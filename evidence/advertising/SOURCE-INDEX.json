@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "captured_date_scope": "Logged-out page text saved on 6 November 2026, and public settings and source saved on 22 November 2026. Exact collection times are retained privately.",
+  "provenance_limits": "Hashes establish that these files have not changed since they were saved. They are not independent trusted timestamps. The 6 November wording is not claimed for HiLo launch day or every earlier bet date.",
+  "sources": [
+    {
+      "file": "november-6/hilo-description-excerpt.txt",
+      "sha256": "0633b5f95d4f05d030da665bfd91e3ecbddff7fe0c987d5df7c228f673aa01df",
+      "representation": "Exact lines 77-80 and 118-135 of the saved logged-out page text: the Login/Create Account buttons and the game description. The rest of the page (site chat, game lists, footer) is omitted. The full capture is retained privately; its hash is recorded here.",
+      "game": "HiLo",
+      "source_url": "https://yeet.com/game/play/yeet-originals/hilo",
+      "capture_date": "2026-11-06",
+      "captured_date_basis": "Saved logged-out page text; no wagers or signed-in pages.",
+      "full_capture_sha256": "027febbca8601eb86f1e39a81d79ff450fed401f024a762aa7f03b002624dec2",
+      "bytes": 670
+    },
+    {
+      "file": "november-6/hilo-rules.txt",
+      "sha256": "c77ec4d6432215d717cbeb2a3fd17a879b8a2e5ae0ab42ba774662aca459ef56",
+      "bytes": 1986,
+      "representation": "Unmodified saved logged-out browser accessibility/DOM text capture; not raw page HTML.",
+      "game": "HiLo",
+      "source_url": "https://yeet.com/game/play/yeet-originals/hilo",
+      "capture_date": "2026-11-06",
+      "captured_date_basis": "Saved logged-out page text; no wagers or signed-in pages."
+    },
+    {
+      "file": "november-6/risky-click-description-excerpt.txt",
+      "sha256": "cb8908b80e35d4cc2fec2ad57f15c415cc1997dc2d36649fda5476ca658936c9",
+      "representation": "Exact lines 77-80 and 140-157 of the saved logged-out page text: the Login/Create Account buttons and the game description. The rest of the page (site chat, game lists, footer) is omitted. The full capture is retained privately; its hash is recorded here.",
+      "game": "Risky Click",
+      "source_url": "https://yeet.com/game/play/yeet-originals/risky-click",
+      "capture_date": "2026-11-06",
+      "captured_date_basis": "Saved logged-out page text; no wagers or signed-in pages.",
+      "full_capture_sha256": "271583ddbae11b2e6c4462ab44f553852a55ffb37205d656561b77932c3f58c1",
+      "bytes": 677
+    },
+    {
+      "file": "november-6/risky-click-rules.txt",
+      "sha256": "65f96b982f3ca4eaa13a1d32a2f6533cf855bba47ccb9a9092ca476a19b2078d",
+      "bytes": 2915,
+      "representation": "Unmodified saved logged-out browser accessibility/DOM text capture; not raw page HTML.",
+      "game": "Risky Click",
+      "source_url": "https://yeet.com/game/play/yeet-originals/risky-click",
+      "capture_date": "2026-11-06",
+      "captured_date_basis": "Saved logged-out page text; no wagers or signed-in pages."
+    },
+    {
+      "file": "november-6/risky-click-paytable.txt",
+      "sha256": "00cc20595a3589b5f72b4dea6cf5304e06b5435a39d4cda436f3be4697573fed",
+      "bytes": 3214,
+      "representation": "Unmodified saved logged-out browser accessibility/DOM text capture; not raw page HTML.",
+      "game": "Risky Click",
+      "source_url": "https://yeet.com/game/play/yeet-originals/risky-click",
+      "capture_date": "2026-11-06",
+      "captured_date_basis": "Saved logged-out page text; no wagers or signed-in pages."
+    },
+    {
+      "file": "public-settings/risky-click-settings-2026-11-22.json",
+      "sha256": "8a3a335c68f8484a0262cf7461e87ae4657b25cab76781ceb155ccfe23a76242",
+      "bytes": 929,
+      "representation": "Unmodified captured public JSON HTTP response body.",
+      "source_url": "https://reactor.yeet.com/originals/risky-click/api/settings",
+      "http_status": 200,
+      "purpose": "Exact tile bases/probabilities, houseEdgeFactor 0.99 and newer fullBoardMultiplier 391.4181. This November 22 response does not by itself prove historical settings.",
+      "captured_date": "2026-11-22"
+    },
+    {
+      "file": "public-settings/risky-click-public-helper-excerpt.js",
+      "sha256": "b7b3d10bebc3aa0d66e6e087d29b74c3e60615037c950e54977419eac31427f9",
+      "bytes": 67,
+      "representation": "Exact contiguous JavaScript excerpt plus a trailing newline; not the entire public asset.",
+      "source_url": "https://reactor.yeet.com/originals/risky-click/assets/index-Cu8LUXbJ.js",
+      "source_asset_sha256": "5154a057f435ec7772bb76f21e8b9c5372b2ff297bf11e2e53a2f7500b32383e",
+      "source_start_unicode_character": 131926,
+      "source_end_unicode_character_exclusive": 131992,
+      "purpose": "Helper leaves first base multiplier unchanged, divides subsequent bases by the supplied factor, then multiplies them. The public settings identify houseEdgeFactor 0.99. This is client source evidence, not proof of the exact backend deployment time.",
+      "captured_date": "2026-11-22"
+    },
+    {
+      "file": "public-settings/asset-response-header-excerpts.json",
+      "sha256": "2413f091b7f1073a576f98d3f8b65e17bb055c6bf3ff14389d9ce668cef177d1",
+      "bytes": 1329,
+      "representation": "Selected public response metadata fields; source URLs, headers, acquisition times and asset hashes retained. Collection times are reduced to dates.",
+      "source_urls": [
+        "https://reactor.yeet.com/originals/risky-click/assets/index-Cu8LUXbJ.js",
+        "https://reactor.yeet.com/originals/hilo/assets/index-DB3qkeD3.js"
+      ]
+    },
+    {
+      "file": "public-settings/risky-click-rules-en-2026-11-22.json",
+      "sha256": "792112e1c64e24da381a97687ded609e10be8133de3c087e9afe276d7acc385a",
+      "bytes": 17330,
+      "representation": "Unmodified public localization JSON response body. Rules text is under the RISKY_CLICK keys.",
+      "source_url": "https://reactor.yeet.com/originals/risky-click/assets/locales/en/risky-click.9348d81d.json",
+      "http_last_modified": "Tue, 10 Nov 2026 10:28:39 GMT",
+      "http_status": 200,
+      "captured_date": "2026-11-22"
+    },
+    {
+      "file": "public-settings/risky-click-rule-rendering-excerpts.json",
+      "sha256": "91a10d773311401d8863a8ce30170d0392f6762283a9b4324d4d11e4dd554487",
+      "bytes": 1173,
+      "representation": "Exact source excerpts packaged with analyst descriptions and source positions. Collection times are reduced to dates.",
+      "source_url": "https://reactor.yeet.com/originals/risky-click/assets/index-Cu8LUXbJ.js",
+      "source_asset_sha256": "5154a057f435ec7772bb76f21e8b9c5372b2ff297bf11e2e53a2f7500b32383e",
+      "captured_date": "2026-11-22"
+    }
+  ]
+}

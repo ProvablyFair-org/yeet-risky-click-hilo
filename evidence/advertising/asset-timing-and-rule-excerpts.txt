@@ -1,0 +1,50 @@
+PUBLIC ASSET TIMING AND RISKY CLICK RULE CHANGE
+Analyst note assembled from preserved public response metadata and source.
+This note is derived; the accompanying files distinguish exact bodies from
+selected header fields and source-code excerpts. No new network retrieval.
+
+1. RISKY CLICK CLIENT ASSET
+https://reactor.yeet.com/originals/risky-click/assets/index-Cu8LUXbJ.js
+Captured: 2026-11-22
+HTTP Last-Modified: Tue, 10 Nov 2026 10:28:39 GMT
+SHA-256: 5154a057f435ec7772bb76f21e8b9c5372b2ff297bf11e2e53a2f7500b32383e
+
+2. HILO CLIENT ASSET
+https://reactor.yeet.com/originals/hilo/assets/index-DB3qkeD3.js
+Captured: 2026-11-22
+HTTP Last-Modified: Tue, 10 Nov 2026 11:54:14 GMT
+SHA-256: 578ad9cf172541ad438560521e88e06b0a11dbed10925c2454278f196ee8445f
+
+These observed Last-Modified headers are 1 hour, 25 minutes and 35 seconds apart.
+They date the served files according to their response headers. They do not
+establish when either backend payout formula changed, whether both changes were
+coordinated, or who decided to make them. No motive or admission follows from
+these timestamps alone. Metadata is in public-settings/asset-response-header-
+excerpts.json; full asset hashes were checked during this package assembly.
+
+3. EXPLICIT ONCE-ONLY RISKY CLICK RULE
+Public localization URL:
+https://reactor.yeet.com/originals/risky-click/assets/locales/en/risky-click.9348d81d.json
+Captured: 2026-11-22
+SHA-256: 792112e1c64e24da381a97687ded609e10be8133de3c087e9afe276d7acc385a
+
+The RISKY_CLICK.RULES_EDGE_ONCE value reads:
+"The house edge is charged once: every tile after your first pays its multiplier
+÷ 0.99, so the game returns 99% however many tiles you take."
+(The line break above was added for readability; the exact single-line value is retained in
+the unmodified public-settings/risky-click-rules-en-2026-11-22.json response.)
+
+The client source references that localization key in the Rules information
+paragraph, includes the paragraph in the returned rules panel, and registers
+that component as the game's rules information. Exact matched snippets and
+source positions are in public-settings/risky-click-rule-rendering-excerpts.json.
+The public helper leaves the first base multiplier unchanged and divides later
+bases by the supplied factor; settings declare 0.99. Those source exhibits are
+also in public-settings/.
+
+The November 6 rules capture described multiplying all tile values directly,
+with a 2x then 3x example yielding 6x and a 361.17x full-board example. The newer
+rule therefore differs explicitly in the treatment of later multipliers. This
+supports a change in reviewed public wording and preview logic. Current test
+receipts separately test observed winning paths; public client source alone is
+not the wager-processing backend and does not certify every settlement.
