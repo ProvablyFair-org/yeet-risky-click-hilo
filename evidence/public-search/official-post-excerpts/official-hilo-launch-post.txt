@@ -1,0 +1,43 @@
+        - 'article "YEET Verified account @yeet Hi-Lo — the newest YEET Original is LIVE! Guess higher, guess lower, and ride your multiplier up. Play now: YEET.com/game/play/yeet Embedded video 0:26 53 replies, 50 reposts, 115 likes, 3 bookmarks, 7480 views"':
+          - link "Square profile picture" [active]:
+            - /url: /yeet
+            - generic "Square profile picture":
+              - img "Square profile picture"
+          - link "YEET Verified account":
+            - /url: /yeet
+            - generic: YEET
+            - img "Verified account"
+          - link "@yeet":
+            - /url: /yeet
+            - generic: "@yeet"
+          - button "Grok actions":
+          - button "More":
+          - text: "Hi-Lo — the newest YEET Original is LIVE! Guess higher, guess lower, and ride your multiplier up. Play now:"
+          - link "YEET.com/game/play/yeet":
+            - /url: https://t.co/9eYJObXjsQ
+            - text: YEET.com/game/play/yeet …
+          - generic "Embedded video"
+          - generic: 0:26
+          - link "Jun 1, 2026 (UTC date)":
+            - /url: /yeet/status/2061478010146992341
+            - time: Jun 1, 2026 (UTC date)
+          - generic: ·
+          - link "7,480 Views":
+            - /url: /yeet/status/2061478010146992341/analytics
+            - generic: 7,480
+            - generic: Views
+          - group "53 replies, 50 reposts, 115 likes, 3 bookmarks, 7480 views":
+            - button "53 Replies. Reply":
+              - generic: "53"
+            - button "50 reposts. Repost":
+              - generic: "50"
+            - button "115 Likes. Like":
+              - generic: "115"
+            - button "3 Bookmarks. Bookmark":
+              - generic: "3"
+            - button "Share post":
+          - button "Relevant":
+            - text: Relevant
+          - link "View quotes":
+            - /url: /yeet/status/2061478010146992341/quotes
+            - text: View quotes

@@ -1,0 +1,41 @@
+        - 'article "YEET Verified account @yeet Think you can call it? Hit 300x or more on Hi-Lo and claim your $50 bounty! 10 winners. First come, first served. Minimum $1 bet. Play now: YEET.com/game/play/yeet Image 47 replies, 43 reposts, 93 likes, 2929 views"':
+          - link "Square profile picture" [active]:
+            - /url: /yeet
+            - generic "Square profile picture":
+              - img "Square profile picture"
+          - link "YEET Verified account":
+            - /url: /yeet
+            - generic: YEET
+            - img "Verified account"
+          - link "@yeet":
+            - /url: /yeet
+            - generic: "@yeet"
+          - button "Grok actions":
+          - button "More":
+          - text: "Think you can call it? Hit 300x or more on Hi-Lo and claim your $50 bounty! 10 winners. First come, first served. Minimum $1 bet. Play now:"
+          - link "YEET.com/game/play/yeet":
+            - /url: https://t.co/9eYJObXRio
+            - text: YEET.com/game/play/yeet …
+          - link "Image":
+            - /url: /yeet/status/2062232853153501685/photo/1
+            - generic "Image":
+              - img "Image"
+          - link "Jun 3, 2026 (UTC date)":
+            - /url: /yeet/status/2062232853153501685
+            - time: Jun 3, 2026 (UTC date)
+          - generic: ·
+          - link "2,929 Views":
+            - /url: /yeet/status/2062232853153501685/analytics
+            - generic: 2,929
+            - generic: Views
+          - group "47 replies, 43 reposts, 93 likes, 2929 views":
+            - button "47 Replies. Reply":
+              - generic: "47"
+            - button "43 reposts. Repost":
+              - generic: "43"
+            - button "93 Likes. Like":
+              - generic: "93"
+            - button "0 Bookmarks. Bookmark":
+            - button "Share post":
+          - button "Relevant":
+            - text: Relevant

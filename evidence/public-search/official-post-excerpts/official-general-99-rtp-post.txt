@@ -1,0 +1,42 @@
+        - article "YEET Verified account @yeet Why are you flipping coins, playing plinko, or rolling dice for 98% RTP or lower at other casinos? At YEET we choose to offer our staple custom games at 99% RTP. We’re built on trust, not greed. Image 37 replies, 26 reposts, 73 likes, 1 bookmark, 20573 views":
+          - link "Square profile picture" [active]:
+            - /url: /yeet
+            - generic "Square profile picture":
+              - img "Square profile picture"
+          - link "YEET Verified account":
+            - /url: /yeet
+            - generic: YEET
+            - img "Verified account"
+          - link "@yeet":
+            - /url: /yeet
+            - generic: "@yeet"
+          - button "Grok actions":
+          - button "More":
+          - generic: Why are you flipping coins, playing plinko, or rolling dice for 98% RTP or lower at other casinos? At YEET we choose to offer our staple custom games at 99% RTP. We’re built on trust, not greed.
+          - link "Image":
+            - /url: /yeet/status/1940157989845102691/photo/1
+            - generic "Image":
+              - img "Image"
+          - link "Jul 1, 2025 (UTC date)":
+            - /url: /yeet/status/1940157989845102691
+            - time: Jul 1, 2025 (UTC date)
+          - generic: ·
+          - link "20.5K Views":
+            - /url: /yeet/status/1940157989845102691/analytics
+            - generic: 20.5K
+            - generic: Views
+          - group "37 replies, 26 reposts, 73 likes, 1 bookmark, 20573 views":
+            - button "37 Replies. Reply":
+              - generic: "37"
+            - button "26 reposts. Repost":
+              - generic: "26"
+            - button "73 Likes. Like":
+              - generic: "73"
+            - button "1 Bookmark. Bookmark":
+              - generic: "1"
+            - button "Share post":
+          - button "Relevant":
+            - text: Relevant
+          - link "View quotes":
+            - /url: /yeet/status/1940157989845102691/quotes
+            - text: View quotes
