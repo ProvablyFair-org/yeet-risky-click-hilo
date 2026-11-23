@@ -1,0 +1,102 @@
+{
+  "source": "https://x.com/JerzyNFT/status/2062294277598609851/photo/1",
+  "image": "../../images/jerzy-original-posted-image.jpg",
+  "evidence_kind": "Analyst transcription of public promotional image; inspect image independently.",
+  "stake_usd": "40.96",
+  "shown_cashout_usd": "1028.54",
+  "prefixes": [
+    {
+      "call": 1,
+      "from_rank": 4,
+      "to_rank": 7,
+      "action": "higher",
+      "success_probability_model": "10/13",
+      "repeated_multiplier": "1.287",
+      "shown_multiplier": "1.28",
+      "matches_truncation": true
+    },
+    {
+      "call": 2,
+      "from_rank": 7,
+      "to_rank": 12,
+      "action": "higher",
+      "success_probability_model": "7/13",
+      "repeated_multiplier": "2.36624142857142857142857142857142857142857142857142857142857",
+      "shown_multiplier": "2.36",
+      "matches_truncation": true
+    },
+    {
+      "call": 3,
+      "from_rank": 12,
+      "to_rank": 4,
+      "action": "lower",
+      "success_probability_model": "12/13",
+      "repeated_multiplier": "2.53779393214285714285714285714285714285714285714285714285714",
+      "shown_multiplier": "2.53",
+      "matches_truncation": true
+    },
+    {
+      "call": 4,
+      "from_rank": 4,
+      "to_rank": 9,
+      "action": "higher",
+      "success_probability_model": "10/13",
+      "repeated_multiplier": "3.26614079066785714285714285714285714285714285714285714285714",
+      "shown_multiplier": "3.26",
+      "matches_truncation": true
+    },
+    {
+      "call": 5,
+      "from_rank": 9,
+      "to_rank": 7,
+      "action": "lower",
+      "success_probability_model": "9/13",
+      "repeated_multiplier": "4.67058133065503571428571428571428571428571428571428571428571",
+      "shown_multiplier": "4.67",
+      "matches_truncation": true
+    },
+    {
+      "call": 6,
+      "from_rank": 7,
+      "to_rank": 9,
+      "action": "higher",
+      "success_probability_model": "7/13",
+      "repeated_multiplier": "8.58719738936147280612244897959183673469387755102040816326531",
+      "shown_multiplier": "8.58",
+      "matches_truncation": true
+    },
+    {
+      "call": 7,
+      "from_rank": 9,
+      "to_rank": 9,
+      "action": "lower",
+      "success_probability_model": "9/13",
+      "repeated_multiplier": "12.2796922667869061127551020408163265306122448979591836734694",
+      "shown_multiplier": "12.27",
+      "matches_truncation": true
+    },
+    {
+      "call": 8,
+      "from_rank": 9,
+      "to_rank": 9,
+      "action": "lower",
+      "success_probability_model": "9/13",
+      "repeated_multiplier": "17.5599599415052757412397959183673469387755102040816326530612",
+      "shown_multiplier": "17.55",
+      "matches_truncation": true
+    },
+    {
+      "call": 9,
+      "from_rank": 9,
+      "to_rank": 6,
+      "action": "lower",
+      "success_probability_model": "9/13",
+      "repeated_multiplier": "25.1107427163525443099729081632653061224489795918367346938776",
+      "shown_multiplier": "25.11",
+      "matches_truncation": true
+    }
+  ],
+  "once_only_multiplier": "27.2130989947556526039771189683006261489506639418455996939242",
+  "once_only_gross_usd_rounded": "1114.65",
+  "limits": "Uses stated independent uniform-rank model; media is not an authenticated ledger or a visible RTP claim."
+}

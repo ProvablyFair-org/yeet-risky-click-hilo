@@ -1,0 +1,537 @@
+{
+  "checkedDateUtc": "2026-11-22",
+  "method": "Signed-in X browser search, Latest tab; read rendered post text and time-element datetimes. Scrolled each result set to the observed bottom; expanded truncated authored text or opened original posts. Index below is an analyst transcription and topic summary, not raw HTML/API data.",
+  "searches": [
+    {
+      "query": "from:yeet \"risky click\"",
+      "url": "https://x.com/search?q=from%3Ayeet%20%22risky%20click%22&src=typed_query&f=live",
+      "returnedPosts": 17,
+      "posts": [
+        {
+          "url": "https://x.com/yeet/status/2049087833659297813",
+          "dateUtc": "2026-04-28",
+          "author": "yeet",
+          "topic": "Risky Click prompt competition",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2046244145635938619",
+          "dateUtc": "2026-04-20",
+          "author": "yeet",
+          "topic": "Anniversary events, including prompt competition",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2044220712244674923",
+          "dateUtc": "2026-04-15",
+          "author": "yeet",
+          "topic": "Risky Click prompt competition",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2043699714239939063",
+          "dateUtc": "2026-04-13",
+          "author": "yeet",
+          "topic": "Anniversary events, including prompt competition",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2041212290276458664",
+          "dateUtc": "2026-04-06",
+          "author": "yeet",
+          "topic": "Reply explaining prompt contest",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2041212203198537901",
+          "dateUtc": "2026-04-06",
+          "author": "yeet",
+          "topic": "Reply explaining prompt contest",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2041212155387678848",
+          "dateUtc": "2026-04-06",
+          "author": "yeet",
+          "topic": "Reply explaining prompt contest",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2041210285726536124",
+          "dateUtc": "2026-04-06",
+          "author": "yeet",
+          "topic": "Risky Click prompt competition",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2041184245490561137",
+          "dateUtc": "2026-04-06",
+          "author": "yeet",
+          "topic": "Anniversary events, including prompt competition",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2000959101271187570",
+          "dateUtc": "2025-12-16",
+          "author": "yeet",
+          "topic": "Advent calendar Risky Click bounty",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/1959072850062553495",
+          "dateUtc": "2025-08-23",
+          "author": "yeet",
+          "topic": "Risky Click clip competition winner",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/1936154666657780075",
+          "dateUtc": "2025-06-20",
+          "author": "yeet",
+          "topic": "Prompt competition winners; full post opened",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/1929928051258736926",
+          "dateUtc": "2025-06-03",
+          "author": "yeet",
+          "topic": "Risky Click prompt competition",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/1924632198386266422",
+          "dateUtc": "2025-05-20",
+          "author": "yeet",
+          "topic": "Prompt competition winners; full post opened",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/1921689778094809208",
+          "dateUtc": "2025-05-11",
+          "author": "yeet",
+          "topic": "Risky Click prompt competition",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/1902344219118739782",
+          "dateUtc": "2025-03-19",
+          "author": "yeet",
+          "topic": "Risky Click launch/teaser",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/1901307618049593501",
+          "dateUtc": "2025-03-16",
+          "author": "yeet",
+          "topic": "Reply about a Risky Click prompt",
+          "kind": "YEET post or reply"
+        }
+      ],
+      "finding": "No Risky Click RTP-change, payout-correction or refund disclosure found in reviewed post text."
+    },
+    {
+      "query": "from:yeet since:2026-11-05 until:2026-11-23",
+      "url": "https://x.com/search?q=from%3Ayeet%20since%3A2026-11-05%20until%3A2026-11-23&src=typed_query&f=live",
+      "returnedPosts": 53,
+      "yeetAuthored": 50,
+      "reposts": 3,
+      "posts": [
+        {
+          "url": "https://x.com/yeet/status/2124125687141585125",
+          "dateUtc": "2026-11-21",
+          "author": "yeet",
+          "topic": "Weekly game highlights",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2123748202088443959",
+          "dateUtc": "2026-11-20",
+          "author": "yeet",
+          "topic": "Spin-the-wheel event",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2123731228830445638",
+          "dateUtc": "2026-11-20",
+          "author": "yeet",
+          "topic": "Six Feet Under game win",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/ScranPints/status/2123466402925318404",
+          "dateUtc": "2026-11-19",
+          "author": "ScranPints",
+          "topic": "Football video promotion",
+          "kind": "YEET repost"
+        },
+        {
+          "url": "https://x.com/yeet/status/2123491127714275686",
+          "dateUtc": "2026-11-19",
+          "author": "yeet",
+          "topic": "New-player race and deposit bonus",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2122437479802306773",
+          "dateUtc": "2026-11-16",
+          "author": "yeet",
+          "topic": "Football video promotion",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2122427015642886271",
+          "dateUtc": "2026-11-16",
+          "author": "yeet",
+          "topic": "Esports/James Bond joke",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2122279118901551605",
+          "dateUtc": "2026-11-16",
+          "author": "yeet",
+          "topic": "Community events",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2121588969540386945",
+          "dateUtc": "2026-11-14",
+          "author": "yeet",
+          "topic": "Weekly game highlights",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2121524311974412655",
+          "dateUtc": "2026-11-14",
+          "author": "yeet",
+          "topic": "Alligators clip competition winners",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/ScranPints/status/2121297918594633778",
+          "dateUtc": "2026-11-13",
+          "author": "ScranPints",
+          "topic": "Football video promotion",
+          "kind": "YEET repost"
+        },
+        {
+          "url": "https://x.com/yeet/status/2123337658562715841",
+          "dateUtc": "2026-11-19",
+          "author": "yeet",
+          "topic": "Vice City/GTA promotional joke",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2123114601978220688",
+          "dateUtc": "2026-11-18",
+          "author": "yeet",
+          "topic": "Miami Mayhem promotion",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2123088776541217178",
+          "dateUtc": "2026-11-18",
+          "author": "yeet",
+          "topic": "GTA promotional joke",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2123068387047944483",
+          "dateUtc": "2026-11-18",
+          "author": "yeet",
+          "topic": "Slots PvP event",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2122824495194837178",
+          "dateUtc": "2026-11-17",
+          "author": "yeet",
+          "topic": "Patriots QB Insurance refunds; unrelated to Risky Click",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2122739633792356481",
+          "dateUtc": "2026-11-17",
+          "author": "yeet",
+          "topic": "New-player race terms",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2122739212998856774",
+          "dateUtc": "2026-11-17",
+          "author": "yeet",
+          "topic": "New-player race and deposit bonus; full post opened",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2121275231771738321",
+          "dateUtc": "2026-11-13",
+          "author": "yeet",
+          "topic": "Unboxing Oblivion release",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2121247009415803010",
+          "dateUtc": "2026-11-13",
+          "author": "yeet",
+          "topic": "Originals PvP event",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2121216801811923334",
+          "dateUtc": "2026-11-13",
+          "author": "yeet",
+          "topic": "Chairman's Cup race",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120958523034976675",
+          "dateUtc": "2026-11-12",
+          "author": "yeet",
+          "topic": "Jensen joke",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120920318147801170",
+          "dateUtc": "2026-11-12",
+          "author": "yeet",
+          "topic": "Spin-the-wheel event",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120894333910159719",
+          "dateUtc": "2026-11-12",
+          "author": "yeet",
+          "topic": "Alligators prize-pool competition",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120877594484588817",
+          "dateUtc": "2026-11-12",
+          "author": "yeet",
+          "topic": "Echo game win",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120556976396705830",
+          "dateUtc": "2026-11-11",
+          "author": "yeet",
+          "topic": "Game-win image; quoted by subsequent Echo post",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120509506685657140",
+          "dateUtc": "2026-11-11",
+          "author": "yeet",
+          "topic": "Alligators how-to thread: game link",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120509504240693567",
+          "dateUtc": "2026-11-11",
+          "author": "yeet",
+          "topic": "Alligators how-to thread: auto betting",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120509501312831725",
+          "dateUtc": "2026-11-11",
+          "author": "yeet",
+          "topic": "Alligators how-to thread: cashout",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120509499190456518",
+          "dateUtc": "2026-11-11",
+          "author": "yeet",
+          "topic": "Alligators how-to thread: setup",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120509496665727282",
+          "dateUtc": "2026-11-11",
+          "author": "yeet",
+          "topic": "Alligators breakdown advertising 98% RTP",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120494250324525488",
+          "dateUtc": "2026-11-11",
+          "author": "yeet",
+          "topic": "Slots PvP event",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120478891689038149",
+          "dateUtc": "2026-11-11",
+          "author": "yeet",
+          "topic": "Alligators clip competition winners",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120199807675625850",
+          "dateUtc": "2026-11-10",
+          "author": "yeet",
+          "topic": "Alligators promotion",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120170062862819728",
+          "dateUtc": "2026-11-10",
+          "author": "yeet",
+          "topic": "Alligators competition terms",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120169890527301948",
+          "dateUtc": "2026-11-10",
+          "author": "yeet",
+          "topic": "Alligators prize-pool competition",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120151928222908734",
+          "dateUtc": "2026-11-10",
+          "author": "yeet",
+          "topic": "Alligators clip competition winners",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2120123367885820266",
+          "dateUtc": "2026-11-10",
+          "author": "yeet",
+          "topic": "Poker tournament",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2119829076923854868",
+          "dateUtc": "2026-11-09",
+          "author": "yeet",
+          "topic": "Alligators clip competition; expanded",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2119772444298801253",
+          "dateUtc": "2026-11-09",
+          "author": "yeet",
+          "topic": "Poker tournament; expanded",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2119735617688949059",
+          "dateUtc": "2026-11-09",
+          "author": "yeet",
+          "topic": "Football video promotion",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2119729034133168616",
+          "dateUtc": "2026-11-09",
+          "author": "yeet",
+          "topic": "Community events/poker",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2119067347294011537",
+          "dateUtc": "2026-11-07",
+          "author": "yeet",
+          "topic": "Weekly game highlights",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2118783094933102819",
+          "dateUtc": "2026-11-06",
+          "author": "yeet",
+          "topic": "Blackjack stream giveaway",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2118768881690886419",
+          "dateUtc": "2026-11-06",
+          "author": "yeet",
+          "topic": "Alligators launch",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2118748969115234725",
+          "dateUtc": "2026-11-06",
+          "author": "yeet",
+          "topic": "Kevin Hart/Pragmatic stream promotion",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2118743907265823168",
+          "dateUtc": "2026-11-06",
+          "author": "yeet",
+          "topic": "Giveaway winner-payment reply; not Risky Click disclosure",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/ScranPints/status/2118393763311567038",
+          "dateUtc": "2026-11-05",
+          "author": "ScranPints",
+          "topic": "Football video promotion",
+          "kind": "YEET repost"
+        },
+        {
+          "url": "https://x.com/yeet/status/2118697823952589047",
+          "dateUtc": "2026-11-06",
+          "author": "yeet",
+          "topic": "Journey's End TitanWays release",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2118472546160873647",
+          "dateUtc": "2026-11-05",
+          "author": "yeet",
+          "topic": "New providers added",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2118439617632342514",
+          "dateUtc": "2026-11-05",
+          "author": "yeet",
+          "topic": "Blackjack stream giveaway",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2118409106285604999",
+          "dateUtc": "2026-11-05",
+          "author": "yeet",
+          "topic": "Sweet YEET Bonanza 2500 promotion",
+          "kind": "YEET post or reply"
+        },
+        {
+          "url": "https://x.com/yeet/status/2118383764334108752",
+          "dateUtc": "2026-11-05",
+          "author": "yeet",
+          "topic": "Sweet YEET Bonanza teaser",
+          "kind": "YEET post or reply"
+        }
+      ],
+      "finding": "No Risky Click RTP-change, payout-correction or refund disclosure found in reviewed post text."
+    }
+  ],
+  "distinctions": [
+    {
+      "url": "https://x.com/yeet/status/2122824495194837178",
+      "datetimeUtc": "2026-11-17T22:49:34Z",
+      "finding": "Refund announcement for eligible losing Patriots sports bets, up to $100 in bonus bets under QB Insurance. It is unrelated to Risky Click."
+    },
+    {
+      "url": "https://x.com/yeet/status/2041210285726536124",
+      "finding": "$100 payments are prompt-competition prizes, not refunds."
+    },
+    {
+      "url": "https://x.com/yeet/status/2120509496665727282",
+      "finding": "98% RTP claim explicitly concerns Alligators, not Risky Click."
+    }
+  ],
+  "limitations": [
+    "X search is not an exhaustive archive: deleted, unindexed, inaccessible or differently worded posts can be missed.",
+    "Review covers returned post text; not every image, video frame/audio track, external link or other user's reply was exhaustively reviewed.",
+    "Quoted posts can be truncated in their parent cards; the relevant original November contest/poker/race posts were also reviewed.",
+    "Dates are UTC, taken from each post's rendered datetime attribute.",
+    "Discord, private emails, direct messages and account credits are outside this search scope."
+  ],
+  "defensibleConclusion": "On 22 November 2026, two X searches of YEET's posts found no Risky Click correction or compensation announcement in the returned post text."
+}

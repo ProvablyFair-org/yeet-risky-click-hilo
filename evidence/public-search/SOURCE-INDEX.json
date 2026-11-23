@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "file": "x-search-index-2026-11-22.json",
+      "sha256": "350ad16f523f9b98f73f0bcdef467f6403e956159373709cb488bc3432c6b70f",
+      "bytes": 19361,
+      "representation": "Edited analyst transcription and topic index of 70 returned X posts. Post URLs, dates, topics, search methods and substantive findings are retained. Unrelated notes are removed and limits are restated. Not raw HTML, an API export, or a new search. The search time is reduced to its date.",
+      "source_urls": [
+        "https://x.com/search?q=from%3Ayeet%20%22risky%20click%22&src=typed_query&f=live",
+        "https://x.com/search?q=from%3Ayeet%20since%3A2026-11-05%20until%3A2026-11-23&src=typed_query&f=live"
+      ],
+      "captured_date": "2026-11-22"
+    },
+    {
+      "file": "official-post-excerpts/official-general-99-rtp-post.txt",
+      "source_url": "https://x.com/yeet/status/1940157989845102691",
+      "representation": "Exact contiguous excerpt from the preserved browser accessibility/DOM text. Only the official post article is retained; signed-in account UI, navigation, replies and surrounding feed are omitted. The display time is replaced with the post's UTC date.",
+      "source_lines_start_1_based": 62,
+      "source_lines_end_inclusive_1_based": 103,
+      "sha256": "ee32b09d5f2d296f5272de23087c2d48f6c0fa855faee267d4757c05c8a0bd0c",
+      "bytes": 2025,
+      "purpose": "General custom-game 99% campaign. Text does not identify HiLo, which launched later; do not use as launch-date HiLo advertising.",
+      "captured_date": "2026-11-22"
+    },
+    {
+      "file": "official-post-excerpts/official-hilo-launch-post.txt",
+      "source_url": "https://x.com/yeet/status/2061478010146992341",
+      "representation": "Exact contiguous excerpt from the preserved browser accessibility/DOM text. Only the official post article is retained; signed-in account UI, navigation, replies and surrounding feed are omitted. The display time is replaced with the post's UTC date.",
+      "source_lines_start_1_based": 62,
+      "source_lines_end_inclusive_1_based": 104,
+      "sha256": "7df8747de3aa9822e4cd6982bacdc55554a37715f92ede029ac0ad3cba3525ab",
+      "bytes": 1948,
+      "purpose": "Official launch announcement dated June 1, 2026. The preserved post text makes no 99% claim; this excerpt is not an exhaustive video transcript.",
+      "captured_date": "2026-11-22"
+    },
+    {
+      "file": "official-post-excerpts/official-hilo-bounty-post.txt",
+      "source_url": "https://x.com/yeet/status/2062232853153501685",
+      "representation": "Exact contiguous excerpt from the preserved browser accessibility/DOM text. Only the official post article is retained; signed-in account UI, navigation, replies and surrounding feed are omitted. The display time is replaced with the post's UTC date.",
+      "source_lines_start_1_based": 62,
+      "source_lines_end_inclusive_1_based": 102,
+      "sha256": "196fc5cde387bb1afbfefd1cb2731fe843486699be1989ec100adff184bff28d",
+      "bytes": 1894,
+      "purpose": "Official June 3 promotion encouraging 300x HiLo wins. Bounty prizes are not player compensation. Post text does not establish an RTP definition.",
+      "captured_date": "2026-11-22"
+    }
+  ]
+}
