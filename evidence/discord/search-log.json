@@ -1,0 +1,115 @@
+{
+  "collectedDate": "2026-11-23",
+  "scope": "YEET server channels readable by the signed-in Discord member. No DMs or other servers examined.",
+  "queries": [
+    {
+      "query": "hilo",
+      "displayedTotal": 6,
+      "capturedResults": 6,
+      "notes": "All six returned messages; one complaint opened with surrounding conversation."
+    },
+    {
+      "query": "risky",
+      "displayedTotal": 184,
+      "capturedResults": 184,
+      "notes": "All eight result pages captured and reviewed."
+    },
+    {
+      "query": "rtp",
+      "displayedTotal": 372,
+      "capturedResults": 25,
+      "notes": "First page only; do not describe all RTP results as reviewed."
+    },
+    {
+      "query": "rtp 99",
+      "displayedTotal": 37,
+      "capturedResults": 37,
+      "notes": "Both result pages; record actual query without assuming universal search semantics."
+    },
+    {
+      "query": "\"house edge\"",
+      "displayedTotal": 51,
+      "capturedResults": 51,
+      "notes": "All three result pages captured; human discussion reviewed, automated Rumble narratives distinguished."
+    },
+    {
+      "query": "refund",
+      "displayedTotal": 40,
+      "capturedResults": 40,
+      "notes": "Both pages; no identified HiLo/Risky Click correction or compensation notice."
+    },
+    {
+      "query": "compensation",
+      "displayedTotal": 15,
+      "capturedResults": 15,
+      "notes": "All results. Discord also returned morphological variants."
+    },
+    {
+      "query": "compensated",
+      "displayedTotal": 15,
+      "capturedResults": 15,
+      "notes": "Same set as compensation; not an independent extra 15 messages."
+    },
+    {
+      "query": "compound",
+      "displayedTotal": 52,
+      "capturedResults": 25,
+      "notes": "First page only, automated Rumble story messages. Not evidence of actual operator admissions."
+    },
+    {
+      "query": "\"per card\"",
+      "displayedTotal": 6,
+      "capturedResults": 6,
+      "notes": "Returned Loteria/card-allocation messages; no HiLo pricing disclosure identified. Quotes did not enforce a strict phrase-only match."
+    },
+    {
+      "query": "\"per click\"",
+      "displayedTotal": 0,
+      "capturedResults": 0,
+      "notes": "No results displayed. Search absence is not proof of absence everywhere."
+    },
+    {
+      "query": "rtp risky",
+      "displayedTotal": 0,
+      "capturedResults": 0,
+      "notes": "Returned no results despite a previously located message containing both words. Not a valid exhaustive conjunction test."
+    },
+    {
+      "query": "migrated risky",
+      "displayedTotal": 0,
+      "capturedResults": 0,
+      "notes": "No results displayed; the migration message was found with migrated instead."
+    },
+    {
+      "query": "\"most of our slots\"",
+      "displayedTotal": 1,
+      "capturedResults": 1,
+      "notes": "Located the June 2025 Team-role RTP statement."
+    },
+    {
+      "query": "migrated",
+      "displayedTotal": 7,
+      "capturedResults": 7,
+      "notes": "All results; relevant September 2026 engine migration identified."
+    },
+    {
+      "query": "hi-lo",
+      "displayedTotal": 197,
+      "capturedResults": 25,
+      "notes": "Unfiltered first page, automated Rumble narratives."
+    },
+    {
+      "query": "authorType:user hi-lo",
+      "displayedTotal": 13,
+      "capturedResults": 13,
+      "notes": "Author type selected using the Discord Filters UI. All 13 returned messages reviewed; user includes human staff. Some hits concern unrelated event formats/Omaha."
+    }
+  ],
+  "additionalReview": "Ten posts in #patch-notes from 15 September to 13 November 2026 (nine text posts and one image-only post), the 4 September 2026 patch notes found by search, and the 18 #announcements posts from 5 to 21 November 2026 (UTC).",
+  "limits": [
+    "Search indexing, tokenization, permissions, edits and deletions limit coverage.",
+    "Not all media attachments or linked pages were read.",
+    "A June 3 HiLo post with an image attachment was located, but the attempted image download was denied and the image content was not verified.",
+    "The lack of a notice found here cannot establish that nobody was notified or compensated."
+  ]
+}

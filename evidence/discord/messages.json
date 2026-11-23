@@ -1,0 +1,205 @@
+{
+  "collectedDate": "2026-11-23",
+  "server": "YEET",
+  "note": "Message text as shown in YEET's Discord. postedUtc is each message's own timestamp. Display times, reaction counts and capture notes are removed.",
+  "keyMessages": [
+    {
+      "id": "june-2025-team-rtp-statement",
+      "postedUtc": "2025-06-27T20:49:47.088Z",
+      "edited": false,
+      "author": "Jaedyn-YEET ( won’t dm you 1st )",
+      "role": "Team",
+      "messageUrl": "https://discord.com/channels/1375846970853298206/1378908103910625330/1388260043891409057",
+      "text": "most of our slots range between 94% and 99% RTP. Our custom Yeet Original games have the following RTPs: 99% for Dice, Limbo, Coin Flip, Plinko, and Risky Click; 98% for Minter and Coin Race; and 97% for Lamb Chop.",
+      "whyItMatters": "A YEET team member lists the YEET originals at 99% RTP, Risky Click included, with no mention of the edge growing with each tile. Predates HiLo."
+    },
+    {
+      "id": "2026-09-04-patch-notes",
+      "postedUtc": "2026-09-04T21:07:18.055Z",
+      "edited": true,
+      "author": "Keyboard Monkey",
+      "role": "Chairman",
+      "messageUrl": "https://discord.com/channels/1375846970853298206/1544415917033914428/1545540785636773949",
+      "text": "Patch Notes 9/4/26\n\n New\n\nLimits for YEET Originals have gone up dramatically.  Keno now has a $1 million dollar max win.\n,\n\nLimits for major slot providers have risen to $2.5m cap.\n,\n\nWe’ve added shareable PNL cards to the sportsbook!  Head to the ‘My Bets’ section and click the share icon in the bottom right of your slip to check them out.\n,\n\n Improvements\n\nWhen a user is tipped, we now display the tip currency in chat.\n,\n\nOn web, launching games no longer requires selecting real money.  To launch demo mode there is now a toggle under the game window.\n,\n\nMigrated Lamb Chop and Risky Click to our new game engine.  They are blazingly fast now and click speeds have gone up dramatically.\n,\n\n Fixes\n\nFixed a bug in the PnL Session Widget that was causing incorrect numbers when using various currencies.\n,",
+      "whyItMatters": "Patch notes say Risky Click moved to a new game engine for speed. Nothing about pricing."
+    },
+    {
+      "id": "2026-11-13-patch-notes",
+      "postedUtc": "2026-11-13T20:23:01.130Z",
+      "edited": false,
+      "author": "Keyboard Monkey",
+      "role": "Chairman",
+      "messageUrl": "https://discord.com/channels/1375846970853298206/1544415917033914428/1570896792277745696",
+      "text": "Path Notes 11/13\n\nImprovements\n\nBet cards are now live! Click on an aura, or any of the Live Wins / Bet Feed to see details about the round played, including detailed Originals information!\n,\nLive win feed now pauses on hover\n,\nPromotions row is now Boosted RTP row\n,\nCombi Bonus for multis in the Sportsbook are now pinned outside the selections list\n,\nRegistration no longer pops up with password complexity requirements\n,\n\nFixes\n\nFixes chat intermittently forcing the scroll position to the newest message when new messages arrive, preventing users from scrolling up and selecting earlier messages to reply individually. The behavior starts after clicking names to reply\n,\nBadges on Chairman’s Cup page are now fully aligned\n,\nEmails now have proper social footers to include Discord and Instagram\n,\nTip history now shows paginated results and can show all tips, previous cap was last 20\n,",
+      "whyItMatters": "First patch notes after the 10 November change: bet cards and interface tweaks. Nothing about HiLo or Risky Click pricing, refunds or compensation."
+    }
+  ],
+  "announcements": {
+    "channelUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712",
+    "scope": "The 18 posts in #announcements from 5 to 21 November 2026 (UTC), the last before the check, listed by headline. None mentions HiLo or Risky Click pricing, refunds or compensation. Full text stays in YEET's Discord; one post lists winning players by name, so we do not republish the text. Attached images, video and linked pages were not all opened.",
+    "messages": [
+      {
+        "postedUtc": "2026-11-05T17:00:56.782Z",
+        "edited": false,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1567946836151508992",
+        "headline": "JUICY BOOSTED PRIZES — OCTOBER’S VOLUME VAULT",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-05T19:48:54.741Z",
+        "edited": true,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1567989106175250585",
+        "headline": "CONGRATULATIONS TO OCTOBER’S VOLUME VAULT WINNERS!",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-06T17:50:13.484Z",
+        "edited": false,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1568321625324126289",
+        "headline": "PVP Battles starting soon!",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-09T16:22:36.398Z",
+        "edited": true,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1569386739103965419",
+        "headline": "$500 GIVEAWAY — SPIN THE WHEEL",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-09T17:39:50.049Z",
+        "edited": false,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1569406174045151268",
+        "headline": "$500 Giveaway & The entry form is OPEN!!!",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-10T16:53:59.857Z",
+        "edited": false,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1569757026769436703",
+        "headline": "YEET IT TRIVIA STARTS IN 5 MINUTES ⚡️",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-11T15:12:34.001Z",
+        "edited": true,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1570093888704610405",
+        "headline": "Friday’s PvP battles open for grabs in ⁠💎│yeet-market",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-11T17:38:13.165Z",
+        "edited": true,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1570130543415132231",
+        "headline": "Slot PVP starting soon - 1PM ET 6pm UTC",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-13T17:41:37.995Z",
+        "edited": false,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1570856178265751605",
+        "headline": "PVP battles starting soon - 1PM ET 6pm UTC",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-13T20:37:35.595Z",
+        "edited": false,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1570900460049797163",
+        "headline": "Forwarded: Path Notes 11/13",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-13T20:42:17.457Z",
+        "edited": false,
+        "author": null,
+        "role": null,
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1570901642264576114",
+        "headline": "Forwarded: #⚙️│patch-notes",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-13T20:42:20.206Z",
+        "edited": false,
+        "author": null,
+        "role": null,
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1570901653794721917",
+        "headline": "KBM's Latest Patch Notes",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-13T21:41:24.621Z",
+        "edited": false,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1570916520148729956",
+        "headline": "SPIN THE WHEEL — LAST CALL!",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-14T18:46:34.191Z",
+        "edited": true,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1571234907961696427",
+        "headline": "Monday Spin the Wheel — Eligibility Checker",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-17T17:54:39.884Z",
+        "edited": false,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1572309009208189071",
+        "headline": "YEET IT TRIVIA STARTS IN 5 MINUTES!",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-18T17:47:37.959Z",
+        "edited": false,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1572669627392331918",
+        "headline": "SLOT PvP — WIN CASH PRIZES!",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-18T21:55:04.421Z",
+        "edited": false,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1572731897967153285",
+        "headline": "Congratulations to 22 winners walking away with CASH prizes!",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      },
+      {
+        "postedUtc": "2026-11-21T23:15:59.810Z",
+        "edited": false,
+        "author": null,
+        "role": "Team",
+        "messageUrl": "https://discord.com/channels/1375846970853298206/1399492008413888712/1573839426541584414",
+        "headline": "SPIN THE WHEEL | ELIGIBILITY CHECK",
+        "mentionsHiloRiskyClickPricingOrRefund": false
+      }
+    ]
+  }
+}
