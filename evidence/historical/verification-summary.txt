@@ -1,0 +1,39 @@
+{
+  "source_files_verified": 24,
+  "hilo": {
+    "records": 20,
+    "successful_prefixes": 163,
+    "post_first_prefixes": 143,
+    "repeat_prefix_matches": 163,
+    "once_post_first_matches": 0,
+    "final_repeat_matches": 20,
+    "max_calls": 25,
+    "total_skips": 39,
+    "actual_gross_usd": "301556.1514",
+    "once_benchmark_usd": "316393.4306863178865907901989044155898298247291339718938712024063937826",
+    "benchmark_gap_usd": "14837.2792863178865907901989044155898298247291339718938712024063937826",
+    "benchmark_gap_rounded_usd": "14837.28",
+    "earliest_recorded_at": "2026-06-01T19:53:13.023Z",
+    "latest_recorded_at": "2026-11-10T10:13:28.095Z"
+  },
+  "risky": {
+    "records": 20,
+    "enumerated_tile_subsets": 511,
+    "old_model_matches": 20,
+    "once_model_matches": 0,
+    "ambiguous_subset_records": 9,
+    "actual_gross_usd": "718706.7799",
+    "conservative_once_benchmark_usd": "743659.0476",
+    "benchmark_gap_usd": "24952.2677",
+    "benchmark_gap_rounded_usd": "24952.27",
+    "earliest_recorded_at": "2025-09-10T01:03:00.544Z",
+    "latest_recorded_at": "2026-08-12T18:39:43.523Z"
+  },
+  "combined": {
+    "records": 40,
+    "actual_gross_usd": "1020262.9313",
+    "once_benchmark_usd": "1060052.478286317886590790198904415589829824729133971893871202406393783",
+    "benchmark_gap_usd": "39789.5469863178865907901989044155898298247291339718938712024063937826",
+    "benchmark_gap_rounded_usd": "39789.55"
+  }
+}

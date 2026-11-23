@@ -1,0 +1,4474 @@
+{
+  "schema_version": 1,
+  "scope": "40 selected public historical winning records: 20 HiLo and 20 Risky Click. Payout-model reconstruction only; not an RNG audit or a representative RTP sample.",
+  "methods": {
+    "hilo": "13 equally likely ranks with replacement, inclusive higher/lower except strict opposite-direction calls at A/K; same is 1/13. Every successful paid call multiplies the reconstructed old value by 0.99/p. Skips change the current rank but apply no payout factor. Compare with 0.99/product(p) for a once-only factor.",
+    "hilo_precision": "Exact rational model; Decimal calculations at 70-digit precision. Recorded float values compared at 1e-12 relative tolerance. No per-row cent rounding in aggregate benchmark.",
+    "risky": "Enumerate all 511 non-empty subsets of the nine documented historical tile multipliers. Match the stored leaderboard multiplier within 0.0001. Each candidate once-only multiplier divides the old product by 0.99^(tiles-1). Choose the smallest once-only candidate for each row.",
+    "risky_precision": "Floor chosen once-only multiplier to four decimals; multiply the displayed USD stake, then floor gross USD to four decimals. A stored 40.1309 value is 0.0001 below exact product 40.131; this discrepancy is preserved.",
+    "combined_precision": "Sum unrounded HiLo route benchmarks and four-decimal floored Risky Click lower benchmarks, then subtract stored gross payouts. Round the final aggregate to cents with ROUND_HALF_UP.",
+    "interpretation": "YEET advertised a 1% house edge and 99% RTP. The benchmark charges that 1% once on the whole round, so the round returns 99% of the stake however many steps are taken. Charging it again at every step returns 0.99 to the power of the steps taken.",
+    "limits": "Public winning leaderboards are selected examples. Risky Click leaderboards do not disclose paths, so subset matches are compatible reconstructions, not revealed choices. Displayed USD stakes are the available unit for cross-record benchmarks; raw payouts may round differently from path multipliers. Source acquisition dates are locally recorded provenance, not independent timestamp attestations. No RNG generation is replayed."
+  },
+  "summary": {
+    "source_files_verified": 24,
+    "hilo": {
+      "records": 20,
+      "successful_prefixes": 163,
+      "post_first_prefixes": 143,
+      "repeat_prefix_matches": 163,
+      "once_post_first_matches": 0,
+      "final_repeat_matches": 20,
+      "max_calls": 25,
+      "total_skips": 39,
+      "actual_gross_usd": "301556.1514",
+      "once_benchmark_usd": "316393.4306863178865907901989044155898298247291339718938712024063937826",
+      "benchmark_gap_usd": "14837.2792863178865907901989044155898298247291339718938712024063937826",
+      "benchmark_gap_rounded_usd": "14837.28",
+      "earliest_recorded_at": "2026-06-01T19:53:13.023Z",
+      "latest_recorded_at": "2026-11-10T10:13:28.095Z"
+    },
+    "risky": {
+      "records": 20,
+      "enumerated_tile_subsets": 511,
+      "old_model_matches": 20,
+      "once_model_matches": 0,
+      "ambiguous_subset_records": 9,
+      "actual_gross_usd": "718706.7799",
+      "conservative_once_benchmark_usd": "743659.0476",
+      "benchmark_gap_usd": "24952.2677",
+      "benchmark_gap_rounded_usd": "24952.27",
+      "earliest_recorded_at": "2025-09-10T01:03:00.544Z",
+      "latest_recorded_at": "2026-08-12T18:39:43.523Z"
+    },
+    "combined": {
+      "records": 40,
+      "actual_gross_usd": "1020262.9313",
+      "once_benchmark_usd": "1060052.478286317886590790198904415589829824729133971893871202406393783",
+      "benchmark_gap_usd": "39789.5469863178865907901989044155898298247291339718938712024063937826",
+      "benchmark_gap_rounded_usd": "39789.55"
+    }
+  },
+  "rows": [
+    {
+      "game": "HiLo",
+      "leaderboard": "top-wins",
+      "rank": 1,
+      "label": "HiLo / top-wins / 1",
+      "source_files": [
+        "sources/hilo-top-wins.json",
+        "sources/hilo-top-wins-01.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/top-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-60111-019fefbc-5e6e-7bda-971c-b48ac2c09b2c"
+      ],
+      "round_id": "019fefbc-5e6e-7bda-971c-b48ac2c09b2c",
+      "recorded_at": "2026-08-11T07:32:07.411Z",
+      "stake_usd": "500",
+      "actual_gross_usd": "82818.45",
+      "observed_multiplier": "165.6369",
+      "calls": 2,
+      "skips": 0,
+      "game_version": 2,
+      "repeated_model_multiplier_exact": "1656369/10000",
+      "repeated_model_multiplier": "165.6369",
+      "once_model_multiplier_exact": "16731/100",
+      "once_model_multiplier": "167.31",
+      "model_original_stake_return": "0.9801",
+      "once_benchmark_usd": "83655.00",
+      "benchmark_gap_usd": "836.55",
+      "benchmark_gap_rounded_usd": "836.55",
+      "history_final_multiplier": "165.6369",
+      "observed_payout_equals_history_times_display_stake": true,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_same",
+          "from_rank": 1,
+          "to_rank": 1,
+          "favourable_ranks": 1,
+          "observed_multiplier": "12.87",
+          "repeated_multiplier_exact": "1287/100",
+          "repeated_multiplier": "12.87",
+          "once_multiplier_exact": "1287/100",
+          "once_multiplier": "12.87",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_same",
+          "from_rank": 1,
+          "to_rank": 1,
+          "favourable_ranks": 1,
+          "observed_multiplier": "165.6369",
+          "repeated_multiplier_exact": "1656369/10000",
+          "repeated_multiplier": "165.6369",
+          "once_multiplier_exact": "16731/100",
+          "once_multiplier": "167.31",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "top-wins",
+      "rank": 2,
+      "label": "HiLo / top-wins / 2",
+      "source_files": [
+        "sources/hilo-top-wins.json",
+        "sources/hilo-top-wins-02.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/top-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-3596-019eafa3-64b2-74b7-9638-a27c8fe72def"
+      ],
+      "round_id": "019eafa3-64b2-74b7-9638-a27c8fe72def",
+      "recorded_at": "2026-06-10T03:46:21.511Z",
+      "stake_usd": "2500",
+      "actual_gross_usd": "31375",
+      "observed_multiplier": "12.55",
+      "calls": 8,
+      "skips": 0,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "2509037316282039819011307/200000000000000000000000",
+      "repeated_model_multiplier": "12.545186581410199095056535",
+      "once_model_multiplier_exact": "26919113793/2000000000",
+      "once_model_multiplier": "13.4595568965",
+      "model_original_stake_return": "0.9227446944279201",
+      "once_benchmark_usd": "33648.8922412500",
+      "benchmark_gap_usd": "2273.8922412500",
+      "benchmark_gap_rounded_usd": "2273.89",
+      "history_final_multiplier": "12.545186581410199095056535000",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_higher",
+          "from_rank": 4,
+          "to_rank": 4,
+          "favourable_ranks": 10,
+          "observed_multiplier": "1.287",
+          "repeated_multiplier_exact": "1287/1000",
+          "repeated_multiplier": "1.287",
+          "once_multiplier_exact": "1287/1000",
+          "once_multiplier": "1.287",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_higher",
+          "from_rank": 4,
+          "to_rank": 10,
+          "favourable_ranks": 10,
+          "observed_multiplier": "1.656369",
+          "repeated_multiplier_exact": "1656369/1000000",
+          "repeated_multiplier": "1.656369",
+          "once_multiplier_exact": "16731/10000",
+          "once_multiplier": "1.6731",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_lower",
+          "from_rank": 10,
+          "to_rank": 4,
+          "favourable_ranks": 10,
+          "observed_multiplier": "2.131746903",
+          "repeated_multiplier_exact": "2131746903/1000000000",
+          "repeated_multiplier": "2.131746903",
+          "once_multiplier_exact": "217503/100000",
+          "once_multiplier": "2.17503",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_higher",
+          "from_rank": 4,
+          "to_rank": 9,
+          "favourable_ranks": 10,
+          "observed_multiplier": "2.743558264161",
+          "repeated_multiplier_exact": "2743558264161/1000000000000",
+          "repeated_multiplier": "2.743558264161",
+          "once_multiplier_exact": "2827539/1000000",
+          "once_multiplier": "2.827539",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 5,
+          "action": "guess_higher",
+          "from_rank": 9,
+          "to_rank": 12,
+          "favourable_ranks": 5,
+          "observed_multiplier": "7.061918971950414",
+          "repeated_multiplier_exact": "3530959485975207/500000000000000",
+          "repeated_multiplier": "7.061918971950414",
+          "once_multiplier_exact": "36758007/5000000",
+          "once_multiplier": "7.3516014",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 6,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 10,
+          "favourable_ranks": 12,
+          "observed_multiplier": "7.5739080974168190150000000000",
+          "repeated_multiplier_exact": "1514781619483363803/200000000000000000",
+          "repeated_multiplier": "7.573908097416819015",
+          "once_multiplier_exact": "159284697/20000000",
+          "once_multiplier": "7.96423485",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 7,
+          "action": "guess_lower",
+          "from_rank": 10,
+          "to_rank": 4,
+          "favourable_ranks": 10,
+          "observed_multiplier": "9.747619721375446072305000000",
+          "repeated_multiplier_exact": "1949523944275089214461/200000000000000000000",
+          "repeated_multiplier": "9.747619721375446072305",
+          "once_multiplier_exact": "2070701061/200000000",
+          "once_multiplier": "10.353505305",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 8,
+          "action": "guess_higher",
+          "from_rank": 4,
+          "to_rank": 7,
+          "favourable_ranks": 10,
+          "observed_multiplier": "12.545186581410199095056535000",
+          "repeated_multiplier_exact": "2509037316282039819011307/200000000000000000000000",
+          "repeated_multiplier": "12.545186581410199095056535",
+          "once_multiplier_exact": "26919113793/2000000000",
+          "once_multiplier": "13.4595568965",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "top-wins",
+      "rank": 3,
+      "label": "HiLo / top-wins / 3",
+      "source_files": [
+        "sources/hilo-top-wins.json",
+        "sources/hilo-top-wins-03.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/top-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDC-91670-019fa041-2f0c-7ac0-b332-ff998579d4b4"
+      ],
+      "round_id": "019fa041-2f0c-7ac0-b332-ff998579d4b4",
+      "recorded_at": "2026-07-26T21:07:34.303Z",
+      "stake_usd": "2000",
+      "actual_gross_usd": "28220",
+      "observed_multiplier": "14.11",
+      "calls": 4,
+      "skips": 0,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "11290363227/800000000",
+      "repeated_model_multiplier": "14.11295403375",
+      "once_model_multiplier_exact": "314171/21600",
+      "once_model_multiplier": "14.54495370370370370370370370370370370370370370370370370370370370370370",
+      "model_original_stake_return": "0.96059601",
+      "once_benchmark_usd": "29089.90740740740740740740740740740740740740740740740740740740740740740",
+      "benchmark_gap_usd": "869.90740740740740740740740740740740740740740740740740740740740740740",
+      "benchmark_gap_rounded_usd": "869.91",
+      "history_final_multiplier": "14.112954033750000000000000000",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_lower",
+          "from_rank": 9,
+          "to_rank": 9,
+          "favourable_ranks": 9,
+          "observed_multiplier": "1.4300000000000000000000000000",
+          "repeated_multiplier_exact": "143/100",
+          "repeated_multiplier": "1.43",
+          "once_multiplier_exact": "143/100",
+          "once_multiplier": "1.43",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_lower",
+          "from_rank": 9,
+          "to_rank": 8,
+          "favourable_ranks": 9,
+          "observed_multiplier": "2.0449000000000000000000000000",
+          "repeated_multiplier_exact": "20449/10000",
+          "repeated_multiplier": "2.0449",
+          "once_multiplier_exact": "1859/900",
+          "once_multiplier": "2.065555555555555555555555555555555555555555555555555555555555555555556",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_higher",
+          "from_rank": 8,
+          "to_rank": 10,
+          "favourable_ranks": 6,
+          "observed_multiplier": "4.3863105000000000000000000000",
+          "repeated_multiplier_exact": "8772621/2000000",
+          "repeated_multiplier": "4.3863105",
+          "once_multiplier_exact": "24167/5400",
+          "once_multiplier": "4.475370370370370370370370370370370370370370370370370370370370370370370",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_higher",
+          "from_rank": 10,
+          "to_rank": 13,
+          "favourable_ranks": 4,
+          "observed_multiplier": "14.112954033750000000000000000",
+          "repeated_multiplier_exact": "11290363227/800000000",
+          "repeated_multiplier": "14.11295403375",
+          "once_multiplier_exact": "314171/21600",
+          "once_multiplier": "14.54495370370370370370370370370370370370370370370370370370370370370370",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "top-wins",
+      "rank": 4,
+      "label": "HiLo / top-wins / 4",
+      "source_files": [
+        "sources/hilo-top-wins.json",
+        "sources/hilo-top-wins-04.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/top-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-3596-019ea815-9e83-7dc8-952e-e1bf8be420fc"
+      ],
+      "round_id": "019ea815-9e83-7dc8-952e-e1bf8be420fc",
+      "recorded_at": "2026-06-08T16:34:09.699Z",
+      "stake_usd": "1250",
+      "actual_gross_usd": "27575",
+      "observed_multiplier": "22.06",
+      "calls": 9,
+      "skips": 5,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "988408639747470231731727/44800000000000000000000",
+      "repeated_model_multiplier": "22.06269285150603195829747767857142857142857142857142857142857142857143",
+      "once_model_multiplier_exact": "10604499373/443520000",
+      "once_model_multiplier": "23.90985608991702741702741702741702741702741702741702741702741702741703",
+      "model_original_stake_return": "0.913517247483640899",
+      "once_benchmark_usd": "29887.32011239628427128427128427128427128427128427128427128427128427129",
+      "benchmark_gap_usd": "2312.32011239628427128427128427128427128427128427128427128427128427129",
+      "benchmark_gap_rounded_usd": "2312.32",
+      "history_final_multiplier": "22.062692851506031958297477677",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_higher",
+          "from_rank": 1,
+          "to_rank": 4,
+          "favourable_ranks": 12,
+          "observed_multiplier": "1.0725000000000000000000000000",
+          "repeated_multiplier_exact": "429/400",
+          "repeated_multiplier": "1.0725",
+          "once_multiplier_exact": "429/400",
+          "once_multiplier": "1.0725",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_higher",
+          "from_rank": 4,
+          "to_rank": 9,
+          "favourable_ranks": 10,
+          "observed_multiplier": "1.3803075000000000000000000000",
+          "repeated_multiplier_exact": "552123/400000",
+          "repeated_multiplier": "1.3803075",
+          "once_multiplier_exact": "5577/4000",
+          "once_multiplier": "1.39425",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_higher",
+          "from_rank": 9,
+          "to_rank": 12,
+          "favourable_ranks": 5,
+          "observed_multiplier": "3.5529115050000000000000000000",
+          "repeated_multiplier_exact": "710582301/200000000",
+          "repeated_multiplier": "3.552911505",
+          "once_multiplier_exact": "72501/20000",
+          "once_multiplier": "3.62505",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 7,
+          "favourable_ranks": 12,
+          "observed_multiplier": "3.8104975891125000000000000000",
+          "repeated_multiplier_exact": "304839807129/80000000000",
+          "repeated_multiplier": "3.8104975891125",
+          "once_multiplier_exact": "314171/80000",
+          "once_multiplier": "3.9271375",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 5,
+          "action": "guess_higher",
+          "from_rank": 7,
+          "to_rank": 8,
+          "favourable_ranks": 7,
+          "observed_multiplier": "7.0058719959825535714285714283",
+          "repeated_multiplier_exact": "392328831775023/56000000000000",
+          "repeated_multiplier": "7.005871995982553571428571428571428571428571428571428571428571428571429",
+          "once_multiplier_exact": "4084223/560000",
+          "once_multiplier": "7.293255357142857142857142857142857142857142857142857142857142857142857",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 6,
+          "action": "guess_higher",
+          "from_rank": 5,
+          "to_rank": 13,
+          "favourable_ranks": 9,
+          "observed_multiplier": "10.018396954255051607142857142",
+          "repeated_multiplier_exact": "56103022943828289/5600000000000000",
+          "repeated_multiplier": "10.01839695425505160714285714285714285714285714285714285714285714285714",
+          "once_multiplier_exact": "53094899/5040000",
+          "once_multiplier": "10.53470218253968253968253968253968253968253968253968253968253968253968",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 7,
+          "action": "guess_lower",
+          "from_rank": 11,
+          "to_rank": 6,
+          "favourable_ranks": 11,
+          "observed_multiplier": "11.721524436478410380357142856",
+          "repeated_multiplier_exact": "6564053684427909813/560000000000000000",
+          "repeated_multiplier": "11.72152443647841038035714285714285714285714285714285714285714285714286",
+          "once_multiplier_exact": "62748517/5040000",
+          "once_multiplier": "12.45010257936507936507936507936507936507936507936507936507936507936508",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 8,
+          "action": "guess_higher",
+          "from_rank": 6,
+          "to_rank": 7,
+          "favourable_ranks": 8,
+          "observed_multiplier": "18.857002437184642699399553570",
+          "repeated_multiplier_exact": "8447937091858719929331/448000000000000000000",
+          "repeated_multiplier": "18.85700243718464269939955357142857142857142857142857142857142857142857",
+          "once_multiplier_exact": "815730721/40320000",
+          "once_multiplier": "20.23141669146825396825396825396825396825396825396825396825396825396825",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 9,
+          "action": "guess_higher",
+          "from_rank": 3,
+          "to_rank": 13,
+          "favourable_ranks": 11,
+          "observed_multiplier": "22.062692851506031958297477677",
+          "repeated_multiplier_exact": "988408639747470231731727/44800000000000000000000",
+          "repeated_multiplier": "22.06269285150603195829747767857142857142857142857142857142857142857143",
+          "once_multiplier_exact": "10604499373/443520000",
+          "once_multiplier": "23.90985608991702741702741702741702741702741702741702741702741702741703",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "top-wins",
+      "rank": 5,
+      "label": "HiLo / top-wins / 5",
+      "source_files": [
+        "sources/hilo-top-wins.json",
+        "sources/hilo-top-wins-05.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/top-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-3596-019eafa5-47f4-76d6-ab37-60324ad3a676"
+      ],
+      "round_id": "019eafa5-47f4-76d6-ab37-60324ad3a676",
+      "recorded_at": "2026-06-10T03:48:25.231Z",
+      "stake_usd": "2500",
+      "actual_gross_usd": "23500",
+      "observed_multiplier": "9.4",
+      "calls": 11,
+      "skips": 0,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "6737322758065339589560695141/716800000000000000000000000",
+      "repeated_model_multiplier": "9.399166794175975989900523355189732142857142857142857142857142857142857",
+      "once_model_multiplier_exact": "1792160394037/172440576000",
+      "once_model_multiplier": "10.39291584155344041532313137251408856347127952066223671161942766881038",
+      "model_original_stake_return": "0.8953382542587164451099",
+      "once_benchmark_usd": "25982.28960388360103830782843128522140867819880165559177904856917202595",
+      "benchmark_gap_usd": "2482.28960388360103830782843128522140867819880165559177904856917202595",
+      "benchmark_gap_rounded_usd": "2482.29",
+      "history_final_multiplier": "9.399166794175975989900523355",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 12,
+          "favourable_ranks": 12,
+          "observed_multiplier": "1.0725000000000000000000000000",
+          "repeated_multiplier_exact": "429/400",
+          "repeated_multiplier": "1.0725",
+          "once_multiplier_exact": "429/400",
+          "once_multiplier": "1.0725",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 7,
+          "favourable_ranks": 12,
+          "observed_multiplier": "1.1502562500000000000000000000",
+          "repeated_multiplier_exact": "184041/160000",
+          "repeated_multiplier": "1.15025625",
+          "once_multiplier_exact": "1859/1600",
+          "once_multiplier": "1.161875",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_higher",
+          "from_rank": 7,
+          "to_rank": 13,
+          "favourable_ranks": 7,
+          "observed_multiplier": "2.1148282767857142857142857142",
+          "repeated_multiplier_exact": "236860767/112000000",
+          "repeated_multiplier": "2.114828276785714285714285714285714285714285714285714285714285714285714",
+          "once_multiplier_exact": "24167/11200",
+          "once_multiplier": "2.157767857142857142857142857142857142857142857142857142857142857142857",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_lower",
+          "from_rank": 13,
+          "to_rank": 1,
+          "favourable_ranks": 12,
+          "observed_multiplier": "2.2681533268526785714285714285",
+          "repeated_multiplier_exact": "101613269043/44800000000",
+          "repeated_multiplier": "2.268153326852678571428571428571428571428571428571428571428571428571429",
+          "once_multiplier_exact": "314171/134400",
+          "once_multiplier": "2.337581845238095238095238095238095238095238095238095238095238095238095",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 5,
+          "action": "guess_higher",
+          "from_rank": 1,
+          "to_rank": 3,
+          "favourable_ranks": 12,
+          "observed_multiplier": "2.4325944430494977678571428571",
+          "repeated_multiplier_exact": "43592092419447/17920000000000",
+          "repeated_multiplier": "2.432594443049497767857142857142857142857142857142857142857142857142857",
+          "once_multiplier_exact": "4084223/1612800",
+          "once_multiplier": "2.532380332341269841269841269841269841269841269841269841269841269841270",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 6,
+          "action": "guess_higher",
+          "from_rank": 3,
+          "to_rank": 9,
+          "favourable_ranks": 11,
+          "observed_multiplier": "2.8461354983679123883928571428",
+          "repeated_multiplier_exact": "5100274813075299/1792000000000000",
+          "repeated_multiplier": "2.846135498367912388392857142857142857142857142857142857142857142857143",
+          "once_multiplier_exact": "4826809/1612800",
+          "once_multiplier": "2.992813120039682539682539682539682539682539682539682539682539682539683",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 7,
+          "action": "guess_lower",
+          "from_rank": 9,
+          "to_rank": 3,
+          "favourable_ranks": 9,
+          "observed_multiplier": "4.0699737626661147154017857142",
+          "repeated_multiplier_exact": "729339298269767757/179200000000000000",
+          "repeated_multiplier": "4.069973762666114715401785714285714285714285714285714285714285714285714",
+          "once_multiplier_exact": "62748517/14515200",
+          "once_multiplier": "4.322952284501763668430335097001763668430335097001763668430335097001764",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 8,
+          "action": "guess_higher",
+          "from_rank": 3,
+          "to_rank": 4,
+          "favourable_ranks": 11,
+          "observed_multiplier": "4.7618693023193542170200892856",
+          "repeated_multiplier_exact": "85332697897562827569/17920000000000000000",
+          "repeated_multiplier": "4.761869302319354217020089285714285714285714285714285714285714285714286",
+          "once_multiplier_exact": "815730721/159667200",
+          "once_multiplier": "5.108943608956629789963123296456629789963123296456629789963123296456630",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 9,
+          "action": "guess_higher",
+          "from_rank": 4,
+          "to_rank": 13,
+          "favourable_ranks": 10,
+          "observed_multiplier": "6.1285257920850088773048549106",
+          "repeated_multiplier_exact": "109823182194163359081303/17920000000000000000000",
+          "repeated_multiplier": "6.128525792085008877304854910714285714285714285714285714285714285714286",
+          "once_multiplier_exact": "10604499373/1596672000",
+          "once_multiplier": "6.641626691643618726952060285393618726952060285393618726952060285393619",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 10,
+          "action": "guess_lower",
+          "from_rank": 13,
+          "to_rank": 9,
+          "favourable_ranks": 12,
+          "observed_multiplier": "6.5728439120111720209094568916",
+          "repeated_multiplier_exact": "47114145161296081045878987/7168000000000000000000000",
+          "repeated_multiplier": "6.572843912011172020909456891741071428571428571428571428571428571428571",
+          "once_multiplier_exact": "137858491849/19160064000",
+          "once_multiplier": "7.195095582613920287531398642509753620864731975843086954198065309176420",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 11,
+          "action": "guess_lower",
+          "from_rank": 9,
+          "to_rank": 1,
+          "favourable_ranks": 9,
+          "observed_multiplier": "9.399166794175975989900523355",
+          "repeated_multiplier_exact": "6737322758065339589560695141/716800000000000000000000000",
+          "repeated_multiplier": "9.399166794175975989900523355189732142857142857142857142857142857142857",
+          "once_multiplier_exact": "1792160394037/172440576000",
+          "once_multiplier": "10.39291584155344041532313137251408856347127952066223671161942766881038",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "top-wins",
+      "rank": 6,
+      "label": "HiLo / top-wins / 6",
+      "source_files": [
+        "sources/hilo-top-wins.json",
+        "sources/hilo-top-wins-06.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/top-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDC-3596-019ec427-345a-7d45-9960-ff98737895ee"
+      ],
+      "round_id": "019ec427-345a-7d45-9960-ff98737895ee",
+      "recorded_at": "2026-06-14T03:22:44.210Z",
+      "stake_usd": "3000",
+      "actual_gross_usd": "20250",
+      "observed_multiplier": "6.75",
+      "calls": 6,
+      "skips": 0,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "188899067150937/28000000000000",
+      "repeated_model_multiplier": "6.746395255390607142857142857142857142857142857142857142857142857142857",
+      "once_model_multiplier_exact": "4826809/680400",
+      "once_model_multiplier": "7.094075543797766019988242210464432686654908877131099353321575543797766",
+      "model_original_stake_return": "0.941480149401",
+      "once_benchmark_usd": "21282.22663139329805996472663139329805996472663139329805996472663139330",
+      "benchmark_gap_usd": "1032.22663139329805996472663139329805996472663139329805996472663139330",
+      "benchmark_gap_rounded_usd": "1032.23",
+      "history_final_multiplier": "6.7463952553906071428571428568",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_higher",
+          "from_rank": 2,
+          "to_rank": 3,
+          "favourable_ranks": 12,
+          "observed_multiplier": "1.0725000000000000000000000000",
+          "repeated_multiplier_exact": "429/400",
+          "repeated_multiplier": "1.0725",
+          "once_multiplier_exact": "429/400",
+          "once_multiplier": "1.0725",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_higher",
+          "from_rank": 3,
+          "to_rank": 9,
+          "favourable_ranks": 11,
+          "observed_multiplier": "1.2548250000000000000000000000",
+          "repeated_multiplier_exact": "50193/40000",
+          "repeated_multiplier": "1.254825",
+          "once_multiplier_exact": "507/400",
+          "once_multiplier": "1.2675",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_lower",
+          "from_rank": 9,
+          "to_rank": 9,
+          "favourable_ranks": 9,
+          "observed_multiplier": "1.7943997500000000000000000000",
+          "repeated_multiplier_exact": "7177599/4000000",
+          "repeated_multiplier": "1.79439975",
+          "once_multiplier_exact": "2197/1200",
+          "once_multiplier": "1.830833333333333333333333333333333333333333333333333333333333333333333",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_lower",
+          "from_rank": 9,
+          "to_rank": 7,
+          "favourable_ranks": 9,
+          "observed_multiplier": "2.5659916425000000000000000000",
+          "repeated_multiplier_exact": "1026396657/400000000",
+          "repeated_multiplier": "2.5659916425",
+          "once_multiplier_exact": "28561/10800",
+          "once_multiplier": "2.644537037037037037037037037037037037037037037037037037037037037037037",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 5,
+          "action": "guess_higher",
+          "from_rank": 7,
+          "to_rank": 9,
+          "favourable_ranks": 7,
+          "observed_multiplier": "4.7177589198535714285714285712",
+          "repeated_multiplier_exact": "1320972497559/280000000000",
+          "repeated_multiplier": "4.717758919853571428571428571428571428571428571428571428571428571428571",
+          "once_multiplier_exact": "371293/75600",
+          "once_multiplier": "4.911283068783068783068783068783068783068783068783068783068783068783069",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 6,
+          "action": "guess_lower",
+          "from_rank": 9,
+          "to_rank": 9,
+          "favourable_ranks": 9,
+          "observed_multiplier": "6.7463952553906071428571428568",
+          "repeated_multiplier_exact": "188899067150937/28000000000000",
+          "repeated_multiplier": "6.746395255390607142857142857142857142857142857142857142857142857142857",
+          "once_multiplier_exact": "4826809/680400",
+          "once_multiplier": "7.094075543797766019988242210464432686654908877131099353321575543797766",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "top-wins",
+      "rank": 7,
+      "label": "HiLo / top-wins / 7",
+      "source_files": [
+        "sources/hilo-top-wins.json",
+        "sources/hilo-top-wins-07.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/top-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-3596-019e8a69-508f-7da4-8d87-1cb1f2b6d6c1"
+      ],
+      "round_id": "019e8a69-508f-7da4-8d87-1cb1f2b6d6c1",
+      "recorded_at": "2026-06-02T22:16:58.278Z",
+      "stake_usd": "1000",
+      "actual_gross_usd": "18780",
+      "observed_multiplier": "18.78",
+      "calls": 10,
+      "skips": 1,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "47114145161296081045878987/2508800000000000000000000",
+      "repeated_model_multiplier": "18.77955403431763434545559111926020408163265306122448979591836734693878",
+      "once_model_multiplier_exact": "137858491849/6706022400",
+      "once_model_multiplier": "20.55741595032548653580399612145643891675637707383739129770875802621834",
+      "model_original_stake_return": "0.90438207500880449001",
+      "once_benchmark_usd": "20557.41595032548653580399612145643891675637707383739129770875802621834",
+      "benchmark_gap_usd": "1777.41595032548653580399612145643891675637707383739129770875802621834",
+      "benchmark_gap_rounded_usd": "1777.42",
+      "history_final_multiplier": "18.779554034317634345455591117",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 8,
+          "favourable_ranks": 12,
+          "observed_multiplier": "1.0725000000000000000000000000",
+          "repeated_multiplier_exact": "429/400",
+          "repeated_multiplier": "1.0725",
+          "once_multiplier_exact": "429/400",
+          "once_multiplier": "1.0725",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_lower",
+          "from_rank": 8,
+          "to_rank": 3,
+          "favourable_ranks": 8,
+          "observed_multiplier": "1.7253843750000000000000000000",
+          "repeated_multiplier_exact": "552123/320000",
+          "repeated_multiplier": "1.725384375",
+          "once_multiplier_exact": "5577/3200",
+          "once_multiplier": "1.7428125",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_higher",
+          "from_rank": 3,
+          "to_rank": 5,
+          "favourable_ranks": 11,
+          "observed_multiplier": "2.0186997187500000000000000000",
+          "repeated_multiplier_exact": "64598391/32000000",
+          "repeated_multiplier": "2.01869971875",
+          "once_multiplier_exact": "6591/3200",
+          "once_multiplier": "2.0596875",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_higher",
+          "from_rank": 5,
+          "to_rank": 13,
+          "favourable_ranks": 9,
+          "observed_multiplier": "2.8867405978125000000000000000",
+          "repeated_multiplier_exact": "9237569913/3200000000",
+          "repeated_multiplier": "2.8867405978125",
+          "once_multiplier_exact": "28561/9600",
+          "once_multiplier": "2.975104166666666666666666666666666666666666666666666666666666666666667",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 5,
+          "action": "guess_lower",
+          "from_rank": 13,
+          "to_rank": 7,
+          "favourable_ranks": 12,
+          "observed_multiplier": "3.0960292911539062500000000000",
+          "repeated_multiplier_exact": "3962917492677/1280000000000",
+          "repeated_multiplier": "3.09602929115390625",
+          "once_multiplier_exact": "371293/115200",
+          "once_multiplier": "3.223029513888888888888888888888888888888888888888888888888888888888889",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 6,
+          "action": "guess_higher",
+          "from_rank": 7,
+          "to_rank": 7,
+          "favourable_ranks": 7,
+          "observed_multiplier": "5.6922709967358247767857142855",
+          "repeated_multiplier_exact": "5100274813075299/896000000000000",
+          "repeated_multiplier": "5.692270996735824776785714285714285714285714285714285714285714285714286",
+          "once_multiplier_exact": "4826809/806400",
+          "once_multiplier": "5.985626240079365079365079365079365079365079365079365079365079365079365",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 7,
+          "action": "guess_lower",
+          "from_rank": 7,
+          "to_rank": 2,
+          "favourable_ranks": 7,
+          "observed_multiplier": "10.465646818284294982461734693",
+          "repeated_multiplier_exact": "6564053684427909813/627200000000000000",
+          "repeated_multiplier": "10.46564681828429498246173469387755102040816326530612244897959183673469",
+          "once_multiplier_exact": "62748517/5644800",
+          "once_multiplier": "11.11616301729024943310657596371882086167800453514739229024943310657596",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 8,
+          "action": "guess_higher",
+          "from_rank": 2,
+          "to_rank": 5,
+          "favourable_ranks": 12,
+          "observed_multiplier": "11.224406212609906368690210458",
+          "repeated_multiplier_exact": "2815979030619573309777/250880000000000000000",
+          "repeated_multiplier": "11.22440621260990636869021045918367346938775510204081632653061224489796",
+          "once_multiplier_exact": "815730721/67737600",
+          "once_multiplier": "12.04250993539777021919879062736205593348450491307634164777021919879063",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 9,
+          "action": "guess_higher",
+          "from_rank": 5,
+          "to_rank": 7,
+          "favourable_ranks": 9,
+          "observed_multiplier": "16.050900884032166107227000955",
+          "repeated_multiplier_exact": "402685001378598983298111/25088000000000000000000",
+          "repeated_multiplier": "16.05090088403216610722700095663265306122448979591836734693877551020408",
+          "once_multiplier_exact": "10604499373/609638400",
+          "once_multiplier": "17.39473657335233476106491979507852523725539598555471571344587217603091",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 10,
+          "action": "guess_higher",
+          "from_rank": 3,
+          "to_rank": 7,
+          "favourable_ranks": 11,
+          "observed_multiplier": "18.779554034317634345455591117",
+          "repeated_multiplier_exact": "47114145161296081045878987/2508800000000000000000000",
+          "repeated_multiplier": "18.77955403431763434545559111926020408163265306122448979591836734693878",
+          "once_multiplier_exact": "137858491849/6706022400",
+          "once_multiplier": "20.55741595032548653580399612145643891675637707383739129770875802621834",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "top-wins",
+      "rank": 8,
+      "label": "HiLo / top-wins / 8",
+      "source_files": [
+        "sources/hilo-top-wins.json",
+        "sources/hilo-top-wins-08.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/top-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-3596-019ea7ec-1f5a-74b1-a39a-94bf73130db8"
+      ],
+      "round_id": "019ea7ec-1f5a-74b1-a39a-94bf73130db8",
+      "recorded_at": "2026-06-08T15:48:50.163Z",
+      "stake_usd": "750",
+      "actual_gross_usd": "18262.5",
+      "observed_multiplier": "24.35",
+      "calls": 6,
+      "skips": 0,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "6233669215980921/256000000000000",
+      "repeated_model_multiplier": "24.35027037492547265625",
+      "once_model_multiplier_exact": "53094899/2073600",
+      "once_model_multiplier": "25.60517891589506172839506172839506172839506172839506172839506172839506",
+      "model_original_stake_return": "0.941480149401",
+      "once_benchmark_usd": "19203.88418692129629629629629629629629629629629629629629629629629629630",
+      "benchmark_gap_usd": "941.38418692129629629629629629629629629629629629629629629629629629630",
+      "benchmark_gap_rounded_usd": "941.38",
+      "history_final_multiplier": "24.350270374925472656250000000",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_higher",
+          "from_rank": 1,
+          "to_rank": 12,
+          "favourable_ranks": 12,
+          "observed_multiplier": "1.0725000000000000000000000000",
+          "repeated_multiplier_exact": "429/400",
+          "repeated_multiplier": "1.0725",
+          "once_multiplier_exact": "429/400",
+          "once_multiplier": "1.0725",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 12,
+          "favourable_ranks": 12,
+          "observed_multiplier": "1.1502562500000000000000000000",
+          "repeated_multiplier_exact": "184041/160000",
+          "repeated_multiplier": "1.15025625",
+          "once_multiplier_exact": "1859/1600",
+          "once_multiplier": "1.161875",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 2,
+          "favourable_ranks": 12,
+          "observed_multiplier": "1.2336498281250000000000000000",
+          "repeated_multiplier_exact": "78953589/64000000",
+          "repeated_multiplier": "1.233649828125",
+          "once_multiplier_exact": "24167/19200",
+          "once_multiplier": "1.258697916666666666666666666666666666666666666666666666666666666666667",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_higher",
+          "from_rank": 2,
+          "to_rank": 9,
+          "favourable_ranks": 12,
+          "observed_multiplier": "1.3230894406640625000000000000",
+          "repeated_multiplier_exact": "33871089681/25600000000",
+          "repeated_multiplier": "1.3230894406640625",
+          "once_multiplier_exact": "314171/230400",
+          "once_multiplier": "1.363589409722222222222222222222222222222222222222222222222222222222222",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 5,
+          "action": "guess_lower",
+          "from_rank": 9,
+          "to_rank": 1,
+          "favourable_ranks": 9,
+          "observed_multiplier": "1.8920179001496093750000000000",
+          "repeated_multiplier_exact": "4843565824383/2560000000000",
+          "repeated_multiplier": "1.892017900149609375",
+          "once_multiplier_exact": "4084223/2073600",
+          "once_multiplier": "1.969629147376543209876543209876543209876543209876543209876543209876543",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 6,
+          "action": "guess_same",
+          "from_rank": 1,
+          "to_rank": 1,
+          "favourable_ranks": 1,
+          "observed_multiplier": "24.350270374925472656250000000",
+          "repeated_multiplier_exact": "6233669215980921/256000000000000",
+          "repeated_multiplier": "24.35027037492547265625",
+          "once_multiplier_exact": "53094899/2073600",
+          "once_multiplier": "25.60517891589506172839506172839506172839506172839506172839506172839506",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "top-wins",
+      "rank": 9,
+      "label": "HiLo / top-wins / 9",
+      "source_files": [
+        "sources/hilo-top-wins.json",
+        "sources/hilo-top-wins-09.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/top-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-28008-019f5f53-2703-7426-9cf7-cc3f1333e1b7"
+      ],
+      "round_id": "019f5f53-2703-7426-9cf7-cc3f1333e1b7",
+      "recorded_at": "2026-07-14T06:31:52.857Z",
+      "stake_usd": "2500",
+      "actual_gross_usd": "17525",
+      "observed_multiplier": "7.01",
+      "calls": 5,
+      "skips": 0,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "392328831775023/56000000000000",
+      "repeated_model_multiplier": "7.005871995982553571428571428571428571428571428571428571428571428571429",
+      "once_model_multiplier_exact": "4084223/560000",
+      "once_model_multiplier": "7.293255357142857142857142857142857142857142857142857142857142857142857",
+      "model_original_stake_return": "0.9509900499",
+      "once_benchmark_usd": "18233.13839285714285714285714285714285714285714285714285714285714285714",
+      "benchmark_gap_usd": "708.13839285714285714285714285714285714285714285714285714285714285714",
+      "benchmark_gap_rounded_usd": "708.14",
+      "history_final_multiplier": "7.0058719959825535714285714283",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_lower",
+          "from_rank": 7,
+          "to_rank": 5,
+          "favourable_ranks": 7,
+          "observed_multiplier": "1.8385714285714285714285714285",
+          "repeated_multiplier_exact": "1287/700",
+          "repeated_multiplier": "1.838571428571428571428571428571428571428571428571428571428571428571429",
+          "once_multiplier_exact": "1287/700",
+          "once_multiplier": "1.838571428571428571428571428571428571428571428571428571428571428571429",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_lower",
+          "from_rank": 5,
+          "to_rank": 1,
+          "favourable_ranks": 5,
+          "observed_multiplier": "4.7324828571428571428571428570",
+          "repeated_multiplier_exact": "1656369/350000",
+          "repeated_multiplier": "4.732482857142857142857142857142857142857142857142857142857142857142857",
+          "once_multiplier_exact": "16731/3500",
+          "once_multiplier": "4.780285714285714285714285714285714285714285714285714285714285714285714",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_higher",
+          "from_rank": 1,
+          "to_rank": 10,
+          "favourable_ranks": 12,
+          "observed_multiplier": "5.0755878642857142857142857141",
+          "repeated_multiplier_exact": "710582301/140000000",
+          "repeated_multiplier": "5.075587864285714285714285714285714285714285714285714285714285714285714",
+          "once_multiplier_exact": "72501/14000",
+          "once_multiplier": "5.178642857142857142857142857142857142857142857142857142857142857142857",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_lower",
+          "from_rank": 10,
+          "to_rank": 2,
+          "favourable_ranks": 10,
+          "observed_multiplier": "6.5322815813357142857142857140",
+          "repeated_multiplier_exact": "914519421387/140000000000",
+          "repeated_multiplier": "6.532281581335714285714285714285714285714285714285714285714285714285714",
+          "once_multiplier_exact": "942513/140000",
+          "once_multiplier": "6.732235714285714285714285714285714285714285714285714285714285714285714",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 5,
+          "action": "guess_higher",
+          "from_rank": 2,
+          "to_rank": 11,
+          "favourable_ranks": 12,
+          "observed_multiplier": "7.0058719959825535714285714283",
+          "repeated_multiplier_exact": "392328831775023/56000000000000",
+          "repeated_multiplier": "7.005871995982553571428571428571428571428571428571428571428571428571429",
+          "once_multiplier_exact": "4084223/560000",
+          "once_multiplier": "7.293255357142857142857142857142857142857142857142857142857142857142857",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "top-wins",
+      "rank": 10,
+      "label": "HiLo / top-wins / 10",
+      "source_files": [
+        "sources/hilo-top-wins.json",
+        "sources/hilo-top-wins-10.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/top-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-3596-019ea811-3738-7a80-8e04-e67666b23494"
+      ],
+      "round_id": "019ea811-3738-7a80-8e04-e67666b23494",
+      "recorded_at": "2026-06-08T16:29:21.102Z",
+      "stake_usd": "1250",
+      "actual_gross_usd": "16200",
+      "observed_multiplier": "12.96",
+      "calls": 8,
+      "skips": 3,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "92927308010445919222641/7168000000000000000000",
+      "repeated_model_multiplier": "12.96418917556444185583719308035714285714285714285714285714285714285714",
+      "once_model_multiplier_exact": "8973037931/645120000",
+      "once_model_multiplier": "13.90909897538442460317460317460317460317460317460317460317460317460317",
+      "model_original_stake_return": "0.9227446944279201",
+      "once_benchmark_usd": "17386.37371923053075396825396825396825396825396825396825396825396825396",
+      "benchmark_gap_usd": "1186.37371923053075396825396825396825396825396825396825396825396825396",
+      "benchmark_gap_rounded_usd": "1186.37",
+      "history_final_multiplier": "12.964189175564441855837193079",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 4,
+          "favourable_ranks": 12,
+          "observed_multiplier": "1.0725000000000000000000000000",
+          "repeated_multiplier_exact": "429/400",
+          "repeated_multiplier": "1.0725",
+          "once_multiplier_exact": "429/400",
+          "once_multiplier": "1.0725",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_higher",
+          "from_rank": 4,
+          "to_rank": 13,
+          "favourable_ranks": 10,
+          "observed_multiplier": "1.3803075000000000000000000000",
+          "repeated_multiplier_exact": "552123/400000",
+          "repeated_multiplier": "1.3803075",
+          "once_multiplier_exact": "5577/4000",
+          "once_multiplier": "1.39425",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_lower",
+          "from_rank": 13,
+          "to_rank": 6,
+          "favourable_ranks": 12,
+          "observed_multiplier": "1.4803797937500000000000000000",
+          "repeated_multiplier_exact": "236860767/160000000",
+          "repeated_multiplier": "1.48037979375",
+          "once_multiplier_exact": "24167/16000",
+          "once_multiplier": "1.5104375",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_higher",
+          "from_rank": 6,
+          "to_rank": 8,
+          "favourable_ranks": 8,
+          "observed_multiplier": "2.3815609931953125000000000000",
+          "repeated_multiplier_exact": "304839807129/128000000000",
+          "repeated_multiplier": "2.3815609931953125",
+          "once_multiplier_exact": "314171/128000",
+          "once_multiplier": "2.4544609375",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 5,
+          "action": "guess_lower",
+          "from_rank": 8,
+          "to_rank": 7,
+          "favourable_ranks": 8,
+          "observed_multiplier": "3.8313362478029589843750000000",
+          "repeated_multiplier_exact": "392328831775023/102400000000000",
+          "repeated_multiplier": "3.831336247802958984375",
+          "once_multiplier_exact": "4084223/1024000",
+          "once_multiplier": "3.9884990234375",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 6,
+          "action": "guess_higher",
+          "from_rank": 7,
+          "to_rank": 9,
+          "favourable_ranks": 7,
+          "observed_multiplier": "7.0441853584605831612723214283",
+          "repeated_multiplier_exact": "504927206494454601/71680000000000000",
+          "repeated_multiplier": "7.044185358460583161272321428571428571428571428571428571428571428571429",
+          "once_multiplier_exact": "53094899/7168000",
+          "once_multiplier": "7.407212472098214285714285714285714285714285714285714285714285714285714",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 7,
+          "action": "guess_lower",
+          "from_rank": 9,
+          "to_rank": 8,
+          "favourable_ranks": 9,
+          "observed_multiplier": "10.073185062598633920619419642",
+          "repeated_multiplier_exact": "72204590528707007943/7168000000000000000",
+          "repeated_multiplier": "10.07318506259863392061941964285714285714285714285714285714285714285714",
+          "once_multiplier_exact": "690233687/64512000",
+          "once_multiplier": "10.69930690414186507936507936507936507936507936507936507936507936507937",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 8,
+          "action": "guess_higher",
+          "from_rank": 4,
+          "to_rank": 11,
+          "favourable_ranks": 10,
+          "observed_multiplier": "12.964189175564441855837193079",
+          "repeated_multiplier_exact": "92927308010445919222641/7168000000000000000000",
+          "repeated_multiplier": "12.96418917556444185583719308035714285714285714285714285714285714285714",
+          "once_multiplier_exact": "8973037931/645120000",
+          "once_multiplier": "13.90909897538442460317460317460317460317460317460317460317460317460317",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "lucky-wins",
+      "rank": 1,
+      "label": "HiLo / lucky-wins / 1",
+      "source_files": [
+        "sources/hilo-lucky-wins.json",
+        "sources/hilo-lucky-wins-01.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/lucky-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-60111-01a083bc-b331-7da1-a399-147e4e8f174e"
+      ],
+      "round_id": "01a083bc-b331-7da1-a399-147e4e8f174e",
+      "recorded_at": "2026-09-09T01:16:17.079Z",
+      "stake_usd": "5",
+      "actual_gross_usd": "5715.7463",
+      "observed_multiplier": "1143.14926",
+      "calls": 4,
+      "skips": 0,
+      "game_version": 3,
+      "repeated_model_multiplier_exact": "914519421387/800000000",
+      "repeated_model_multiplier": "1143.14927673375",
+      "once_model_multiplier_exact": "942513/800",
+      "once_model_multiplier": "1178.14125",
+      "model_original_stake_return": "0.96059601",
+      "once_benchmark_usd": "5890.70625",
+      "benchmark_gap_usd": "174.95995",
+      "benchmark_gap_rounded_usd": "174.96",
+      "history_final_multiplier": "1143.1492767337500000000000000",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_higher",
+          "from_rank": 10,
+          "to_rank": 11,
+          "favourable_ranks": 4,
+          "observed_multiplier": "3.2175",
+          "repeated_multiplier_exact": "1287/400",
+          "repeated_multiplier": "3.2175",
+          "once_multiplier_exact": "1287/400",
+          "once_multiplier": "3.2175",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_higher",
+          "from_rank": 11,
+          "to_rank": 12,
+          "favourable_ranks": 3,
+          "observed_multiplier": "13.803075000000000000000000000",
+          "repeated_multiplier_exact": "552123/40000",
+          "repeated_multiplier": "13.803075",
+          "once_multiplier_exact": "5577/400",
+          "once_multiplier": "13.9425",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_higher",
+          "from_rank": 12,
+          "to_rank": 13,
+          "favourable_ranks": 2,
+          "observed_multiplier": "88.82278762500000000000000000",
+          "repeated_multiplier_exact": "710582301/8000000",
+          "repeated_multiplier": "88.822787625",
+          "once_multiplier_exact": "72501/800",
+          "once_multiplier": "90.62625",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_same",
+          "from_rank": 13,
+          "to_rank": 13,
+          "favourable_ranks": 1,
+          "observed_multiplier": "1143.1492767337500000000000000",
+          "repeated_multiplier_exact": "914519421387/800000000",
+          "repeated_multiplier": "1143.14927673375",
+          "once_multiplier_exact": "942513/800",
+          "once_multiplier": "1178.14125",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "lucky-wins",
+      "rank": 2,
+      "label": "HiLo / lucky-wins / 2",
+      "source_files": [
+        "sources/hilo-lucky-wins.json",
+        "sources/hilo-lucky-wins-02.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/lucky-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-60111-019e85f0-cb37-7369-be09-07ee16c29823"
+      ],
+      "round_id": "019e85f0-cb37-7369-be09-07ee16c29823",
+      "recorded_at": "2026-06-02T01:26:50.957Z",
+      "stake_usd": "10",
+      "actual_gross_usd": "10658.7",
+      "observed_multiplier": "1065.87",
+      "calls": 3,
+      "skips": 0,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "2131746903/2000000",
+      "repeated_model_multiplier": "1065.8734515",
+      "once_model_multiplier_exact": "217503/200",
+      "once_model_multiplier": "1087.515",
+      "model_original_stake_return": "0.970299",
+      "once_benchmark_usd": "10875.150",
+      "benchmark_gap_usd": "216.450",
+      "benchmark_gap_rounded_usd": "216.45",
+      "history_final_multiplier": "1065.8734515",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_higher",
+          "from_rank": 12,
+          "to_rank": 13,
+          "favourable_ranks": 2,
+          "observed_multiplier": "6.435",
+          "repeated_multiplier_exact": "1287/200",
+          "repeated_multiplier": "6.435",
+          "once_multiplier_exact": "1287/200",
+          "once_multiplier": "6.435",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_same",
+          "from_rank": 13,
+          "to_rank": 13,
+          "favourable_ranks": 1,
+          "observed_multiplier": "82.81845",
+          "repeated_multiplier_exact": "1656369/20000",
+          "repeated_multiplier": "82.81845",
+          "once_multiplier_exact": "16731/200",
+          "once_multiplier": "83.655",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_same",
+          "from_rank": 13,
+          "to_rank": 13,
+          "favourable_ranks": 1,
+          "observed_multiplier": "1065.8734515",
+          "repeated_multiplier_exact": "2131746903/2000000",
+          "repeated_multiplier": "1065.8734515",
+          "once_multiplier_exact": "217503/200",
+          "once_multiplier": "1087.515",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "lucky-wins",
+      "rank": 3,
+      "label": "HiLo / lucky-wins / 3",
+      "source_files": [
+        "sources/hilo-lucky-wins.json",
+        "sources/hilo-lucky-wins-03.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/lucky-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-4048-019e8860-1789-7fc1-bd3b-4c65690f773a"
+      ],
+      "round_id": "019e8860-1789-7fc1-bd3b-4c65690f773a",
+      "recorded_at": "2026-06-02T12:47:39.431Z",
+      "stake_usd": "0.01",
+      "actual_gross_usd": "9.4434",
+      "observed_multiplier": "944.34",
+      "calls": 21,
+      "skips": 10,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "1267470847271022387450222467278014078634917976116014352831/1342177280000000000000000000000000000000000000000000000",
+      "repeated_model_multiplier": "944.3393701844084169344771409615979184470459640890466815464198589324951",
+      "once_model_multiplier_exact": "247064529073450392704413/213986410758144000000",
+      "once_model_multiplier": "1154.580462367269690834299652543919607893522830693654924378560680614907",
+      "model_original_stake_return": "0.809727868221258562180306673938892827902099",
+      "once_benchmark_usd": "11.54580462367269690834299652543919607893522830693654924378560680614907",
+      "benchmark_gap_usd": "2.10240462367269690834299652543919607893522830693654924378560680614907",
+      "benchmark_gap_rounded_usd": "2.10",
+      "history_final_multiplier": "944.3393701844084169344771410",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_higher",
+          "from_rank": 12,
+          "to_rank": 13,
+          "favourable_ranks": 2,
+          "observed_multiplier": "6.435",
+          "repeated_multiplier_exact": "1287/200",
+          "repeated_multiplier": "6.435",
+          "once_multiplier_exact": "1287/200",
+          "once_multiplier": "6.435",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_lower",
+          "from_rank": 13,
+          "to_rank": 2,
+          "favourable_ranks": 12,
+          "observed_multiplier": "6.9015375000000000000000000000",
+          "repeated_multiplier_exact": "552123/80000",
+          "repeated_multiplier": "6.9015375",
+          "once_multiplier_exact": "5577/800",
+          "once_multiplier": "6.97125",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_higher",
+          "from_rank": 2,
+          "to_rank": 9,
+          "favourable_ranks": 12,
+          "observed_multiplier": "7.4018989687500000000000000000",
+          "repeated_multiplier_exact": "236860767/32000000",
+          "repeated_multiplier": "7.40189896875",
+          "once_multiplier_exact": "24167/3200",
+          "once_multiplier": "7.5521875",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_lower",
+          "from_rank": 9,
+          "to_rank": 1,
+          "favourable_ranks": 9,
+          "observed_multiplier": "10.584715525312500000000000000",
+          "repeated_multiplier_exact": "33871089681/3200000000",
+          "repeated_multiplier": "10.5847155253125",
+          "once_multiplier_exact": "314171/28800",
+          "once_multiplier": "10.90871527777777777777777777777777777777777777777777777777777777777778",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 5,
+          "action": "guess_higher",
+          "from_rank": 1,
+          "to_rank": 8,
+          "favourable_ranks": 12,
+          "observed_multiplier": "11.352107400897656250000000000",
+          "repeated_multiplier_exact": "14530697473149/1280000000000",
+          "repeated_multiplier": "11.35210740089765625",
+          "once_multiplier_exact": "4084223/345600",
+          "once_multiplier": "11.81777488425925925925925925925925925925925925925925925925925925925926",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 6,
+          "action": "guess_higher",
+          "from_rank": 8,
+          "to_rank": 8,
+          "favourable_ranks": 6,
+          "observed_multiplier": "24.350270374925472656250000000",
+          "repeated_multiplier_exact": "6233669215980921/256000000000000",
+          "repeated_multiplier": "24.35027037492547265625",
+          "once_multiplier_exact": "53094899/2073600",
+          "once_multiplier": "25.60517891589506172839506172839506172839506172839506172839506172839506",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 7,
+          "action": "guess_lower",
+          "from_rank": 8,
+          "to_rank": 1,
+          "favourable_ranks": 8,
+          "observed_multiplier": "39.173497465661354135742187500",
+          "repeated_multiplier_exact": "8022732280967445327/204800000000000000",
+          "repeated_multiplier": "39.1734974656613541357421875",
+          "once_multiplier_exact": "690233687/16588800",
+          "once_multiplier": "41.60841573832947530864197530864197530864197530864197530864197530864198",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 8,
+          "action": "guess_higher",
+          "from_rank": 1,
+          "to_rank": 8,
+          "favourable_ranks": 12,
+          "observed_multiplier": "42.013576031921802310583496094",
+          "repeated_multiplier_exact": "3441752148535034045283/81920000000000000000",
+          "repeated_multiplier": "42.01357603192180231058349609375",
+          "once_multiplier_exact": "8973037931/199065600",
+          "once_multiplier": "45.07578371652359825102880658436213991769547325102880658436213991769547",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 9,
+          "action": "guess_higher",
+          "from_rank": 6,
+          "to_rank": 6,
+          "favourable_ranks": 8,
+          "observed_multiplier": "67.589340441354199467151199341",
+          "repeated_multiplier_exact": "4429535015164588816279221/65536000000000000000000",
+          "repeated_multiplier": "67.5893404413541994671511993408203125",
+          "once_multiplier_exact": "116649493103/1592524800",
+          "once_multiplier": "73.24814853935084715792181069958847736625514403292181069958847736625514",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 10,
+          "action": "guess_higher",
+          "from_rank": 6,
+          "to_rank": 10,
+          "favourable_ranks": 8,
+          "observed_multiplier": "108.73435143502856839277949194",
+          "repeated_multiplier_exact": "5700811564516825806551357427/52428800000000000000000000",
+          "repeated_multiplier": "108.734351435028568392779491939544677734375",
+          "once_multiplier_exact": "1516443410339/12740198400",
+          "once_multiplier": "119.0282413764451266316229423868312757201646090534979423868312757201646",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 11,
+          "action": "guess_lower",
+          "from_rank": 13,
+          "to_rank": 11,
+          "favourable_ranks": 12,
+          "observed_multiplier": "116.61759191406813960125600511",
+          "repeated_multiplier_exact": "2445648161177718271010532336183/20971520000000000000000000000",
+          "repeated_multiplier": "116.6175919140681396012560051051616668701171875",
+          "once_multiplier_exact": "19713764334407/152882380800",
+          "once_multiplier": "128.9472614911488871842581875857338820301783264746227709190672153635117",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 12,
+          "action": "guess_lower",
+          "from_rank": 11,
+          "to_rank": 1,
+          "favourable_ranks": 11,
+          "observed_multiplier": "136.44258253945972333346952598",
+          "repeated_multiplier_exact": "286140834857793037708232283333411/2097152000000000000000000000000",
+          "repeated_multiplier": "136.442582539459723333469525973039150238037109375",
+          "once_multiplier_exact": "23298085122481/152882380800",
+          "once_multiplier": "152.3922181259032303086687671467764060356652949245541838134430727023320",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 13,
+          "action": "guess_higher",
+          "from_rank": 1,
+          "to_rank": 6,
+          "favourable_ranks": 12,
+          "observed_multiplier": "146.33466977357055327514606661",
+          "repeated_multiplier_exact": "122754418153993213176831649550033319/838860800000000000000000000000000",
+          "repeated_multiplier": "146.3346697735705532751460666060844886302947998046875",
+          "once_multiplier_exact": "302875106592253/1834588569600",
+          "once_multiplier": "165.0915696363951661677244977423411065386374028349336991312299954275263",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 14,
+          "action": "guess_higher",
+          "from_rank": 2,
+          "to_rank": 10,
+          "favourable_ranks": 12,
+          "observed_multiplier": "156.94393333215441838759415644",
+          "repeated_multiplier_exact": "52661645388063088452860777656964293851/335544320000000000000000000000000000",
+          "repeated_multiplier": "156.94393333215441838759415643502561405599117279052734375",
+          "once_multiplier_exact": "3937376385699289/22015062835200",
+          "once_multiplier": "178.8492004394280966817015392208695320835238530711781740588324950464868",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 15,
+          "action": "guess_lower",
+          "from_rank": 10,
+          "to_rank": 8,
+          "favourable_ranks": 10,
+          "observed_multiplier": "201.98684219848273646483367934",
+          "repeated_multiplier_exact": "67775537614437194838831820844513046186237/335544320000000000000000000000000000000",
+          "repeated_multiplier": "201.98684219848273646483367933187796529006063938140869140625",
+          "once_multiplier_exact": "51185893014090757/220150628352000",
+          "once_multiplier": "232.5039605712565256862120009871303917085810089925316262764822435604329",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 16,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 9,
+          "favourable_ranks": 12,
+          "observed_multiplier": "216.63088825787273485853412109",
+          "repeated_multiplier_exact": "29075705636593556585858851142296096813895673/134217728000000000000000000000000000000000",
+          "repeated_multiplier": "216.630888257872734858534121083439117773590035736560821533203125",
+          "once_multiplier_exact": "665416609183179841/2641807540224000",
+          "once_multiplier": "251.8792906188612361600630010693912576842960930752425951328557638571356",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 17,
+          "action": "guess_lower",
+          "from_rank": 9,
+          "to_rank": 5,
+          "favourable_ranks": 9,
+          "observed_multiplier": "309.78217020875801084770379316",
+          "repeated_multiplier_exact": "4157825906032878591777815713348341844387081239/13421772800000000000000000000000000000000000",
+          "repeated_multiplier": "309.78217020875801084770379314931793841623375110328197479248046875",
+          "once_multiplier_exact": "8650415919381337933/23776267862016000",
+          "once_multiplier": "363.8256420050217855645354459891207055439832455531281929696805477936403",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 18,
+          "action": "guess_higher",
+          "from_rank": 5,
+          "to_rank": 10,
+          "favourable_ranks": 9,
+          "observed_multiplier": "442.98850339852395551221642422",
+          "repeated_multiplier_exact": "594569104562701638624227647008812883747352617177/1342177280000000000000000000000000000000000000",
+          "repeated_multiplier": "442.9885033985239555122164242035246519352142640776932239532470703125",
+          "once_multiplier_exact": "112455406951957393129/213986410758144000",
+          "once_multiplier": "525.5259273405870235932178664287299080079757991322962787339830134797027",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 19,
+          "action": "guess_lower",
+          "from_rank": 10,
+          "to_rank": 4,
+          "favourable_ranks": 10,
+          "observed_multiplier": "570.12620387390033074422253797",
+          "repeated_multiplier_exact": "765210437572197008909380981700342181382842818306799/1342177280000000000000000000000000000000000000000",
+          "repeated_multiplier": "570.1262038739003307442225379499362270406207578679911792278289794921875",
+          "once_multiplier_exact": "1461920290375446110677/2139864107581440000",
+          "once_multiplier": "683.1837055427631306711832263573488804103685388719851623541779175236135",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 20,
+          "action": "guess_higher",
+          "from_rank": 4,
+          "to_rank": 7,
+          "favourable_ranks": 10,
+          "observed_multiplier": "733.75242438570972566781440637",
+          "repeated_multiplier_exact": "984825833155417550466373323448340387439718707160850313/1342177280000000000000000000000000000000000000000000",
+          "repeated_multiplier": "733.7524243857097256678144063415679242012789153761046476662158966064453",
+          "once_multiplier_exact": "19004963774880799438801/21398641075814400000",
+          "once_multiplier": "888.1388172055920698725381942645535445334791005335807110604312927806975",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 21,
+          "action": "guess_lower",
+          "from_rank": 10,
+          "to_rank": 4,
+          "favourable_ranks": 10,
+          "observed_multiplier": "944.3393701844084169344771410",
+          "repeated_multiplier_exact": "1267470847271022387450222467278014078634917976116014352831/1342177280000000000000000000000000000000000000000000000",
+          "repeated_multiplier": "944.3393701844084169344771409615979184470459640890466815464198589324951",
+          "once_multiplier_exact": "247064529073450392704413/213986410758144000000",
+          "once_multiplier": "1154.580462367269690834299652543919607893522830693654924378560680614907",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "lucky-wins",
+      "rank": 4,
+      "label": "HiLo / lucky-wins / 4",
+      "source_files": [
+        "sources/hilo-lucky-wins.json",
+        "sources/hilo-lucky-wins-04.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/lucky-wins",
+        "https://yeet.com/resources/casino/bet-cards/SOL-65652-019ed469-d0b0-7710-be81-a2b6c9772f24"
+      ],
+      "round_id": "019ed469-d0b0-7710-be81-a2b6c9772f24",
+      "recorded_at": "2026-06-17T07:09:25.078Z",
+      "stake_usd": "0.1",
+      "actual_gross_usd": "79.812",
+      "observed_multiplier": "798.12",
+      "calls": 12,
+      "skips": 0,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "63849607778185223290266707851257/80000000000000000000000000000",
+      "repeated_model_multiplier": "798.1200972273152911283338481407125",
+      "once_model_multiplier_exact": "23298085122481/26136000000",
+      "once_model_multiplier": "891.4173983195974900520355065809611264156718702173247627793082338536884",
+      "model_original_stake_return": "0.886384871716129280658801",
+      "once_benchmark_usd": "89.14173983195974900520355065809611264156718702173247627793082338536884",
+      "benchmark_gap_usd": "9.32973983195974900520355065809611264156718702173247627793082338536884",
+      "benchmark_gap_rounded_usd": "9.33",
+      "history_final_multiplier": "798.1200972273152911283338481",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_lower",
+          "from_rank": 3,
+          "to_rank": 3,
+          "favourable_ranks": 3,
+          "observed_multiplier": "4.2900000000000000000000000000",
+          "repeated_multiplier_exact": "429/100",
+          "repeated_multiplier": "4.29",
+          "once_multiplier_exact": "429/100",
+          "once_multiplier": "4.29",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_lower",
+          "from_rank": 3,
+          "to_rank": 3,
+          "favourable_ranks": 3,
+          "observed_multiplier": "18.404100000000000000000000000",
+          "repeated_multiplier_exact": "184041/10000",
+          "repeated_multiplier": "18.4041",
+          "once_multiplier_exact": "1859/100",
+          "once_multiplier": "18.59",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_lower",
+          "from_rank": 3,
+          "to_rank": 1,
+          "favourable_ranks": 3,
+          "observed_multiplier": "78.953589000000000000000000000",
+          "repeated_multiplier_exact": "78953589/1000000",
+          "repeated_multiplier": "78.953589",
+          "once_multiplier_exact": "24167/300",
+          "once_multiplier": "80.55666666666666666666666666666666666666666666666666666666666666666667",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_higher",
+          "from_rank": 1,
+          "to_rank": 2,
+          "favourable_ranks": 12,
+          "observed_multiplier": "84.67772420250000000000000000",
+          "repeated_multiplier_exact": "33871089681/400000000",
+          "repeated_multiplier": "84.6777242025",
+          "once_multiplier_exact": "314171/3600",
+          "once_multiplier": "87.26972222222222222222222222222222222222222222222222222222222222222222",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 5,
+          "action": "guess_higher",
+          "from_rank": 2,
+          "to_rank": 4,
+          "favourable_ranks": 12,
+          "observed_multiplier": "90.81685920718125000000000000",
+          "repeated_multiplier_exact": "14530697473149/160000000000",
+          "repeated_multiplier": "90.81685920718125",
+          "once_multiplier_exact": "4084223/43200",
+          "once_multiplier": "94.54219907407407407407407407407407407407407407407407407407407407407407",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 6,
+          "action": "guess_higher",
+          "from_rank": 4,
+          "to_rank": 10,
+          "favourable_ranks": 10,
+          "observed_multiplier": "116.88129779964226875000000000",
+          "repeated_multiplier_exact": "18701007647942763/160000000000000",
+          "repeated_multiplier": "116.88129779964226875",
+          "once_multiplier_exact": "53094899/432000",
+          "once_multiplier": "122.9048587962962962962962962962962962962962962962962962962962962962963",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 7,
+          "action": "guess_lower",
+          "from_rank": 10,
+          "to_rank": 4,
+          "favourable_ranks": 10,
+          "observed_multiplier": "150.42623026813959988125000000",
+          "repeated_multiplier_exact": "24068196842902335981/160000000000000000",
+          "repeated_multiplier": "150.42623026813959988125",
+          "once_multiplier_exact": "690233687/4320000",
+          "once_multiplier": "159.7763164351851851851851851851851851851851851851851851851851851851852",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 8,
+          "action": "guess_higher",
+          "from_rank": 4,
+          "to_rank": 11,
+          "favourable_ranks": 10,
+          "observed_multiplier": "193.59855835509566504716875000",
+          "repeated_multiplier_exact": "30975769336815306407547/160000000000000000000",
+          "repeated_multiplier": "193.59855835509566504716875",
+          "once_multiplier_exact": "8973037931/43200000",
+          "once_multiplier": "207.7092113657407407407407407407407407407407407407407407407407407407407",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 9,
+          "action": "guess_lower",
+          "from_rank": 11,
+          "to_rank": 5,
+          "favourable_ranks": 11,
+          "observed_multiplier": "226.51031327546192810518743750",
+          "repeated_multiplier_exact": "3624165012407390849682999/16000000000000000000000",
+          "repeated_multiplier": "226.5103132754619281051874375",
+          "once_multiplier_exact": "10604499373/43200000",
+          "once_multiplier": "245.4745225231481481481481481481481481481481481481481481481481481481481",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 10,
+          "action": "guess_lower",
+          "from_rank": 5,
+          "to_rank": 3,
+          "favourable_ranks": 5,
+          "observed_multiplier": "583.03754637103900294275246412",
+          "repeated_multiplier_exact": "4664300370968312023542019713/8000000000000000000000000",
+          "repeated_multiplier": "583.037546371039002942752464125",
+          "once_multiplier_exact": "137858491849/216000000",
+          "once_multiplier": "638.2337585601851851851851851851851851851851851851851851851851851851852",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 11,
+          "action": "guess_higher",
+          "from_rank": 3,
+          "to_rank": 3,
+          "favourable_ranks": 11,
+          "observed_multiplier": "682.15392925411563344302038302",
+          "repeated_multiplier_exact": "545723143403292506754416306421/800000000000000000000000000",
+          "repeated_multiplier": "682.15392925411563344302038302625",
+          "once_multiplier_exact": "1792160394037/2376000000",
+          "once_multiplier": "754.2762601165824915824915824915824915824915824915824915824915824915825",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 12,
+          "action": "guess_higher",
+          "from_rank": 3,
+          "to_rank": 7,
+          "favourable_ranks": 11,
+          "observed_multiplier": "798.1200972273152911283338481",
+          "repeated_multiplier_exact": "63849607778185223290266707851257/80000000000000000000000000000",
+          "repeated_multiplier": "798.1200972273152911283338481407125",
+          "once_multiplier_exact": "23298085122481/26136000000",
+          "once_multiplier": "891.4173983195974900520355065809611264156718702173247627793082338536884",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "lucky-wins",
+      "rank": 5,
+      "label": "HiLo / lucky-wins / 5",
+      "source_files": [
+        "sources/hilo-lucky-wins.json",
+        "sources/hilo-lucky-wins-05.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/lucky-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-16751-019e84e1-6495-7d48-b91c-422cf8a01888"
+      ],
+      "round_id": "019e84e1-6495-7d48-b91c-422cf8a01888",
+      "recorded_at": "2026-06-01T20:30:24.428Z",
+      "stake_usd": "0.01",
+      "actual_gross_usd": "6.8589",
+      "observed_multiplier": "685.89",
+      "calls": 4,
+      "skips": 0,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "2743558264161/4000000000",
+      "repeated_model_multiplier": "685.88956604025",
+      "once_model_multiplier_exact": "2827539/4000",
+      "once_model_multiplier": "706.88475",
+      "model_original_stake_return": "0.96059601",
+      "once_benchmark_usd": "7.0688475",
+      "benchmark_gap_usd": "0.2099475",
+      "benchmark_gap_rounded_usd": "0.21",
+      "history_final_multiplier": "685.889566040250",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_higher",
+          "from_rank": 9,
+          "to_rank": 10,
+          "favourable_ranks": 5,
+          "observed_multiplier": "2.574",
+          "repeated_multiplier_exact": "1287/500",
+          "repeated_multiplier": "2.574",
+          "once_multiplier_exact": "1287/500",
+          "once_multiplier": "2.574",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_higher",
+          "from_rank": 10,
+          "to_rank": 12,
+          "favourable_ranks": 4,
+          "observed_multiplier": "8.2818450",
+          "repeated_multiplier_exact": "1656369/200000",
+          "repeated_multiplier": "8.281845",
+          "once_multiplier_exact": "16731/2000",
+          "once_multiplier": "8.3655",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_higher",
+          "from_rank": 12,
+          "to_rank": 13,
+          "favourable_ranks": 2,
+          "observed_multiplier": "53.2936725750",
+          "repeated_multiplier_exact": "2131746903/40000000",
+          "repeated_multiplier": "53.293672575",
+          "once_multiplier_exact": "217503/4000",
+          "once_multiplier": "54.37575",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_same",
+          "from_rank": 13,
+          "to_rank": 13,
+          "favourable_ranks": 1,
+          "observed_multiplier": "685.889566040250",
+          "repeated_multiplier_exact": "2743558264161/4000000000",
+          "repeated_multiplier": "685.88956604025",
+          "once_multiplier_exact": "2827539/4000",
+          "once_multiplier": "706.88475",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "lucky-wins",
+      "rank": 6,
+      "label": "HiLo / lucky-wins / 6",
+      "source_files": [
+        "sources/hilo-lucky-wins.json",
+        "sources/hilo-lucky-wins-06.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/lucky-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-66044-019ec81c-0a4b-76b7-9520-5272f6f40045"
+      ],
+      "round_id": "019ec81c-0a4b-76b7-9520-5272f6f40045",
+      "recorded_at": "2026-06-14T21:49:01.430Z",
+      "stake_usd": "0.06",
+      "actual_gross_usd": "31.9764",
+      "observed_multiplier": "532.94",
+      "calls": 3,
+      "skips": 0,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "2131746903/4000000",
+      "repeated_model_multiplier": "532.93672575",
+      "once_model_multiplier_exact": "217503/400",
+      "once_model_multiplier": "543.7575",
+      "model_original_stake_return": "0.970299",
+      "once_benchmark_usd": "32.625450",
+      "benchmark_gap_usd": "0.649050",
+      "benchmark_gap_rounded_usd": "0.65",
+      "history_final_multiplier": "532.93672575",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_lower",
+          "from_rank": 2,
+          "to_rank": 2,
+          "favourable_ranks": 2,
+          "observed_multiplier": "6.435",
+          "repeated_multiplier_exact": "1287/200",
+          "repeated_multiplier": "6.435",
+          "once_multiplier_exact": "1287/200",
+          "once_multiplier": "6.435",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_lower",
+          "from_rank": 2,
+          "to_rank": 1,
+          "favourable_ranks": 2,
+          "observed_multiplier": "41.409225",
+          "repeated_multiplier_exact": "1656369/40000",
+          "repeated_multiplier": "41.409225",
+          "once_multiplier_exact": "16731/400",
+          "once_multiplier": "41.8275",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_same",
+          "from_rank": 1,
+          "to_rank": 1,
+          "favourable_ranks": 1,
+          "observed_multiplier": "532.93672575",
+          "repeated_multiplier_exact": "2131746903/4000000",
+          "repeated_multiplier": "532.93672575",
+          "once_multiplier_exact": "217503/400",
+          "once_multiplier": "543.7575",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "lucky-wins",
+      "rank": 7,
+      "label": "HiLo / lucky-wins / 7",
+      "source_files": [
+        "sources/hilo-lucky-wins.json",
+        "sources/hilo-lucky-wins-07.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/lucky-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-84314-01a1c4f2-c990-7693-86f5-ec769285810e"
+      ],
+      "round_id": "01a1c4f2-c990-7693-86f5-ec769285810e",
+      "recorded_at": "2026-11-10T10:13:28.095Z",
+      "stake_usd": "1",
+      "actual_gross_usd": "532.9367",
+      "observed_multiplier": "532.9367",
+      "calls": 3,
+      "skips": 0,
+      "game_version": 3,
+      "repeated_model_multiplier_exact": "2131746903/4000000",
+      "repeated_model_multiplier": "532.93672575",
+      "once_model_multiplier_exact": "217503/400",
+      "once_model_multiplier": "543.7575",
+      "model_original_stake_return": "0.970299",
+      "once_benchmark_usd": "543.7575",
+      "benchmark_gap_usd": "10.8208",
+      "benchmark_gap_rounded_usd": "10.82",
+      "history_final_multiplier": "532.93672575",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_higher",
+          "from_rank": 12,
+          "to_rank": 12,
+          "favourable_ranks": 2,
+          "observed_multiplier": "6.435",
+          "repeated_multiplier_exact": "1287/200",
+          "repeated_multiplier": "6.435",
+          "once_multiplier_exact": "1287/200",
+          "once_multiplier": "6.435",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_higher",
+          "from_rank": 12,
+          "to_rank": 13,
+          "favourable_ranks": 2,
+          "observed_multiplier": "41.409225",
+          "repeated_multiplier_exact": "1656369/40000",
+          "repeated_multiplier": "41.409225",
+          "once_multiplier_exact": "16731/400",
+          "once_multiplier": "41.8275",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_same",
+          "from_rank": 13,
+          "to_rank": 13,
+          "favourable_ranks": 1,
+          "observed_multiplier": "532.93672575",
+          "repeated_multiplier_exact": "2131746903/4000000",
+          "repeated_multiplier": "532.93672575",
+          "once_multiplier_exact": "217503/400",
+          "once_multiplier": "543.7575",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "lucky-wins",
+      "rank": 8,
+      "label": "HiLo / lucky-wins / 8",
+      "source_files": [
+        "sources/hilo-lucky-wins.json",
+        "sources/hilo-lucky-wins-08.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/lucky-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-4048-019e84bf-5826-7ea5-9778-81e3af6ea7f0"
+      ],
+      "round_id": "019e84bf-5826-7ea5-9778-81e3af6ea7f0",
+      "recorded_at": "2026-06-01T19:53:13.023Z",
+      "stake_usd": "0.01",
+      "actual_gross_usd": "5.2231",
+      "observed_multiplier": "522.31",
+      "calls": 25,
+      "skips": 10,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "1962890421280191946666641647179267848061080210613954356980527431/3758096384000000000000000000000000000000000000000000000000000",
+      "repeated_model_multiplier": "522.3097602384941776593459629531598112575391069623919355498167635606868",
+      "once_model_multiplier_exact": "7056410014866816666030739693/10614519435215033597952000",
+      "once_model_multiplier": "664.7884586707023926501307599082489543129901814485618352397379566673191",
+      "model_original_stake_return": "0.77782135939914677200873949156207143430037297002499",
+      "once_benchmark_usd": "6.647884586707023926501307599082489543129901814485618352397379566673191",
+      "benchmark_gap_usd": "1.424784586707023926501307599082489543129901814485618352397379566673191",
+      "benchmark_gap_rounded_usd": "1.42",
+      "history_final_multiplier": "522.30976023849417765934596293",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_lower",
+          "from_rank": 10,
+          "to_rank": 7,
+          "favourable_ranks": 10,
+          "observed_multiplier": "1.287",
+          "repeated_multiplier_exact": "1287/1000",
+          "repeated_multiplier": "1.287",
+          "once_multiplier_exact": "1287/1000",
+          "once_multiplier": "1.287",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_higher",
+          "from_rank": 7,
+          "to_rank": 13,
+          "favourable_ranks": 7,
+          "observed_multiplier": "2.3662414285714285714285714285",
+          "repeated_multiplier_exact": "1656369/700000",
+          "repeated_multiplier": "2.366241428571428571428571428571428571428571428571428571428571428571429",
+          "once_multiplier_exact": "16731/7000",
+          "once_multiplier": "2.390142857142857142857142857142857142857142857142857142857142857142857",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_same",
+          "from_rank": 13,
+          "to_rank": 13,
+          "favourable_ranks": 1,
+          "observed_multiplier": "30.453527185714285714285714285",
+          "repeated_multiplier_exact": "2131746903/70000000",
+          "repeated_multiplier": "30.45352718571428571428571428571428571428571428571428571428571428571429",
+          "once_multiplier_exact": "217503/7000",
+          "once_multiplier": "31.07185714285714285714285714285714285714285714285714285714285714285714",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_lower",
+          "from_rank": 13,
+          "to_rank": 9,
+          "favourable_ranks": 12,
+          "observed_multiplier": "32.661407906678571428571428571",
+          "repeated_multiplier_exact": "914519421387/28000000000",
+          "repeated_multiplier": "32.66140790667857142857142857142857142857142857142857142857142857142857",
+          "once_multiplier_exact": "942513/28000",
+          "once_multiplier": "33.66117857142857142857142857142857142857142857142857142857142857142857",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 5,
+          "action": "guess_higher",
+          "from_rank": 2,
+          "to_rank": 11,
+          "favourable_ranks": 12,
+          "observed_multiplier": "35.029359979912767857142857142",
+          "repeated_multiplier_exact": "392328831775023/11200000000000",
+          "repeated_multiplier": "35.02935997991276785714285714285714285714285714285714285714285714285714",
+          "once_multiplier_exact": "4084223/112000",
+          "once_multiplier": "36.46627678571428571428571428571428571428571428571428571428571428571429",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 6,
+          "action": "guess_lower",
+          "from_rank": 11,
+          "to_rank": 6,
+          "favourable_ranks": 11,
+          "observed_multiplier": "40.984351176497938392857142856",
+          "repeated_multiplier_exact": "45902473317677691/1120000000000000",
+          "repeated_multiplier": "40.98435117649793839285714285714285714285714285714285714285714285714286",
+          "once_multiplier_exact": "4826809/112000",
+          "once_multiplier": "43.09650892857142857142857142857142857142857142857142857142857142857143",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 7,
+          "action": "guess_higher",
+          "from_rank": 6,
+          "to_rank": 12,
+          "favourable_ranks": 8,
+          "observed_multiplier": "65.933574955191058389508928570",
+          "repeated_multiplier_exact": "59076483159851188317/896000000000000000",
+          "repeated_multiplier": "65.93357495519105838950892857142857142857142857142857142857142857142857",
+          "once_multiplier_exact": "62748517/896000",
+          "once_multiplier": "70.03182700892857142857142857142857142857142857142857142857142857142857",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 8,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 7,
+          "favourable_ranks": 12,
+          "observed_multiplier": "70.713759139442410122748325891",
+          "repeated_multiplier_exact": "25343811275576159787993/358400000000000000000",
+          "repeated_multiplier": "70.71375913944241012274832589285714285714285714285714285714285714285714",
+          "once_multiplier_exact": "815730721/10752000",
+          "once_multiplier": "75.86781259300595238095238095238095238095238095238095238095238095238095",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 9,
+          "action": "guess_lower",
+          "from_rank": 11,
+          "to_rank": 11,
+          "favourable_ranks": 11,
+          "observed_multiplier": "82.73509819314761984361554129",
+          "repeated_multiplier_exact": "2965225919242410695195181/35840000000000000000000",
+          "repeated_multiplier": "82.73509819314761984361554129464285714285714285714285714285714285714286",
+          "once_multiplier_exact": "10604499373/118272000",
+          "once_multiplier": "89.66196033718885281385281385281385281385281385281385281385281385281385",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 10,
+          "action": "guess_lower",
+          "from_rank": 11,
+          "to_rank": 5,
+          "favourable_ranks": 11,
+          "observed_multiplier": "96.80006488598271521703018331",
+          "repeated_multiplier_exact": "346931432551362051337836177/3584000000000000000000000",
+          "repeated_multiplier": "96.80006488598271521703018331473214285714285714285714285714285714285714",
+          "once_multiplier_exact": "137858491849/1300992000",
+          "once_multiplier": "105.9641349439504624163715072805981896890987800078709169618260527351436",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 11,
+          "action": "guess_higher",
+          "from_rank": 5,
+          "to_rank": 9,
+          "favourable_ranks": 9,
+          "observed_multiplier": "138.42409278695528276035316213",
+          "repeated_multiplier_exact": "49611194854844773341310573311/358400000000000000000000000",
+          "repeated_multiplier": "138.4240927869552827603531621400669642857142857142857142857142857142857",
+          "once_multiplier_exact": "1792160394037/11708928000",
+          "once_multiplier": "153.0593060301506679347588438497529406620315711224802133893042983952075",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 12,
+          "action": "guess_higher",
+          "from_rank": 3,
+          "to_rank": 5,
+          "favourable_ranks": 11,
+          "observed_multiplier": "161.95618856073768082961319969",
+          "repeated_multiplier_exact": "5804509798016838480933337077387/35840000000000000000000000000",
+          "repeated_multiplier": "161.9561885607376808296131997038783482142857142857142857142857142857143",
+          "once_multiplier_exact": "23298085122481/128798208000",
+          "once_multiplier": "180.8882707629053348319877245497080207824009476902038885509959890125179",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 13,
+          "action": "guess_lower",
+          "from_rank": 11,
+          "to_rank": 3,
+          "favourable_ranks": 11,
+          "observed_multiplier": "189.48874061606308657064744364",
+          "repeated_multiplier_exact": "679127646367970102269200438054279/3584000000000000000000000000000",
+          "repeated_multiplier": "189.4887406160630865706474436535376674107142857142857142857142857142857",
+          "once_multiplier_exact": "302875106592253/1416780288000",
+          "once_multiplier": "213.7770472652517593468945835587458427428374836338773228329952597420667",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 14,
+          "action": "guess_higher",
+          "from_rank": 3,
+          "to_rank": 12,
+          "favourable_ranks": 11,
+          "observed_multiplier": "221.70182652079381128765750906",
+          "repeated_multiplier_exact": "79457934625052501965496451252350643/358400000000000000000000000000000",
+          "repeated_multiplier": "221.7018265207938112876575090746390708705357142857142857142857142857143",
+          "once_multiplier_exact": "3937376385699289/15584583168000",
+          "once_multiplier": "252.6456013134793519554208714785178141506261170218550178935398524224424",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 15,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 2,
+          "favourable_ranks": 12,
+          "observed_multiplier": "237.77520894355136260601267847",
+          "repeated_multiplier_exact": "34087453954147523343197977587258425847/143360000000000000000000000000000000",
+          "repeated_multiplier": "237.7752089435513626060126784825504035086495535714285714285714285714286",
+          "once_multiplier_exact": "51185893014090757/187014998016000",
+          "once_multiplier": "273.6994014229359646183726107683942986631782934403429360513348401243126",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 16,
+          "action": "guess_higher",
+          "from_rank": 2,
+          "to_rank": 7,
+          "favourable_ranks": 12,
+          "observed_multiplier": "255.01391159195883639494859766",
+          "repeated_multiplier_exact": "14623517746329287514231932384933864688363/57344000000000000000000000000000000000",
+          "repeated_multiplier": "255.0139115919588363949485976725353077630266462053571428571428571428571",
+          "once_multiplier_exact": "665416609183179841/2244179976192000",
+          "once_multiplier": "296.5076848748472950032369949990938235517764845603715140556127434680053",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 17,
+          "action": "guess_lower",
+          "from_rank": 13,
+          "to_rank": 2,
+          "favourable_ranks": 12,
+          "observed_multiplier": "273.50242018237585203358237099",
+          "repeated_multiplier_exact": "6273489113175264343605498993136627951307727/22937600000000000000000000000000000000000",
+          "repeated_multiplier": "273.5024201823758520335823710037941175758460780552455357142857142857143",
+          "once_multiplier_exact": "8650415919381337933/26930159714304000",
+          "once_multiplier": "321.2166586144179029201734112490183088477578582737358068935804720903391",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 18,
+          "action": "guess_higher",
+          "from_rank": 2,
+          "to_rank": 12,
+          "favourable_ranks": 12,
+          "observed_multiplier": "293.33134564559810130601709289",
+          "repeated_multiplier_exact": "2691326829552188403406759068055613391111014883/9175040000000000000000000000000000000000000",
+          "repeated_multiplier": "293.3313456455981013060170929015691911000949187142508370535714285714286",
+          "once_multiplier_exact": "112455406951957393129/323161916571648000",
+          "once_multiplier": "347.9847134989527281635211955197698345850710131298804574680455114312007",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 19,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 11,
+          "favourable_ranks": 12,
+          "observed_multiplier": "314.59786820490396365070333212",
+          "repeated_multiplier_exact": "1154579209877888825061499640195858144786625384807/3670016000000000000000000000000000000000000000",
+          "repeated_multiplier": "314.5978682049039636507033321369329574548518003210340227399553571428571",
+          "once_multiplier_exact": "1461920290375446110677/3877942998859776000",
+          "once_multiplier": "376.9834396238654555104812951464173208004935975573704955903826373838008",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 20,
+          "action": "guess_lower",
+          "from_rank": 11,
+          "to_rank": 1,
+          "favourable_ranks": 11,
+          "observed_multiplier": "368.07950579973763747132289858",
+          "repeated_multiplier_exact": "135085767555712992532195457902915402940035170022419/367001600000000000000000000000000000000000000000",
+          "repeated_multiplier": "368.0795057997376374713228986002115602221766063756098066057477678571429",
+          "once_multiplier_exact": "19004963774880799438801/42657372987457536000",
+          "once_multiplier": "445.5258831918409928760233488094022882187651607496196766068158441808554",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 21,
+          "action": "guess_higher",
+          "from_rank": 1,
+          "to_rank": 12,
+          "favourable_ranks": 12,
+          "observed_multiplier": "394.76526997021861618799380873",
+          "repeated_multiplier_exact": "57951794281400873796311851440350707861275087939617751/146800640000000000000000000000000000000000000000000",
+          "repeated_multiplier": "394.7652699702186161879938087487268983382844103378415175846644810267857",
+          "once_multiplier_exact": "247064529073450392704413/511888475849490432000",
+          "once_multiplier": "482.6530401244944089490252945435191455703289241454213163240504978625934",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 22,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 1,
+          "favourable_ranks": 12,
+          "observed_multiplier": "423.38575204305946586162335986",
+          "repeated_multiplier_exact": "24861319746720974858617784267910453672487012726096015179/58720256000000000000000000000000000000000000000000000",
+          "repeated_multiplier": "423.3857520430594658616233598830095984678100300873350276095526559012277",
+          "once_multiplier_exact": "3211838877954855105157369/6142661710193885184000",
+          "once_multiplier": "522.8741268015356096947774024221457410345230011575397593510547060178095",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 23,
+          "action": "guess_higher",
+          "from_rank": 1,
+          "to_rank": 6,
+          "favourable_ranks": 12,
+          "observed_multiplier": "454.08121906618127713659105345",
+          "repeated_multiplier_exact": "10665506171343298214347029450933584625496928459495190511791/23488102400000000000000000000000000000000000000000000000",
+          "repeated_multiplier": "454.0812190661812771365910534745277943567262572686668171112452234540667",
+          "once_multiplier_exact": "41753905413413116367045797/73711940522326622208000",
+          "once_multiplier": "566.4469707016635771693421859573245527873999179206680726303092648526270",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 24,
+          "action": "guess_higher",
+          "from_rank": 2,
+          "to_rank": 8,
+          "favourable_ranks": 12,
+          "observed_multiplier": "487.00210744847941972899390483",
+          "repeated_multiplier_exact": "4575502147506274933954875634450507804338182309123436729558339/9395240960000000000000000000000000000000000000000000000000",
+          "repeated_multiplier": "487.0021074484794197289939048514310594475889109206451613518105021544865",
+          "once_multiplier_exact": "542800770374370512771595361/884543286267919466496000",
+          "once_multiplier": "613.6508849268022086001207014537682655196832444140570786828350369236792",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 25,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 8,
+          "favourable_ranks": 12,
+          "observed_multiplier": "522.30976023849417765934596293",
+          "repeated_multiplier_exact": "1962890421280191946666641647179267848061080210613954356980527431/3758096384000000000000000000000000000000000000000000000000000",
+          "repeated_multiplier": "522.3097602384941776593459629531598112575391069623919355498167635606868",
+          "once_multiplier_exact": "7056410014866816666030739693/10614519435215033597952000",
+          "once_multiplier": "664.7884586707023926501307599082489543129901814485618352397379566673191",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "lucky-wins",
+      "rank": 9,
+      "label": "HiLo / lucky-wins / 9",
+      "source_files": [
+        "sources/hilo-lucky-wins.json",
+        "sources/hilo-lucky-wins-09.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/lucky-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-36898-019e99c0-ce47-766b-9bd1-d087613b779d"
+      ],
+      "round_id": "019e99c0-ce47-766b-9bd1-d087613b779d",
+      "recorded_at": "2026-06-05T21:46:50.339Z",
+      "stake_usd": "0.01",
+      "actual_gross_usd": "5.0092",
+      "observed_multiplier": "500.92",
+      "calls": 6,
+      "skips": 0,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "56103022943828289/112000000000000",
+      "repeated_model_multiplier": "500.9198477127525803571428571428571428571428571428571428571428571428571",
+      "once_model_multiplier_exact": "53094899/100800",
+      "once_model_multiplier": "526.7351091269841269841269841269841269841269841269841269841269841269841",
+      "model_original_stake_return": "0.941480149401",
+      "once_benchmark_usd": "5.267351091269841269841269841269841269841269841269841269841269841269841",
+      "benchmark_gap_usd": "0.258151091269841269841269841269841269841269841269841269841269841269841",
+      "benchmark_gap_rounded_usd": "0.26",
+      "history_final_multiplier": "500.91984771275258035714285713",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_lower",
+          "from_rank": 3,
+          "to_rank": 3,
+          "favourable_ranks": 3,
+          "observed_multiplier": "4.2900000000000000000000000000",
+          "repeated_multiplier_exact": "429/100",
+          "repeated_multiplier": "4.29",
+          "once_multiplier_exact": "429/100",
+          "once_multiplier": "4.29",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_lower",
+          "from_rank": 3,
+          "to_rank": 2,
+          "favourable_ranks": 3,
+          "observed_multiplier": "18.404100000000000000000000000",
+          "repeated_multiplier_exact": "184041/10000",
+          "repeated_multiplier": "18.4041",
+          "once_multiplier_exact": "1859/100",
+          "once_multiplier": "18.59",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_higher",
+          "from_rank": 2,
+          "to_rank": 12,
+          "favourable_ranks": 12,
+          "observed_multiplier": "19.738397250000000000000000000",
+          "repeated_multiplier_exact": "78953589/4000000",
+          "repeated_multiplier": "19.73839725",
+          "once_multiplier_exact": "24167/1200",
+          "once_multiplier": "20.13916666666666666666666666666666666666666666666666666666666666666667",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 7,
+          "favourable_ranks": 12,
+          "observed_multiplier": "21.169431050625000000000000000",
+          "repeated_multiplier_exact": "33871089681/1600000000",
+          "repeated_multiplier": "21.169431050625",
+          "once_multiplier_exact": "314171/14400",
+          "once_multiplier": "21.81743055555555555555555555555555555555555555555555555555555555555556",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 5,
+          "action": "guess_higher",
+          "from_rank": 7,
+          "to_rank": 13,
+          "favourable_ranks": 7,
+          "observed_multiplier": "38.921511088791964285714285713",
+          "repeated_multiplier_exact": "43592092419447/1120000000000",
+          "repeated_multiplier": "38.92151108879196428571428571428571428571428571428571428571428571428571",
+          "once_multiplier_exact": "4084223/100800",
+          "once_multiplier": "40.51808531746031746031746031746031746031746031746031746031746031746032",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 6,
+          "action": "guess_same",
+          "from_rank": 13,
+          "to_rank": 13,
+          "favourable_ranks": 1,
+          "observed_multiplier": "500.91984771275258035714285713",
+          "repeated_multiplier_exact": "56103022943828289/112000000000000",
+          "repeated_multiplier": "500.9198477127525803571428571428571428571428571428571428571428571428571",
+          "once_multiplier_exact": "53094899/100800",
+          "once_multiplier": "526.7351091269841269841269841269841269841269841269841269841269841269841",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "HiLo",
+      "leaderboard": "lucky-wins",
+      "rank": 10,
+      "label": "HiLo / lucky-wins / 10",
+      "source_files": [
+        "sources/hilo-lucky-wins.json",
+        "sources/hilo-lucky-wins-10.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3028/lucky-wins",
+        "https://yeet.com/resources/casino/bet-cards/USDT-4048-019e9428-3c5b-731c-a2da-ef57b23779fe"
+      ],
+      "round_id": "019e9428-3c5b-731c-a2da-ef57b23779fe",
+      "recorded_at": "2026-06-04T19:42:05.426Z",
+      "stake_usd": "0.01",
+      "actual_gross_usd": "4.4954",
+      "observed_multiplier": "449.54",
+      "calls": 13,
+      "skips": 10,
+      "game_version": 1,
+      "repeated_model_multiplier_exact": "368263254461979639530494948650099957/819200000000000000000000000000000",
+      "repeated_model_multiplier": "449.540105544408739661248716613891549072265625",
+      "once_model_multiplier_exact": "302875106592253/597196800000",
+      "once_model_multiplier": "507.1613019230059504672496570644718792866941015089163237311385459533608",
+      "model_original_stake_return": "0.87752102299896798785221299",
+      "once_benchmark_usd": "5.071613019230059504672496570644718792866941015089163237311385459533608",
+      "benchmark_gap_usd": "0.576213019230059504672496570644718792866941015089163237311385459533608",
+      "benchmark_gap_rounded_usd": "0.58",
+      "history_final_multiplier": "449.54010554440873966124871661",
+      "observed_payout_equals_history_times_display_stake": false,
+      "prefixes": [
+        {
+          "call": 1,
+          "action": "guess_lower",
+          "from_rank": 5,
+          "to_rank": 4,
+          "favourable_ranks": 5,
+          "observed_multiplier": "2.574",
+          "repeated_multiplier_exact": "1287/500",
+          "repeated_multiplier": "2.574",
+          "once_multiplier_exact": "1287/500",
+          "once_multiplier": "2.574",
+          "matches_repeated": true,
+          "matches_once": true
+        },
+        {
+          "call": 2,
+          "action": "guess_lower",
+          "from_rank": 4,
+          "to_rank": 1,
+          "favourable_ranks": 4,
+          "observed_multiplier": "8.2818450",
+          "repeated_multiplier_exact": "1656369/200000",
+          "repeated_multiplier": "8.281845",
+          "once_multiplier_exact": "16731/2000",
+          "once_multiplier": "8.3655",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 3,
+          "action": "guess_same",
+          "from_rank": 1,
+          "to_rank": 1,
+          "favourable_ranks": 1,
+          "observed_multiplier": "106.587345150",
+          "repeated_multiplier_exact": "2131746903/20000000",
+          "repeated_multiplier": "106.58734515",
+          "once_multiplier_exact": "217503/2000",
+          "once_multiplier": "108.7515",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 4,
+          "action": "guess_higher",
+          "from_rank": 1,
+          "to_rank": 12,
+          "favourable_ranks": 12,
+          "observed_multiplier": "114.31492767337500000000000000",
+          "repeated_multiplier_exact": "914519421387/8000000000",
+          "repeated_multiplier": "114.314927673375",
+          "once_multiplier_exact": "942513/8000",
+          "once_multiplier": "117.814125",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 5,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 4,
+          "favourable_ranks": 12,
+          "observed_multiplier": "122.60275992969468750000000000",
+          "repeated_multiplier_exact": "392328831775023/3200000000000",
+          "repeated_multiplier": "122.6027599296946875",
+          "once_multiplier_exact": "4084223/32000",
+          "once_multiplier": "127.63196875",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 6,
+          "action": "guess_higher",
+          "from_rank": 4,
+          "to_rank": 9,
+          "favourable_ranks": 10,
+          "observed_multiplier": "157.78975202951706281250000000",
+          "repeated_multiplier_exact": "504927206494454601/3200000000000000",
+          "repeated_multiplier": "157.7897520295170628125",
+          "once_multiplier_exact": "53094899/320000",
+          "once_multiplier": "165.921559375",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 7,
+          "action": "guess_higher",
+          "from_rank": 2,
+          "to_rank": 9,
+          "favourable_ranks": 12,
+          "observed_multiplier": "169.22950905165704986640625000",
+          "repeated_multiplier_exact": "216613771586121023829/1280000000000000000",
+          "repeated_multiplier": "169.22950905165704986640625",
+          "once_multiplier_exact": "690233687/3840000",
+          "once_multiplier": "179.7483559895833333333333333333333333333333333333333333333333333333333",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 8,
+          "action": "guess_lower",
+          "from_rank": 9,
+          "to_rank": 8,
+          "favourable_ranks": 9,
+          "observed_multiplier": "241.99819794386958130896093750",
+          "repeated_multiplier_exact": "30975769336815306407547/128000000000000000000",
+          "repeated_multiplier": "241.9981979438695813089609375",
+          "once_multiplier_exact": "8973037931/34560000",
+          "once_multiplier": "259.6365142071759259259259259259259259259259259259259259259259259259259",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 9,
+          "action": "guess_higher",
+          "from_rank": 1,
+          "to_rank": 6,
+          "favourable_ranks": 12,
+          "observed_multiplier": "259.54306729480012595386060547",
+          "repeated_multiplier_exact": "13288605045493766448837663/51200000000000000000000",
+          "repeated_multiplier": "259.54306729480012595386060546875",
+          "once_multiplier_exact": "116649493103/414720000",
+          "once_multiplier": "281.2728903911072530864197530864197530864197530864197530864197530864198",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 10,
+          "action": "guess_higher",
+          "from_rank": 4,
+          "to_rank": 12,
+          "favourable_ranks": 10,
+          "observed_multiplier": "334.03192760840776210261859924",
+          "repeated_multiplier_exact": "17102434693550477419654072281/51200000000000000000000000",
+          "repeated_multiplier": "334.03192760840776210261859923828125",
+          "once_multiplier_exact": "1516443410339/4147200000",
+          "once_multiplier": "365.6547575084394290123456790123456790123456790123456790123456790123457",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 11,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 4,
+          "favourable_ranks": 12,
+          "observed_multiplier": "358.24924236001732485505844768",
+          "repeated_multiplier_exact": "7336944483533154813031597008549/20480000000000000000000000000",
+          "repeated_multiplier": "358.249242360017324855058447683056640625",
+          "once_multiplier_exact": "19713764334407/49766400000",
+          "once_multiplier": "396.1259873008093814300411522633744855967078189300411522633744855967078",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 12,
+          "action": "guess_higher",
+          "from_rank": 3,
+          "to_rank": 8,
+          "favourable_ranks": 11,
+          "observed_multiplier": "419.15161356122027008041838379",
+          "repeated_multiplier_exact": "858422504573379113124696850000233/2048000000000000000000000000000",
+          "repeated_multiplier": "419.15161356122027008041838378917626953125",
+          "once_multiplier_exact": "23298085122481/49766400000",
+          "once_multiplier": "468.1488940827747235082304526748971193415637860082304526748971193415638",
+          "matches_repeated": true,
+          "matches_once": false
+        },
+        {
+          "call": 13,
+          "action": "guess_lower",
+          "from_rank": 12,
+          "to_rank": 10,
+          "favourable_ranks": 12,
+          "observed_multiplier": "449.54010554440873966124871661",
+          "repeated_multiplier_exact": "368263254461979639530494948650099957/819200000000000000000000000000000",
+          "repeated_multiplier": "449.540105544408739661248716613891549072265625",
+          "once_multiplier_exact": "302875106592253/597196800000",
+          "once_multiplier": "507.1613019230059504672496570644718792866941015089163237311385459533608",
+          "matches_repeated": true,
+          "matches_once": false
+        }
+      ]
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "top-wins",
+      "rank": 1,
+      "label": "Risky Click / top-wins / 1",
+      "source_files": [
+        "sources/risky-click-top-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/top-wins"
+      ],
+      "round_id": "cfd87366-d31c-4ee2-aaf2-a35d437a120b",
+      "recorded_at": "2025-12-30T20:59:44.773Z",
+      "stake_usd": "2000",
+      "actual_gross_usd": "132300",
+      "observed_multiplier": "66.15",
+      "calls": 5,
+      "calls_candidates": [
+        5,
+        6,
+        7
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.2",
+            "1.75",
+            "2.5",
+            "3",
+            "4.2"
+          ],
+          "calls": 5,
+          "repeated_multiplier_exact": "1323/20",
+          "once_multiplier_exact": "245000000/3557763",
+          "once_multiplier": "68.86349652857708621962733324282702361006059144468026678561781658868227"
+        },
+        {
+          "tiles": [
+            "1.4",
+            "1.5",
+            "2.5",
+            "3",
+            "4.2"
+          ],
+          "calls": 5,
+          "repeated_multiplier_exact": "1323/20",
+          "once_multiplier_exact": "245000000/3557763",
+          "once_multiplier": "68.86349652857708621962733324282702361006059144468026678561781658868227"
+        },
+        {
+          "tiles": [
+            "1.5",
+            "1.75",
+            "2",
+            "3",
+            "4.2"
+          ],
+          "calls": 5,
+          "repeated_multiplier_exact": "1323/20",
+          "once_multiplier_exact": "245000000/3557763",
+          "once_multiplier": "68.86349652857708621962733324282702361006059144468026678561781658868227"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.5",
+            "1.75",
+            "2",
+            "2.5",
+            "4.2"
+          ],
+          "calls": 6,
+          "repeated_multiplier_exact": "1323/20",
+          "once_multiplier_exact": "24500000000/352218537",
+          "once_multiplier": "69.55908740260311739356296287154244809097029438856592604607860261483058"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.4",
+            "1.5",
+            "1.75",
+            "2",
+            "2.5",
+            "3"
+          ],
+          "calls": 7,
+          "repeated_multiplier_exact": "1323/20",
+          "once_multiplier_exact": "2450000000000/34869635163",
+          "once_multiplier": "70.26170444707385595309390189044691726360635796824841014755414405538442"
+        }
+      ],
+      "repeated_model_multiplier_exact": "1323/20",
+      "repeated_model_multiplier": "66.15",
+      "old_model_exact_difference": "0.00",
+      "once_model_multiplier_exact": "245000000/3557763",
+      "once_model_multiplier": "68.86349652857708621962733324282702361006059144468026678561781658868227",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "68.8634",
+      "once_benchmark_usd": "137726.8000",
+      "benchmark_gap_usd": "5426.8000",
+      "benchmark_gap_rounded_usd": "5426.80"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "top-wins",
+      "rank": 2,
+      "label": "Risky Click / top-wins / 2",
+      "source_files": [
+        "sources/risky-click-top-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/top-wins"
+      ],
+      "round_id": "cc4b0afc-29e3-4799-99b7-981d2491f2ab",
+      "recorded_at": "2025-12-30T20:58:36.740Z",
+      "stake_usd": "2000",
+      "actual_gross_usd": "132300",
+      "observed_multiplier": "66.15",
+      "calls": 5,
+      "calls_candidates": [
+        5,
+        6,
+        7
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.2",
+            "1.75",
+            "2.5",
+            "3",
+            "4.2"
+          ],
+          "calls": 5,
+          "repeated_multiplier_exact": "1323/20",
+          "once_multiplier_exact": "245000000/3557763",
+          "once_multiplier": "68.86349652857708621962733324282702361006059144468026678561781658868227"
+        },
+        {
+          "tiles": [
+            "1.4",
+            "1.5",
+            "2.5",
+            "3",
+            "4.2"
+          ],
+          "calls": 5,
+          "repeated_multiplier_exact": "1323/20",
+          "once_multiplier_exact": "245000000/3557763",
+          "once_multiplier": "68.86349652857708621962733324282702361006059144468026678561781658868227"
+        },
+        {
+          "tiles": [
+            "1.5",
+            "1.75",
+            "2",
+            "3",
+            "4.2"
+          ],
+          "calls": 5,
+          "repeated_multiplier_exact": "1323/20",
+          "once_multiplier_exact": "245000000/3557763",
+          "once_multiplier": "68.86349652857708621962733324282702361006059144468026678561781658868227"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.5",
+            "1.75",
+            "2",
+            "2.5",
+            "4.2"
+          ],
+          "calls": 6,
+          "repeated_multiplier_exact": "1323/20",
+          "once_multiplier_exact": "24500000000/352218537",
+          "once_multiplier": "69.55908740260311739356296287154244809097029438856592604607860261483058"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.4",
+            "1.5",
+            "1.75",
+            "2",
+            "2.5",
+            "3"
+          ],
+          "calls": 7,
+          "repeated_multiplier_exact": "1323/20",
+          "once_multiplier_exact": "2450000000000/34869635163",
+          "once_multiplier": "70.26170444707385595309390189044691726360635796824841014755414405538442"
+        }
+      ],
+      "repeated_model_multiplier_exact": "1323/20",
+      "repeated_model_multiplier": "66.15",
+      "old_model_exact_difference": "0.00",
+      "once_model_multiplier_exact": "245000000/3557763",
+      "once_model_multiplier": "68.86349652857708621962733324282702361006059144468026678561781658868227",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "68.8634",
+      "once_benchmark_usd": "137726.8000",
+      "benchmark_gap_usd": "5426.8000",
+      "benchmark_gap_rounded_usd": "5426.80"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "top-wins",
+      "rank": 3,
+      "label": "Risky Click / top-wins / 3",
+      "source_files": [
+        "sources/risky-click-top-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/top-wins"
+      ],
+      "round_id": "ddb4b6ca-deec-40bb-9cf2-0bcd40b54ba8",
+      "recorded_at": "2025-12-30T20:48:44.046Z",
+      "stake_usd": "2000",
+      "actual_gross_usd": "126000",
+      "observed_multiplier": "63",
+      "calls": 4,
+      "calls_candidates": [
+        4
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "2",
+            "2.5",
+            "3",
+            "4.2"
+          ],
+          "calls": 4,
+          "repeated_multiplier_exact": "63/1",
+          "once_multiplier_exact": "7000000/107811",
+          "once_multiplier": "64.92843958408696700707719991466547940377141479069853725501108421218614"
+        }
+      ],
+      "repeated_model_multiplier_exact": "63/1",
+      "repeated_model_multiplier": "63",
+      "old_model_exact_difference": "0",
+      "once_model_multiplier_exact": "7000000/107811",
+      "once_model_multiplier": "64.92843958408696700707719991466547940377141479069853725501108421218614",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "64.9284",
+      "once_benchmark_usd": "129856.8000",
+      "benchmark_gap_usd": "3856.8000",
+      "benchmark_gap_rounded_usd": "3856.80"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "top-wins",
+      "rank": 4,
+      "label": "Risky Click / top-wins / 4",
+      "source_files": [
+        "sources/risky-click-top-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/top-wins"
+      ],
+      "round_id": "189e1a37-c177-4843-bbf7-02d1a2dfb752",
+      "recorded_at": "2025-10-24T18:29:34.535Z",
+      "stake_usd": "3000",
+      "actual_gross_usd": "82555.2",
+      "observed_multiplier": "27.5184",
+      "calls": 5,
+      "calls_candidates": [
+        5,
+        6
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.4",
+            "3",
+            "4.2"
+          ],
+          "calls": 5,
+          "repeated_multiplier_exact": "17199/625",
+          "once_multiplier_exact": "101920000/3557763",
+          "once_multiplier": "28.64721455588806786736497062901604182178520604098699098281701170089182"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.4",
+            "1.5",
+            "2",
+            "4.2"
+          ],
+          "calls": 6,
+          "repeated_multiplier_exact": "17199/625",
+          "once_multiplier_exact": "10192000000/352218537",
+          "once_multiplier": "28.93658035948289683572219255456165840584364246564342523516869868776952"
+        }
+      ],
+      "repeated_model_multiplier_exact": "17199/625",
+      "repeated_model_multiplier": "27.5184",
+      "old_model_exact_difference": "0.0000",
+      "once_model_multiplier_exact": "101920000/3557763",
+      "once_model_multiplier": "28.64721455588806786736497062901604182178520604098699098281701170089182",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "28.6472",
+      "once_benchmark_usd": "85941.6000",
+      "benchmark_gap_usd": "3386.4000",
+      "benchmark_gap_rounded_usd": "3386.40"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "top-wins",
+      "rank": 5,
+      "label": "Risky Click / top-wins / 5",
+      "source_files": [
+        "sources/risky-click-top-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/top-wins"
+      ],
+      "round_id": "3c4d371b-f226-425d-bde6-c3a2a77b2cc6",
+      "recorded_at": "2025-12-30T20:47:34.647Z",
+      "stake_usd": "2000",
+      "actual_gross_usd": "80261.8",
+      "observed_multiplier": "40.1309",
+      "calls": 5,
+      "calls_candidates": [
+        5,
+        6
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.3",
+            "1.4",
+            "1.75",
+            "3",
+            "4.2"
+          ],
+          "calls": 5,
+          "repeated_multiplier_exact": "40131/1000",
+          "once_multiplier_exact": "445900000/10673289",
+          "once_multiplier": "41.77718789400343230657391550064839432343675880977269518327480873046724"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.4",
+            "1.75",
+            "2.5",
+            "4.2"
+          ],
+          "calls": 6,
+          "repeated_multiplier_exact": "40131/1000",
+          "once_multiplier_exact": "44590000000/1056655611",
+          "once_multiplier": "42.19917969091255788542819747540241850852197859572999513462101891966388"
+        },
+        {
+          "tiles": [
+            "1.3",
+            "1.4",
+            "1.5",
+            "1.75",
+            "2",
+            "4.2"
+          ],
+          "calls": 6,
+          "repeated_multiplier_exact": "40131/1000",
+          "once_multiplier_exact": "44590000000/1056655611",
+          "once_multiplier": "42.19917969091255788542819747540241850852197859572999513462101891966388"
+        }
+      ],
+      "repeated_model_multiplier_exact": "40131/1000",
+      "repeated_model_multiplier": "40.131",
+      "old_model_exact_difference": "-0.0001",
+      "once_model_multiplier_exact": "445900000/10673289",
+      "once_model_multiplier": "41.77718789400343230657391550064839432343675880977269518327480873046724",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "41.7771",
+      "once_benchmark_usd": "83554.2000",
+      "benchmark_gap_usd": "3292.4000",
+      "benchmark_gap_rounded_usd": "3292.40"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "top-wins",
+      "rank": 6,
+      "label": "Risky Click / top-wins / 6",
+      "source_files": [
+        "sources/risky-click-top-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/top-wins"
+      ],
+      "round_id": "c0a491d6-a473-4570-b4f7-d507fce9c57f",
+      "recorded_at": "2025-12-30T20:45:07.790Z",
+      "stake_usd": "2000",
+      "actual_gross_usd": "66150",
+      "observed_multiplier": "33.075",
+      "calls": 4,
+      "calls_candidates": [
+        4,
+        5,
+        6
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.5",
+            "1.75",
+            "3",
+            "4.2"
+          ],
+          "calls": 4,
+          "repeated_multiplier_exact": "1323/40",
+          "once_multiplier_exact": "1225000/35937",
+          "once_multiplier": "34.08743078164565767871552995519937668697999276511673205888081921139772"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.5",
+            "1.75",
+            "2.5",
+            "4.2"
+          ],
+          "calls": 5,
+          "repeated_multiplier_exact": "1323/40",
+          "once_multiplier_exact": "122500000/3557763",
+          "once_multiplier": "34.43174826428854310981366662141351180503029572234013339280890829434114"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.4",
+            "1.5",
+            "1.75",
+            "2.5",
+            "3"
+          ],
+          "calls": 6,
+          "repeated_multiplier_exact": "1323/40",
+          "once_multiplier_exact": "12250000000/352218537",
+          "once_multiplier": "34.77954370130155869678148143577122404548514719428296302303930130741529"
+        }
+      ],
+      "repeated_model_multiplier_exact": "1323/40",
+      "repeated_model_multiplier": "33.075",
+      "old_model_exact_difference": "0.000",
+      "once_model_multiplier_exact": "1225000/35937",
+      "once_model_multiplier": "34.08743078164565767871552995519937668697999276511673205888081921139772",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "34.0874",
+      "once_benchmark_usd": "68174.8000",
+      "benchmark_gap_usd": "2024.8000",
+      "benchmark_gap_rounded_usd": "2024.80"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "top-wins",
+      "rank": 7,
+      "label": "Risky Click / top-wins / 7",
+      "source_files": [
+        "sources/risky-click-top-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/top-wins"
+      ],
+      "round_id": "9bf2bc1e-8d0c-4497-805b-3c07c3452a00",
+      "recorded_at": "2025-12-30T20:51:17.672Z",
+      "stake_usd": "2000",
+      "actual_gross_usd": "25200",
+      "observed_multiplier": "12.6",
+      "calls": 2,
+      "calls_candidates": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "3",
+            "4.2"
+          ],
+          "calls": 2,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "140/11",
+          "once_multiplier": "12.72727272727272727272727272727272727272727272727272727272727272727273"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "2.5",
+            "4.2"
+          ],
+          "calls": 3,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "14000/1089",
+          "once_multiplier": "12.85583103764921946740128558310376492194674012855831037649219467401286"
+        },
+        {
+          "tiles": [
+            "1.5",
+            "2",
+            "4.2"
+          ],
+          "calls": 3,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "14000/1089",
+          "once_multiplier": "12.85583103764921946740128558310376492194674012855831037649219467401286"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.4",
+            "2.5",
+            "3"
+          ],
+          "calls": 4,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "1400000/107811",
+          "once_multiplier": "12.98568791681739340141543998293309588075428295813970745100221684243723"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.75",
+            "2",
+            "3"
+          ],
+          "calls": 4,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "1400000/107811",
+          "once_multiplier": "12.98568791681739340141543998293309588075428295813970745100221684243723"
+        },
+        {
+          "tiles": [
+            "1.4",
+            "1.5",
+            "2",
+            "3"
+          ],
+          "calls": 4,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "1400000/107811",
+          "once_multiplier": "12.98568791681739340141543998293309588075428295813970745100221684243723"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.4",
+            "1.5",
+            "2",
+            "2.5"
+          ],
+          "calls": 5,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "140000000/10673289",
+          "once_multiplier": "13.11685648163373070850044442720514735429725551327243176868910792165377"
+        }
+      ],
+      "repeated_model_multiplier_exact": "63/5",
+      "repeated_model_multiplier": "12.6",
+      "old_model_exact_difference": "0.0",
+      "once_model_multiplier_exact": "140/11",
+      "once_model_multiplier": "12.72727272727272727272727272727272727272727272727272727272727272727273",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "12.7272",
+      "once_benchmark_usd": "25454.4000",
+      "benchmark_gap_usd": "254.4000",
+      "benchmark_gap_rounded_usd": "254.40"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "top-wins",
+      "rank": 8,
+      "label": "Risky Click / top-wins / 8",
+      "source_files": [
+        "sources/risky-click-top-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/top-wins"
+      ],
+      "round_id": "93757c8c-6d82-46a2-af0c-4abc25cfe809",
+      "recorded_at": "2025-12-30T20:50:59.281Z",
+      "stake_usd": "2000",
+      "actual_gross_usd": "25200",
+      "observed_multiplier": "12.6",
+      "calls": 2,
+      "calls_candidates": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "3",
+            "4.2"
+          ],
+          "calls": 2,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "140/11",
+          "once_multiplier": "12.72727272727272727272727272727272727272727272727272727272727272727273"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "2.5",
+            "4.2"
+          ],
+          "calls": 3,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "14000/1089",
+          "once_multiplier": "12.85583103764921946740128558310376492194674012855831037649219467401286"
+        },
+        {
+          "tiles": [
+            "1.5",
+            "2",
+            "4.2"
+          ],
+          "calls": 3,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "14000/1089",
+          "once_multiplier": "12.85583103764921946740128558310376492194674012855831037649219467401286"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.4",
+            "2.5",
+            "3"
+          ],
+          "calls": 4,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "1400000/107811",
+          "once_multiplier": "12.98568791681739340141543998293309588075428295813970745100221684243723"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.75",
+            "2",
+            "3"
+          ],
+          "calls": 4,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "1400000/107811",
+          "once_multiplier": "12.98568791681739340141543998293309588075428295813970745100221684243723"
+        },
+        {
+          "tiles": [
+            "1.4",
+            "1.5",
+            "2",
+            "3"
+          ],
+          "calls": 4,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "1400000/107811",
+          "once_multiplier": "12.98568791681739340141543998293309588075428295813970745100221684243723"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.4",
+            "1.5",
+            "2",
+            "2.5"
+          ],
+          "calls": 5,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "140000000/10673289",
+          "once_multiplier": "13.11685648163373070850044442720514735429725551327243176868910792165377"
+        }
+      ],
+      "repeated_model_multiplier_exact": "63/5",
+      "repeated_model_multiplier": "12.6",
+      "old_model_exact_difference": "0.0",
+      "once_model_multiplier_exact": "140/11",
+      "once_model_multiplier": "12.72727272727272727272727272727272727272727272727272727272727272727273",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "12.7272",
+      "once_benchmark_usd": "25454.4000",
+      "benchmark_gap_usd": "254.4000",
+      "benchmark_gap_rounded_usd": "254.40"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "top-wins",
+      "rank": 9,
+      "label": "Risky Click / top-wins / 9",
+      "source_files": [
+        "sources/risky-click-top-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/top-wins"
+      ],
+      "round_id": "23dd50d6-6089-47a3-b32c-3370e37be1c5",
+      "recorded_at": "2025-10-24T18:27:14.985Z",
+      "stake_usd": "1944.36",
+      "actual_gross_usd": "24498.936",
+      "observed_multiplier": "12.6",
+      "calls": 2,
+      "calls_candidates": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "3",
+            "4.2"
+          ],
+          "calls": 2,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "140/11",
+          "once_multiplier": "12.72727272727272727272727272727272727272727272727272727272727272727273"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "2.5",
+            "4.2"
+          ],
+          "calls": 3,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "14000/1089",
+          "once_multiplier": "12.85583103764921946740128558310376492194674012855831037649219467401286"
+        },
+        {
+          "tiles": [
+            "1.5",
+            "2",
+            "4.2"
+          ],
+          "calls": 3,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "14000/1089",
+          "once_multiplier": "12.85583103764921946740128558310376492194674012855831037649219467401286"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.4",
+            "2.5",
+            "3"
+          ],
+          "calls": 4,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "1400000/107811",
+          "once_multiplier": "12.98568791681739340141543998293309588075428295813970745100221684243723"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.75",
+            "2",
+            "3"
+          ],
+          "calls": 4,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "1400000/107811",
+          "once_multiplier": "12.98568791681739340141543998293309588075428295813970745100221684243723"
+        },
+        {
+          "tiles": [
+            "1.4",
+            "1.5",
+            "2",
+            "3"
+          ],
+          "calls": 4,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "1400000/107811",
+          "once_multiplier": "12.98568791681739340141543998293309588075428295813970745100221684243723"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.4",
+            "1.5",
+            "2",
+            "2.5"
+          ],
+          "calls": 5,
+          "repeated_multiplier_exact": "63/5",
+          "once_multiplier_exact": "140000000/10673289",
+          "once_multiplier": "13.11685648163373070850044442720514735429725551327243176868910792165377"
+        }
+      ],
+      "repeated_model_multiplier_exact": "63/5",
+      "repeated_model_multiplier": "12.6",
+      "old_model_exact_difference": "0.0",
+      "once_model_multiplier_exact": "140/11",
+      "once_model_multiplier": "12.72727272727272727272727272727272727272727272727272727272727272727273",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "12.7272",
+      "once_benchmark_usd": "24746.2585",
+      "benchmark_gap_usd": "247.3225",
+      "benchmark_gap_rounded_usd": "247.32"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "top-wins",
+      "rank": 10,
+      "label": "Risky Click / top-wins / 10",
+      "source_files": [
+        "sources/risky-click-top-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/top-wins"
+      ],
+      "round_id": "be608f22-06f6-4256-8c62-eee3a5aef4f6",
+      "recorded_at": "2025-12-25T11:44:41.852Z",
+      "stake_usd": "2048",
+      "actual_gross_usd": "23482.368",
+      "observed_multiplier": "11.466",
+      "calls": 4,
+      "calls_candidates": [
+        4,
+        5,
+        6
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.75",
+            "4.2"
+          ],
+          "calls": 4,
+          "repeated_multiplier_exact": "5733/500",
+          "once_multiplier_exact": "1274000/107811",
+          "once_multiplier": "11.81697600430382799528805038446911725148639749190713378041201732661788"
+        },
+        {
+          "tiles": [
+            "1.3",
+            "1.4",
+            "1.5",
+            "4.2"
+          ],
+          "calls": 4,
+          "repeated_multiplier_exact": "5733/500",
+          "once_multiplier_exact": "1274000/107811",
+          "once_multiplier": "11.81697600430382799528805038446911725148639749190713378041201732661788"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.4",
+            "1.75",
+            "3"
+          ],
+          "calls": 5,
+          "repeated_multiplier_exact": "5733/500",
+          "once_multiplier_exact": "127400000/10673289",
+          "once_multiplier": "11.93633939828669494473540442875668409241050251707791290950708820870493"
+        },
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.4",
+            "1.5",
+            "1.75",
+            "2"
+          ],
+          "calls": 6,
+          "repeated_multiplier_exact": "5733/500",
+          "once_multiplier_exact": "12740000000/1056655611",
+          "once_multiplier": "12.05690848311787368155091356440069100243485102735142718132029111990397"
+        }
+      ],
+      "repeated_model_multiplier_exact": "5733/500",
+      "repeated_model_multiplier": "11.466",
+      "old_model_exact_difference": "0.000",
+      "once_model_multiplier_exact": "1274000/107811",
+      "once_model_multiplier": "11.81697600430382799528805038446911725148639749190713378041201732661788",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "11.8169",
+      "once_benchmark_usd": "24201.0112",
+      "benchmark_gap_usd": "718.6432",
+      "benchmark_gap_rounded_usd": "718.64"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "lucky-wins",
+      "rank": 1,
+      "label": "Risky Click / lucky-wins / 1",
+      "source_files": [
+        "sources/risky-click-lucky-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/lucky-wins"
+      ],
+      "round_id": "c1bfc948-16fa-40c7-b2c8-e79210fb9a43",
+      "recorded_at": "2025-12-05T22:08:19.341Z",
+      "stake_usd": "0.1",
+      "actual_gross_usd": "36.1179",
+      "observed_multiplier": "361.179",
+      "calls": 9,
+      "calls_candidates": [
+        9
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.4",
+            "1.5",
+            "1.75",
+            "2",
+            "2.5",
+            "3",
+            "4.2"
+          ],
+          "calls": 9,
+          "repeated_multiplier_exact": "361179/1000",
+          "once_multiplier_exact": "44590000000000000/113919098077521",
+          "once_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949"
+        }
+      ],
+      "repeated_model_multiplier_exact": "361179/1000",
+      "repeated_model_multiplier": "361.179",
+      "old_model_exact_difference": "0.000",
+      "once_model_multiplier_exact": "44590000000000000/113919098077521",
+      "once_model_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "391.4181",
+      "once_benchmark_usd": "39.1418",
+      "benchmark_gap_usd": "3.0239",
+      "benchmark_gap_rounded_usd": "3.02"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "lucky-wins",
+      "rank": 2,
+      "label": "Risky Click / lucky-wins / 2",
+      "source_files": [
+        "sources/risky-click-lucky-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/lucky-wins"
+      ],
+      "round_id": "ae06cbe0-51fc-4f42-bc62-5a1ab4c47823",
+      "recorded_at": "2026-08-04T03:46:44.928Z",
+      "stake_usd": "0.1",
+      "actual_gross_usd": "36.1179",
+      "observed_multiplier": "361.179",
+      "calls": 9,
+      "calls_candidates": [
+        9
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.4",
+            "1.5",
+            "1.75",
+            "2",
+            "2.5",
+            "3",
+            "4.2"
+          ],
+          "calls": 9,
+          "repeated_multiplier_exact": "361179/1000",
+          "once_multiplier_exact": "44590000000000000/113919098077521",
+          "once_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949"
+        }
+      ],
+      "repeated_model_multiplier_exact": "361179/1000",
+      "repeated_model_multiplier": "361.179",
+      "old_model_exact_difference": "0.000",
+      "once_model_multiplier_exact": "44590000000000000/113919098077521",
+      "once_model_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "391.4181",
+      "once_benchmark_usd": "39.1418",
+      "benchmark_gap_usd": "3.0239",
+      "benchmark_gap_rounded_usd": "3.02"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "lucky-wins",
+      "rank": 3,
+      "label": "Risky Click / lucky-wins / 3",
+      "source_files": [
+        "sources/risky-click-lucky-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/lucky-wins"
+      ],
+      "round_id": "80f59992-8b4e-41ae-9127-cd4e34d46312",
+      "recorded_at": "2025-12-27T03:50:53.448Z",
+      "stake_usd": "0.2",
+      "actual_gross_usd": "72.2358",
+      "observed_multiplier": "361.179",
+      "calls": 9,
+      "calls_candidates": [
+        9
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.4",
+            "1.5",
+            "1.75",
+            "2",
+            "2.5",
+            "3",
+            "4.2"
+          ],
+          "calls": 9,
+          "repeated_multiplier_exact": "361179/1000",
+          "once_multiplier_exact": "44590000000000000/113919098077521",
+          "once_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949"
+        }
+      ],
+      "repeated_model_multiplier_exact": "361179/1000",
+      "repeated_model_multiplier": "361.179",
+      "old_model_exact_difference": "0.000",
+      "once_model_multiplier_exact": "44590000000000000/113919098077521",
+      "once_model_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "391.4181",
+      "once_benchmark_usd": "78.2836",
+      "benchmark_gap_usd": "6.0478",
+      "benchmark_gap_rounded_usd": "6.05"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "lucky-wins",
+      "rank": 4,
+      "label": "Risky Click / lucky-wins / 4",
+      "source_files": [
+        "sources/risky-click-lucky-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/lucky-wins"
+      ],
+      "round_id": "7f316a46-263f-4243-9b6e-b9d7f85bad1a",
+      "recorded_at": "2025-12-21T09:44:22.185Z",
+      "stake_usd": "0.2",
+      "actual_gross_usd": "72.2358",
+      "observed_multiplier": "361.179",
+      "calls": 9,
+      "calls_candidates": [
+        9
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.4",
+            "1.5",
+            "1.75",
+            "2",
+            "2.5",
+            "3",
+            "4.2"
+          ],
+          "calls": 9,
+          "repeated_multiplier_exact": "361179/1000",
+          "once_multiplier_exact": "44590000000000000/113919098077521",
+          "once_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949"
+        }
+      ],
+      "repeated_model_multiplier_exact": "361179/1000",
+      "repeated_model_multiplier": "361.179",
+      "old_model_exact_difference": "0.000",
+      "once_model_multiplier_exact": "44590000000000000/113919098077521",
+      "once_model_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "391.4181",
+      "once_benchmark_usd": "78.2836",
+      "benchmark_gap_usd": "6.0478",
+      "benchmark_gap_rounded_usd": "6.05"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "lucky-wins",
+      "rank": 5,
+      "label": "Risky Click / lucky-wins / 5",
+      "source_files": [
+        "sources/risky-click-lucky-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/lucky-wins"
+      ],
+      "round_id": "781aaac3-8d62-4092-bad8-febb5cc40166",
+      "recorded_at": "2025-09-10T01:03:38.259Z",
+      "stake_usd": "0.1",
+      "actual_gross_usd": "36.1179",
+      "observed_multiplier": "361.179",
+      "calls": 9,
+      "calls_candidates": [
+        9
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.4",
+            "1.5",
+            "1.75",
+            "2",
+            "2.5",
+            "3",
+            "4.2"
+          ],
+          "calls": 9,
+          "repeated_multiplier_exact": "361179/1000",
+          "once_multiplier_exact": "44590000000000000/113919098077521",
+          "once_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949"
+        }
+      ],
+      "repeated_model_multiplier_exact": "361179/1000",
+      "repeated_model_multiplier": "361.179",
+      "old_model_exact_difference": "0.000",
+      "once_model_multiplier_exact": "44590000000000000/113919098077521",
+      "once_model_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "391.4181",
+      "once_benchmark_usd": "39.1418",
+      "benchmark_gap_usd": "3.0239",
+      "benchmark_gap_rounded_usd": "3.02"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "lucky-wins",
+      "rank": 6,
+      "label": "Risky Click / lucky-wins / 6",
+      "source_files": [
+        "sources/risky-click-lucky-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/lucky-wins"
+      ],
+      "round_id": "55f5add4-4490-44e6-bc89-055f1499aed2",
+      "recorded_at": "2025-09-10T01:03:00.544Z",
+      "stake_usd": "1",
+      "actual_gross_usd": "361.179",
+      "observed_multiplier": "361.179",
+      "calls": 9,
+      "calls_candidates": [
+        9
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.4",
+            "1.5",
+            "1.75",
+            "2",
+            "2.5",
+            "3",
+            "4.2"
+          ],
+          "calls": 9,
+          "repeated_multiplier_exact": "361179/1000",
+          "once_multiplier_exact": "44590000000000000/113919098077521",
+          "once_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949"
+        }
+      ],
+      "repeated_model_multiplier_exact": "361179/1000",
+      "repeated_model_multiplier": "361.179",
+      "old_model_exact_difference": "0.000",
+      "once_model_multiplier_exact": "44590000000000000/113919098077521",
+      "once_model_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "391.4181",
+      "once_benchmark_usd": "391.4181",
+      "benchmark_gap_usd": "30.2391",
+      "benchmark_gap_rounded_usd": "30.24"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "lucky-wins",
+      "rank": 7,
+      "label": "Risky Click / lucky-wins / 7",
+      "source_files": [
+        "sources/risky-click-lucky-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/lucky-wins"
+      ],
+      "round_id": "521ceb06-a9ab-4f37-a935-afb2d00dc923",
+      "recorded_at": "2026-08-12T18:39:43.523Z",
+      "stake_usd": "0.1",
+      "actual_gross_usd": "36.1179",
+      "observed_multiplier": "361.179",
+      "calls": 9,
+      "calls_candidates": [
+        9
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.4",
+            "1.5",
+            "1.75",
+            "2",
+            "2.5",
+            "3",
+            "4.2"
+          ],
+          "calls": 9,
+          "repeated_multiplier_exact": "361179/1000",
+          "once_multiplier_exact": "44590000000000000/113919098077521",
+          "once_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949"
+        }
+      ],
+      "repeated_model_multiplier_exact": "361179/1000",
+      "repeated_model_multiplier": "361.179",
+      "old_model_exact_difference": "0.000",
+      "once_model_multiplier_exact": "44590000000000000/113919098077521",
+      "once_model_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "391.4181",
+      "once_benchmark_usd": "39.1418",
+      "benchmark_gap_usd": "3.0239",
+      "benchmark_gap_rounded_usd": "3.02"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "lucky-wins",
+      "rank": 8,
+      "label": "Risky Click / lucky-wins / 8",
+      "source_files": [
+        "sources/risky-click-lucky-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/lucky-wins"
+      ],
+      "round_id": "122264f2-3bd2-4fca-adc1-32ac860cac78",
+      "recorded_at": "2026-08-02T15:19:35.846Z",
+      "stake_usd": "0.1",
+      "actual_gross_usd": "36.1179",
+      "observed_multiplier": "361.179",
+      "calls": 9,
+      "calls_candidates": [
+        9
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.4",
+            "1.5",
+            "1.75",
+            "2",
+            "2.5",
+            "3",
+            "4.2"
+          ],
+          "calls": 9,
+          "repeated_multiplier_exact": "361179/1000",
+          "once_multiplier_exact": "44590000000000000/113919098077521",
+          "once_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949"
+        }
+      ],
+      "repeated_model_multiplier_exact": "361179/1000",
+      "repeated_model_multiplier": "361.179",
+      "old_model_exact_difference": "0.000",
+      "once_model_multiplier_exact": "44590000000000000/113919098077521",
+      "once_model_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "391.4181",
+      "once_benchmark_usd": "39.1418",
+      "benchmark_gap_usd": "3.0239",
+      "benchmark_gap_rounded_usd": "3.02"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "lucky-wins",
+      "rank": 9,
+      "label": "Risky Click / lucky-wins / 9",
+      "source_files": [
+        "sources/risky-click-lucky-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/lucky-wins"
+      ],
+      "round_id": "090368ad-e539-44fa-8721-71a5b45a981e",
+      "recorded_at": "2026-08-03T03:37:14.298Z",
+      "stake_usd": "0.1",
+      "actual_gross_usd": "36.1179",
+      "observed_multiplier": "361.179",
+      "calls": 9,
+      "calls_candidates": [
+        9
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.4",
+            "1.5",
+            "1.75",
+            "2",
+            "2.5",
+            "3",
+            "4.2"
+          ],
+          "calls": 9,
+          "repeated_multiplier_exact": "361179/1000",
+          "once_multiplier_exact": "44590000000000000/113919098077521",
+          "once_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949"
+        }
+      ],
+      "repeated_model_multiplier_exact": "361179/1000",
+      "repeated_model_multiplier": "361.179",
+      "old_model_exact_difference": "0.000",
+      "once_model_multiplier_exact": "44590000000000000/113919098077521",
+      "once_model_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "391.4181",
+      "once_benchmark_usd": "39.1418",
+      "benchmark_gap_usd": "3.0239",
+      "benchmark_gap_rounded_usd": "3.02"
+    },
+    {
+      "game": "Risky Click",
+      "leaderboard": "lucky-wins",
+      "rank": 10,
+      "label": "Risky Click / lucky-wins / 10",
+      "source_files": [
+        "sources/risky-click-lucky-wins.json"
+      ],
+      "source_urls": [
+        "https://yeet.com/resources/concierge/game-leaderboard/public/3008/lucky-wins"
+      ],
+      "round_id": "026fbd1c-aa0c-44de-88bc-654d11180307",
+      "recorded_at": "2026-08-02T13:57:51.543Z",
+      "stake_usd": "0.1",
+      "actual_gross_usd": "36.1179",
+      "observed_multiplier": "361.179",
+      "calls": 9,
+      "calls_candidates": [
+        9
+      ],
+      "calls_basis": "Fewest compatible tiles; the hidden route is not disclosed by this leaderboard.",
+      "compatible_subsets": [
+        {
+          "tiles": [
+            "1.2",
+            "1.3",
+            "1.4",
+            "1.5",
+            "1.75",
+            "2",
+            "2.5",
+            "3",
+            "4.2"
+          ],
+          "calls": 9,
+          "repeated_multiplier_exact": "361179/1000",
+          "once_multiplier_exact": "44590000000000000/113919098077521",
+          "once_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949"
+        }
+      ],
+      "repeated_model_multiplier_exact": "361179/1000",
+      "repeated_model_multiplier": "361.179",
+      "old_model_exact_difference": "0.000",
+      "once_model_multiplier_exact": "44590000000000000/113919098077521",
+      "once_model_multiplier": "391.4181270084922492642513052972555537795028206373189668458786108992949",
+      "once_model_matches_within_0001": 0,
+      "once_model_matches_nearest_cent": 0,
+      "once_model_matches_floor_cent": 0,
+      "once_benchmark_multiplier_floor4": "391.4181",
+      "once_benchmark_usd": "39.1418",
+      "benchmark_gap_usd": "3.0239",
+      "benchmark_gap_rounded_usd": "3.02"
+    }
+  ]
+}
