@@ -1,0 +1,32 @@
+{
+  "representation": "Analyst-selected fields copied from preserved public HTTP response metadata. This is not a complete raw header block. Source asset hashes were independently rechecked during assembly.",
+  "limit": "Last-Modified is a served-file header, not the backend payout deployment time.",
+  "assets": [
+    {
+      "game": "Risky Click",
+      "url": "https://reactor.yeet.com/originals/risky-click/assets/index-Cu8LUXbJ.js",
+      "status": 200,
+      "source_asset_sha256": "5154a057f435ec7772bb76f21e8b9c5372b2ff297bf11e2e53a2f7500b32383e",
+      "headers": {
+        "Content-Type": "application/javascript",
+        "Content-Length": "293668",
+        "Last-Modified": "Tue, 10 Nov 2026 10:28:39 GMT",
+        "ETag": "\"0150189ef33d454970a1219b32814762\""
+      },
+      "captured_date": "2026-11-22"
+    },
+    {
+      "game": "HiLo",
+      "url": "https://reactor.yeet.com/originals/hilo/assets/index-DB3qkeD3.js",
+      "status": 200,
+      "source_asset_sha256": "578ad9cf172541ad438560521e88e06b0a11dbed10925c2454278f196ee8445f",
+      "headers": {
+        "Content-Type": "application/javascript",
+        "Content-Length": "384171",
+        "Last-Modified": "Tue, 10 Nov 2026 11:54:14 GMT",
+        "ETag": "\"aca58344faad859d3278b7b8039bbe70\""
+      },
+      "captured_date": "2026-11-22"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "representation": "Analyst-selected exact contiguous source excerpts, independently matched to the preserved public asset.",
+  "source_url": "https://reactor.yeet.com/originals/risky-click/assets/index-Cu8LUXbJ.js",
+  "source_asset_sha256": "5154a057f435ec7772bb76f21e8b9c5372b2ff297bf11e2e53a2f7500b32383e",
+  "excerpts": [
+    {
+      "description": "Rules information paragraph",
+      "start_unicode_character": 288234,
+      "end_unicode_character_exclusive": 288382,
+      "exact_source": "let _;e[30]===t?_=e[31]:(_=t(`RISKY_CLICK.RULES_EDGE_ONCE`),e[30]=t,e[31]=_);let v;e[32]===_?v=e[33]:(v=(0,X.jsx)(Br,{children:_}),e[32]=_,e[33]=v);"
+    },
+    {
+      "description": "Rules information returns paragraph",
+      "start_unicode_character": 289407,
+      "end_unicode_character_exclusive": 289446,
+      "exact_source": "E=(0,X.jsxs)(zr,{children:[m,g,v,C,T]})"
+    },
+    {
+      "description": "Game registers rules component",
+      "start_unicode_character": 291513,
+      "end_unicode_character_exclusive": 291581,
+      "exact_source": "rulesConfig:{information:(0,X.jsx)(Ev,{}),paytable:(0,X.jsx)(Ov,{})}"
+    }
+  ],
+  "captured_date": "2026-11-22"
+}
