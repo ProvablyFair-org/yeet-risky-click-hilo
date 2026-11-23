@@ -1,0 +1,59 @@
+- complementary:
+  - tabpanel:
+    - generic: Bet Amount
+    - img "US Dollar"
+    - textbox: "0.01"
+    - button "1/2" [disabled]
+    - button "2X"
+    - generic: Profit on Win
+    - generic: $0.00
+    - generic: 1.00x
+    - button "Guess higher" [disabled]:
+      - generic: Higher / Same
+      - generic: 53.85%
+    - button "Guess lower" [disabled]:
+      - generic: Lower / Same
+      - generic: 53.85%
+    - button "Skip"
+    - button "Bet"
+- main:
+  - generic: K
+  - generic: Highest
+  - generic: ◀
+  - generic: ▶
+  - generic: Lowest
+  - generic: A
+  - generic: "7"
+  - generic: ♥
+  - button "Guess higher" [disabled]:
+    - generic: Higher / Same
+    - generic: x0.00
+  - button "Guess lower" [disabled]:
+    - generic: Lower / Same
+    - generic: x0.00
+  - generic: "7"
+  - generic: ♥
+  - generic: Start card
+- contentinfo:
+  - button "Settings":
+  - button "Sound":
+  - button "Hotkeys":
+  - button "Rules" [active]:
+  - dialog "Rules":
+    - heading "Rules" [level=2]
+    - button "Close":
+      - img "Close"
+    - generic: Max Bet
+    - generic: $5,000.00
+    - generic: Max Payout
+    - generic: $200,000.00
+    - generic: RTP
+    - generic: 99.00%
+    - paragraph: "Hi-Lo is a card-guessing game: predict whether each next card is higher or lower than the current one, build a multiplier with every correct call, and cash out before you get it wrong."
+    - list:
+      - listitem: Pick your starting card rank (A is low, K is high), then place your bet to deal it.
+      - listitem: Guess whether the next card will be Higher or Lower than the current card.
+      - listitem: A tie counts as a win on both Higher and Lower - except on Ace/King
+      - listitem: Each correct guess grows your multiplier and current cashout value.
+      - listitem: Don't like the current card? Skip it (limited per round) to draw a new one without risking your multiplier.
+      - listitem: Cash out anytime to lock in winnings. A wrong guess ends the round and forfeits the bet.

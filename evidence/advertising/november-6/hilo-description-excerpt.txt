@@ -1,0 +1,24 @@
+[lines 77-80 of the saved page text]
+  - button "Login":
+    - generic: Login
+  - button "Create Account":
+    - generic: Create Account
+[lines 118-135 of the saved page text]
+  - heading "HiLo" [level=3]
+  - text: This game is
+  - generic: Provably Fair
+  - generic "Play in a pop-out window":
+    - button "Play in a pop-out window":
+  - button "Toggle Fullscreen":
+  - tablist:
+    - tab "Top Wins":
+      - generic: Top Wins
+    - tab "Lucky Wins":
+      - generic: Lucky Wins
+    - tab "Description" [active] [selected]:
+      - generic: Description
+  - generic: Yeet Originals
+  - generic: 99%
+  - generic: Return to Player
+  - generic: 1%
+  - generic: House Edge

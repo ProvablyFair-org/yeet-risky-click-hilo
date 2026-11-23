@@ -1,0 +1,92 @@
+- complementary:
+  - tablist:
+    - tab "Manual" [selected]:
+      - generic: Manual
+    - tab "Auto":
+      - generic: Auto
+  - tabpanel "Manual":
+    - generic: Bet Amount
+    - img "US Dollar"
+    - textbox: "0.10"
+    - button "1/2" [disabled]
+    - button "2X"
+    - button "Pick a tile" [disabled]
+    - button "Refresh prompts":
+      - generic: Refresh prompts
+- main:
+  - button "Copy Trade Nancy Pelosi 82.5% 1.20x":
+    - generic: Copy Trade Nancy Pelosi
+    - generic: 82.5%
+    - generic: 1.20x
+  - button "Download The Newest Wallet 76.2% 1.30x":
+    - generic: Download The Newest Wallet
+    - generic: 76.2%
+    - generic: 1.30x
+  - button "Share A PnL Screenshot 70.7% 1.40x":
+    - generic: Share A PnL Screenshot
+    - generic: 70.7%
+    - generic: 1.40x
+  - button "Join A Paid Group 66.0% 1.50x":
+    - generic: Join A Paid Group
+    - generic: 66.0%
+    - generic: 1.50x
+  - button "Attend A Crypto Conference 56.6% 1.75x":
+    - generic: Attend A Crypto Conference
+    - generic: 56.6%
+    - generic: 1.75x
+  - button "Start A Short Squeeze 49.5% 2.00x":
+    - generic: Start A Short Squeeze
+    - generic: 49.5%
+    - generic: 2.00x
+  - button "Use An NFT Swap Platform 39.6% 2.50x":
+    - generic: Use An NFT Swap Platform
+    - generic: 39.6%
+    - generic: 2.50x
+  - button "Use A Tornado Cash Clone 33.0% 3.00x":
+    - generic: Use A Tornado Cash Clone
+    - generic: 33.0%
+    - generic: 3.00x
+  - button "Send E-girl Your Seed Phrase 23.6% 4.20x":
+    - generic: Send E-girl Your Seed Phrase
+    - generic: 23.6%
+    - generic: 4.20x
+- contentinfo:
+  - button "Settings":
+  - button "Sound":
+  - button "Hotkeys":
+  - button "Rules" [active]:
+  - dialog "Rules":
+    - heading "Rules" [level=2]
+    - button "Close":
+      - img "Close"
+    - tablist:
+      - tab "Information" [selected]:
+        - generic: Information
+      - tab "Paytable":
+        - generic: Paytable
+    - tabpanel "Information":
+      - generic: Max Bet
+      - generic: $5,000.00
+      - generic: Max Payout
+      - generic: $200,000.00
+      - generic: RTP
+      - generic: 99.00%
+      - list:
+        - listitem: Set your bet, then pick a tile on the board.
+        - listitem: Confirm the transaction to turn the tile over. A win multiplies your potential payout.
+        - listitem: Cash out at any time to collect your current payout.
+        - listitem: Keep clicking for a higher multiplier, but one rug ends the round.
+        - listitem: The round ends when you get rugged, cash out or clear the board.
+      - paragraph: The multipliers of the tiles you win multiply together into your total multiplier.
+      - paragraph: Examples
+      - list:
+        - generic: 2x
+        - generic: 3x
+        - generic: =
+        - generic: 6x
+        - generic: 1.5x
+        - generic: 2x
+        - generic: 3x
+        - generic: =
+        - generic: 9x
+      - paragraph: Clear all 9 tiles for a 361.17x win.
