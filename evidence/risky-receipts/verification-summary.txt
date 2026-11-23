@@ -1,0 +1,15 @@
+{
+  "additional_public_receipts": 20,
+  "comparison_leaderboards": 2,
+  "all20_ids_dates_currency_stake_payout_multiplier_match": true,
+  "presentation_image_only_count": 20,
+  "distinct_shared_presentation_image_urls": 1,
+  "receipts_with_explicit_choices_or_actions": 0,
+  "fairness_metadata_present": 5,
+  "revealed_public_server_seeds": 1,
+  "legacy_true_count": 5,
+  "original_ambiguous_subset_records": 9,
+  "ambiguous_subset_records_resolved_by_these_receipts": 0,
+  "original40_record_pricing_analysis_changed": false,
+  "original_combined_benchmark_gap_usd_rounded": "39789.55"
+}
