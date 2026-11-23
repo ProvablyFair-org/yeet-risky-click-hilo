@@ -1,0 +1,249 @@
+{
+  "schema_version": 2,
+  "scope": "Sources supporting explicit mathematical extrapolation to49 calls and the constructed cap-avoiding example. No49-call live bet is in this evidence set.",
+  "sources": [
+    {
+      "file": "../historical/sources/hilo-top-wins-01.json",
+      "sha256": "aa6977269a4d63eaf8f22c988d0bd5150603a466e5fe2dbafb5f4bac9ac89932",
+      "bytes": 1247,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-60111-019fefbc-5e6e-7bda-971c-b48ac2c09b2c",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-top-wins-02.json",
+      "sha256": "5f7df91e148887e650f20c64e1efde48af7aafafac5e0fe43b57b8acadaa6685",
+      "bytes": 1884,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-3596-019eafa3-64b2-74b7-9638-a27c8fe72def",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-top-wins-03.json",
+      "sha256": "482de1281aa5c83ddf9eca9fe36078ead91a31407072c69a80770e81b7e3f994",
+      "bytes": 1556,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDC-91670-019fa041-2f0c-7ac0-b332-ff998579d4b4",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-top-wins-04.json",
+      "sha256": "9230e77f23d07f11fbbbbdf288826dcd7011d6c3e0b392f553ea062a5b63694b",
+      "bytes": 2592,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-3596-019ea815-9e83-7dc8-952e-e1bf8be420fc",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-top-wins-05.json",
+      "sha256": "840e7a302c9f3fdabd3a610cb64da58c8f096e25864906b50fd648e30708c16b",
+      "bytes": 2300,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-3596-019eafa5-47f4-76d6-ab37-60324ad3a676",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-top-wins-06.json",
+      "sha256": "c78a4241ba2f553d9bd1fc8cadad4f9deb1effa2aa11ce7b8f077e1b09c230fa",
+      "bytes": 1769,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDC-3596-019ec427-345a-7d45-9960-ff98737895ee",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-top-wins-07.json",
+      "sha256": "fd8256082e8bbcecd70a9d01cdc31dbea2deb9954953f9e6c9c8cd0902dea1db",
+      "bytes": 2292,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-3596-019e8a69-508f-7da4-8d87-1cb1f2b6d6c1",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-top-wins-08.json",
+      "sha256": "d379470b9d8acad0dd4d3149f82521d0ce5033ba5639841d086c91fe6e3de22a",
+      "bytes": 1764,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-3596-019ea7ec-1f5a-74b1-a39a-94bf73130db8",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-top-wins-09.json",
+      "sha256": "3492900940b2d9cf7ce783893dfb013dec4c1f0ede5f261b2e4471dcd7b8e2c3",
+      "bytes": 1716,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-28008-019f5f53-2703-7426-9cf7-cc3f1333e1b7",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-top-wins-10.json",
+      "sha256": "a5c85c5d71b70af86d865bf4783678c995f8d4fc205bea16b0456ac69a50e80d",
+      "bytes": 2284,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-3596-019ea811-3738-7a80-8e04-e67666b23494",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-lucky-wins-01.json",
+      "sha256": "c4235213fce02456ceb5decf0d884826522f7c15ce5539f0a4a939a9ad1e15c5",
+      "bytes": 1529,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-60111-01a083bc-b331-7da1-a399-147e4e8f174e",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-lucky-wins-02.json",
+      "sha256": "f8cf868f56252ae0e5343e495936defc445631d4821234739f2831f9f97bfbb9",
+      "bytes": 1347,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-60111-019e85f0-cb37-7369-be09-07ee16c29823",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-lucky-wins-03.json",
+      "sha256": "233bc05d253fe608b20df711c91e6bd8c151586dc9dba629a43ef4380198a1bb",
+      "bytes": 4406,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-4048-019e8860-1789-7fc1-bd3b-4c65690f773a",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-lucky-wins-04.json",
+      "sha256": "eeda6da975d542eb67a81e6a819833f2835dcd9f6b96f71c8131e84dfbdea887",
+      "bytes": 2452,
+      "url": "https://yeet.com/resources/casino/bet-cards/SOL-65652-019ed469-d0b0-7710-be81-a2b6c9772f24",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-lucky-wins-05.json",
+      "sha256": "656e065a9ab772db717929487a814ddf9742b7ef5045cf2837b88b8c7d55a90c",
+      "bytes": 1508,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-16751-019e84e1-6495-7d48-b91c-422cf8a01888",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-lucky-wins-06.json",
+      "sha256": "5d232bf82d0b3f4034da4b3cd6f952edfcc09f0c157d65352fc1b8b2ab26a166",
+      "bytes": 1401,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-66044-019ec81c-0a4b-76b7-9520-5272f6f40045",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-lucky-wins-07.json",
+      "sha256": "7bffa8bac42c22fb590ca1d74b7686340ff98352bdcd909c5b4fda0350abb80e",
+      "bytes": 1341,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-84314-01a1c4f2-c990-7693-86f5-ec769285810e",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-lucky-wins-08.json",
+      "sha256": "1d0b1ec1dc28fc836f587ba848b6ee7c9a0a365ea71258b3a9b968eb742368be",
+      "bytes": 4843,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-4048-019e84bf-5826-7ea5-9778-81e3af6ea7f0",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-lucky-wins-09.json",
+      "sha256": "6556027a3174aa94c3ff47e60dc3188f34bd1e32549608051f5d1ce5b8dbe2e2",
+      "bytes": 1823,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-36898-019e99c0-ce47-766b-9bd1-d087613b779d",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "../historical/sources/hilo-lucky-wins-10.json",
+      "sha256": "65bb9ffc35e54bb9536780880de8859fc556d50ba12c4a99ed0a5634a666fded",
+      "bytes": 3514,
+      "url": "https://yeet.com/resources/casino/bet-cards/USDT-4048-019e9428-3c5b-731c-a2da-ef57b23779fe",
+      "kind": "public_historical_receipt",
+      "field": "presentation.response.maxCardsAllowed",
+      "value": 50,
+      "captured_date": "2026-11-23",
+      "representation": "Field from the browser-rendered JSON document collected on 23 November 2026. The historical bet date remains in the source body."
+    },
+    {
+      "file": "hilo-public-settings-2026-11-22.json",
+      "sha256": "cecb8f3a2ade480bc952e26a7fd6984d7eb06865eec2d34f2a5c8b7db7b95aea",
+      "bytes": 1904,
+      "url": "https://reactor.yeet.com/originals/hilo/api/settings",
+      "kind": "public_current_settings",
+      "representation": "Unmodified public settings HTTP JSON response body. No account fields or example seeds.",
+      "captured_date": "2026-11-22"
+    },
+    {
+      "file": "../advertising/november-6/hilo-rules.txt",
+      "sha256": "c77ec4d6432215d717cbeb2a3fd17a879b8a2e5ae0ab42ba774662aca459ef56",
+      "bytes": 1986,
+      "url": "https://yeet.com/game/play/yeet-originals/hilo",
+      "capture_date": "2026-11-06",
+      "kind": "anonymous_historical_rules",
+      "representation": "Unmodified saved UI text, corroborating displayed maximum payout of USD 200,000; does not establish historical multiplier/card-count cap enforcement."
+    }
+  ],
+  "limits": [
+    "The 20 historical receipts were collected as browser-rendered JSON on 23 November 2026 and declare maxCardsAllowed 50. These fields are not independent historical configuration snapshots.",
+    "One starting deal plus 49 paid calls makes 50 dealt cards. The game client does not show how the server counts or enforces this limit, so this does not establish 49 as the maximum number of paid calls.",
+    "The 10,000x multiplier cap is observed in the 22 November settings; its identical historical application has not been established. The 6 November rules display a USD 200,000 maximum payout."
+  ]
+}
