@@ -1,0 +1,802 @@
+[
+    {
+        "label": "R01",
+        "game": "Risky Click",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 13:24\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n4.54x\nSAFE CLICKS\n4 of 9\n4.54x\n$0.45\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 4 of 9 tiles for 4.54x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "R01-receipt-svg-1.svg"
+        ],
+        "betId": "01a207b8-7479-7388-a94a-1667dec1e1aa",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "R02",
+        "game": "Risky Click",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 13:24\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n4.54x\nSAFE CLICKS\n4 of 9\n4.54x\n$0.45\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 4 of 9 tiles for 4.54x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "R02-receipt-svg-1.svg"
+        ],
+        "betId": "01a207b8-67b9-714a-a019-26b2819bf3f2",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "R03",
+        "game": "Risky Click",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 13:24\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n4.54x\nSAFE CLICKS\n4 of 9\n4.54x\n$0.45\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 4 of 9 tiles for 4.54x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "R03-receipt-svg-1.svg"
+        ],
+        "betId": "01a207b8-5a3d-75c7-a574-a4b6e34e03c4",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "R04",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 13:24\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n1 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 1 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "R04-receipt-svg-1.svg"
+        ],
+        "betId": "01a207b8-53b2-7bd4-bd57-bed3932734c5",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "R05",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 13:24\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n1 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 1 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "R05-receipt-svg-1.svg"
+        ],
+        "betId": "01a207b8-4d7b-7b60-98bf-733c2b5fd33e",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "R06",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 13:24\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n3 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 3 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "R06-receipt-svg-1.svg"
+        ],
+        "betId": "01a207b8-4218-79e5-9e4c-6bd0613ffaa3",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "R07",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 13:24\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n0 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 0 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "R07-receipt-svg-1.svg"
+        ],
+        "betId": "01a207b8-3e8e-7714-847d-453ccb164a7f",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "R08",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 13:24\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n1 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 1 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "R08-receipt-svg-1.svg"
+        ],
+        "betId": "01a207b8-3876-7862-965e-4f9bf8769758",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "R09",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 13:24\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n0 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 0 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "R09-receipt-svg-1.svg"
+        ],
+        "betId": "01a207b8-35a2-747d-8971-ea792394aec5",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "R10",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 13:24\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n0 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 0 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "R10-receipt-svg-1.svg"
+        ],
+        "betId": "01a207b8-3114-73ac-8802-83f7776936c2",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "R12",
+        "game": "Risky Click",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 13:23\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n4.54x\nSAFE CLICKS\n4 of 9\n4.54x\n$0.45\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 4 of 9 tiles for 4.54x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "R12-receipt-svg-1.svg"
+        ],
+        "betId": "01a207b8-1801-7cd2-abe3-5637a7abefde",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "R13",
+        "game": "Risky Click",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 13:23\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n4.54x\nSAFE CLICKS\n4 of 9\n4.54x\n$0.45\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 4 of 9 tiles for 4.54x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "R13-receipt-svg-1.svg"
+        ],
+        "betId": "01a207b8-08c4-7880-9d8b-542df7b0fb1f",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "R16",
+        "game": "Risky Click",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 13:23\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n17.05x\nSAFE CLICKS\n5 of 9\n17.05x\n$1.70\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 5 of 9 tiles for 17.05x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "R16-receipt-svg-1.svg"
+        ],
+        "betId": "01a207b7-be31-7729-b988-16d7010733d0",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HNEW02-start",
+        "game": "HiLo",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 14:00\nK HIGHEST\nLOWEST A\nK\n0.00x\n8\n1.07x\nA\n1.74x\nJ\n1.88x\n2\n2.23x\nJ\n2.41x\n9\n2.85x\nMULTIPLIER\n2.85x\nCORRECT CALLS\n6\n2.86x\n$0.28\nfrom $0.10",
+        "svgLabels": [
+            "Cashed out at 2.85x after 6 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HNEW02-start-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d9-44b7-7556-bc81-04376b75af54",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HNEW03-verified",
+        "game": "HiLo",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:59\nK HIGHEST\nLOWEST A\n8\n0.00x\n8\n1.60x\n8\n2.61x\n5\n4.24x\n6\n6.13x\nMULTIPLIER\n6.13x\nCORRECT CALLS\n4\n6.14x\n$0.61\nfrom $0.10",
+        "svgLabels": [
+            "Cashed out at 6.13x after 4 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HNEW03-verified-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d8-d604-74e3-8703-170538da6759",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HNEW04-start",
+        "game": "HiLo",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:59\nK HIGHEST\nLOWEST A\nJ\n0.00x\n4\n1.17x\n6\n1.52x\n3\n3.29x\nQ\n3.89x\nQ\n4.21x\nMULTIPLIER\n4.21x\nCORRECT CALLS\n5\n4.22x\n$0.42\nfrom $0.10",
+        "svgLabels": [
+            "Cashed out at 4.21x after 5 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HNEW04-start-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d8-55c0-7222-8120-ded2f25b254c",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HNEW05-verified",
+        "game": "HiLo",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:58\nK HIGHEST\nLOWEST A\nJ\n0.00x\n2\n1.17x\nJ\n1.26x\n5\n1.49x\nK\n2.16x\nMULTIPLIER\n2.16x\nCORRECT CALLS\n4\n2.16x\n$0.21\nfrom $0.10",
+        "svgLabels": [
+            "Cashed out at 2.16x after 4 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HNEW05-verified-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d8-0412-7c93-a66a-447ae08aa925",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HNEW06-start",
+        "game": "HiLo",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:58\nK HIGHEST\nLOWEST A\n7\n0.00x\n10\n1.83x\n4\n2.39x\n7\n3.10x\n5\n5.77x\n6\n8.33x\n7\n13.54x\nJ\n25.15x\n4\n29.72x\nMULTIPLIER\n29.72x\nCORRECT CALLS\n8\n29.73x\n$2.97\nfrom $0.10",
+        "svgLabels": [
+            "Cashed out at 29.72x after 8 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HNEW06-start-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d7-9dd8-7563-9eae-53409146ccdf",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HNEW07-start",
+        "game": "HiLo",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:57\nK HIGHEST\nLOWEST A\n3\n0.00x\n2\n4.29x\n3\n4.64x\n10\n5.49x\n4\n7.14x\n10\n9.28x\n3\n12.06x\nMULTIPLIER\n12.06x\nCORRECT CALLS\n6\n12.07x\n$1.20\nfrom $0.10",
+        "svgLabels": [
+            "Cashed out at 12.06x after 6 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HNEW07-start-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d6-a37c-75d2-8bdf-f0b9cbeb20b9",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HROW02",
+        "game": "HiLo",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 14:00\nK HIGHEST\nLOWEST A\nK\n0.00x\nK\n0.00x\nMULTIPLIER\n0.00x\nCORRECT CALLS\n0\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Lost after 0 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HROW02-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d9-327b-7ce8-9323-e7c027470cca",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HROW03",
+        "game": "HiLo",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 14:00\nK HIGHEST\nLOWEST A\n4\n0.00x\nK\n0.00x\nMULTIPLIER\n0.00x\nCORRECT CALLS\n0\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Lost after 0 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HROW03-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d9-2374-702b-ae77-4932e6198b92",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HROW04",
+        "game": "HiLo",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:59\nK HIGHEST\nLOWEST A\n10\n0.00x\n4\n0.00x\nMULTIPLIER\n0.00x\nCORRECT CALLS\n0\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Lost after 0 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HROW04-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d9-15a0-720b-a297-6b0eb25e689b",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HROW05",
+        "game": "HiLo",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:59\nK HIGHEST\nLOWEST A\n6\n0.00x\n10\n0.00x\nMULTIPLIER\n0.00x\nCORRECT CALLS\n0\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Lost after 0 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HROW05-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d9-0220-7d36-92fa-4e9a44bdec3b",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HROW07",
+        "game": "HiLo",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:59\nK HIGHEST\nLOWEST A\nJ\n0.00x\n8\n0.00x\nMULTIPLIER\n0.00x\nCORRECT CALLS\n0\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Lost after 0 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HROW07-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d8-c90a-76ec-9596-5fe25c22af9e",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HROW08",
+        "game": "HiLo",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:59\nK HIGHEST\nLOWEST A\nQ\n0.00x\n5\n1.07x\n5\n1.54x\n9\n2.23x\nJ\n0.00x\nMULTIPLIER\n0.00x\nCORRECT CALLS\n3\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Lost after 3 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HROW08-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d8-9de5-7bd2-b044-4d37f70c7cb4",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HROW10",
+        "game": "HiLo",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:58\nK HIGHEST\nLOWEST A\nK\n0.00x\nJ\n1.07x\n10\n1.26x\nJ\n0.00x\nMULTIPLIER\n0.00x\nCORRECT CALLS\n2\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Lost after 2 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HROW10-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d8-354b-7de2-80cc-8972cdb364b8",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HROW12",
+        "game": "HiLo",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:58\nK HIGHEST\nLOWEST A\n4\n0.00x\n6\n1.28x\nJ\n0.00x\nMULTIPLIER\n0.00x\nCORRECT CALLS\n1\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Lost after 1 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HROW12-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d7-ee6d-7179-8c79-5dc0f2067cc4",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HROW14",
+        "game": "HiLo",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:58\nK HIGHEST\nLOWEST A\nK\n0.00x\n2\n1.07x\n8\n1.16x\n7\n0.00x\nMULTIPLIER\n0.00x\nCORRECT CALLS\n2\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Lost after 2 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HROW14-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d7-7b72-7dc9-a135-d3ea94fa3a54",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HROW15",
+        "game": "HiLo",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:58\nK HIGHEST\nLOWEST A\n8\n0.00x\n2\n1.60x\nK\n1.74x\nK\n0.00x\nMULTIPLIER\n0.00x\nCORRECT CALLS\n2\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Lost after 2 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HROW15-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d7-51f2-74bf-a926-bb0a5a6bf835",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HROW16",
+        "game": "HiLo",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:57\nK HIGHEST\nLOWEST A\n10\n0.00x\nQ\n3.21x\n10\n3.48x\n6\n4.53x\n8\n0.00x\nMULTIPLIER\n0.00x\nCORRECT CALLS\n3\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Lost after 3 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HROW16-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d7-2aa4-7c30-91c4-6601b19a8c34",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HROW17",
+        "game": "HiLo",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:57\nK HIGHEST\nLOWEST A\nA\n0.00x\n6\n1.07x\n4\n2.32x\nQ\n3.02x\n4\n3.27x\n8\n4.25x\n10\n0.00x\nMULTIPLIER\n0.00x\nCORRECT CALLS\n5\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Lost after 5 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HROW17-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d6-f0c2-77c7-8f71-365aa7b5ee10",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HROW18",
+        "game": "HiLo",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:57\nK HIGHEST\nLOWEST A\n3\n0.00x\nA\n0.00x\nMULTIPLIER\n0.00x\nCORRECT CALLS\n0\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Lost after 0 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HROW18-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d6-e0b7-77a9-be05-9dea6d92c60c",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "HROW20",
+        "game": "HiLo",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/hilo",
+        "receiptTextWithoutAccountFields": "HiLo\nPlaced 23 Nov 2026, 13:57\nK HIGHEST\nLOWEST A\nQ\n0.00x\n4\n1.07x\n3\n0.00x\nMULTIPLIER\n0.00x\nCORRECT CALLS\n1\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Lost after 1 correct calls"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "HROW20-receipt-svg-1.svg"
+        ],
+        "betId": "01a207d6-8ae3-776f-8fee-b60888cb91f7",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW01-verified",
+        "game": "Risky Click",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:11\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n2.38x\nSAFE CLICKS\n3 of 9\n2.39x\n$0.23\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 3 of 9 tiles for 2.38x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW01-verified-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e3-6bc5-734e-b2b7-63bf07f8cccf",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW02",
+        "game": "Risky Click",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:11\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n2.38x\nSAFE CLICKS\n3 of 9\n2.39x\n$0.23\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 3 of 9 tiles for 2.38x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW02-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e3-60d6-752b-b729-6248459652ae",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW03",
+        "game": "Risky Click",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:11\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n2.38x\nSAFE CLICKS\n3 of 9\n2.39x\n$0.23\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 3 of 9 tiles for 2.38x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW03-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e3-549c-7f82-80ab-b3e375cf8239",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW04",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:11\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n2 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 2 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW04-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e3-4c1c-7614-881e-71ecaac5fec2",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW05",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:11\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n2 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 2 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW05-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e3-4257-7bcf-af55-7547047bebf2",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW06",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:10\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n1 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 1 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW06-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e3-2271-743c-84fa-b59925b1dcbe",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW07",
+        "game": "Risky Click",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:10\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n2.99x\nSAFE CLICKS\n3 of 9\n3.00x\n$0.29\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 3 of 9 tiles for 2.99x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW07-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e3-1800-783c-89d7-8054a2c6de6a",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW08",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:10\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n2 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 2 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW08-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e3-0ea4-7bba-bbf8-317c2e800273",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW09",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:10\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n0 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 0 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW09-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e3-0bc8-7ae7-9782-5a5be8cfad55",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW10",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:10\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n0 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 0 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW10-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e3-08ed-7736-9b12-3dd6c147f59a",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW11",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:10\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n1 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 1 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW11-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e3-0385-7119-a46f-5629d17666bd",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW12",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:10\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n2 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 2 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW12-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e2-fabf-7975-849c-1cb741390806",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW13",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:10\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n2 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 2 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW13-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e2-f0cf-7751-955a-392d05119959",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW14",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:10\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n2 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 2 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW14-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e2-cda9-7cd3-8386-5ca445052507",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW15",
+        "game": "Risky Click",
+        "status": "WON",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:10\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n2.22x\nSAFE CLICKS\n3 of 9\n2.23x\n$0.22\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 3 of 9 tiles for 2.22x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW15-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e2-c27a-7814-ac8b-24bc7e16a073",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW16",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:10\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n1 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 1 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW16-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e2-bbd3-78db-be98-47570139e881",
+        "captureDate": "2026-11-23"
+    },
+    {
+        "label": "RNEW17",
+        "game": "Risky Click",
+        "status": "LOST",
+        "sourceURL": "https://yeet.com/game/play/yeet-originals/risky-click",
+        "receiptTextWithoutAccountFields": "Risky Click\nPlaced 23 Nov 2026, 14:10\n1.20x\n1.30x\n1.40x\n1.50x\n1.75x\n2.00x\n2.50x\n3.00x\n4.20x\nMULTIPLIER\n0.00x\nSAFE CLICKS\n2 of 9\n0.00x\n$0.00\nfrom $0.10",
+        "svgLabels": [
+            "Turned over 2 of 9 tiles for 0.00x"
+        ],
+        "evidenceType": "Account name and fairness inputs omitted from DOM text; bet ID preserved as a separate field. SVG files extracted verbatim from saved rendered DOM.",
+        "svgFiles": [
+            "RNEW17-receipt-svg-1.svg"
+        ],
+        "betId": "01a207e2-b1d2-7530-b878-8ae2e4f07965",
+        "captureDate": "2026-11-23"
+    }
+]
